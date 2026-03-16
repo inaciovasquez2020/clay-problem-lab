@@ -1,0 +1,10 @@
+{
+  "problems": [
+    {"name": "Riemann Hypothesis", "module": "riemann"},
+    {"name": "Navier–Stokes", "module": "navier_stokes"},
+    {"name": "Yang–Mills Mass Gap", "module": "yang_mills"},
+    {"name": "P vs NP", "module": "complexity"},
+    {"name": "Birch–Swinnerton–Dyer", "module": "bsd"},
+    {"name": "Hodge Conjecture", "module": "hodge"}
+  ]
+}

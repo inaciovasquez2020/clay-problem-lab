@@ -1,3 +1,7 @@
+## Status
+Current repository work may be complete at the artifact, test, script, dashboard, and reproducibility-infrastructure level within the declared experimental scope.
+No theorem-level completion claim is implied.
+
 # Clay Problem Lab
 
 Clay Problem Lab is a unified experimental framework for computational exploration of the Clay Millennium Problems.
@@ -36,6 +40,10 @@ scripts/test_pipeline.sh
 - `docs/PIPELINE_SCOPE_NOTE_2026_04.md` — conditional note specifying the weakest non-overreach audit compatible with the repository's exploration-only boundary.
 - `docs/CROSS_MODULE_COMPARABILITY_NOTE_2026_04.md` — conditional note specifying the weakest cross-module normalization audit compatible with the repository's unified-framework scope.
 - `docs/TEST_COVERAGE_BOUNDARY_NOTE_2026_04.md` — conditional note specifying the weakest test-boundary audit compatible with the repository's verification-pipeline scope.
+
+
+## Conditional notes
+- `docs/CURRENT_WORK_COMPLETION_NOTE_2026_04.md` — conditional note updating repository scope text to reflect completed current work without strengthening scientific claims.
 
 Project goal:
 

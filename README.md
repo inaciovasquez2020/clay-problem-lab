@@ -27,6 +27,16 @@ Run tests:
 
 scripts/test_pipeline.sh
 
+
+## Conditional notes
+- `docs/REPLAY_INTEGRITY_NOTE_2026_04.md` — conditional note specifying the weakest replay-audit extension compatible with the repository's experimental-framework scope.
+- `docs/MODULE_ADAPTER_COMPLETENESS_NOTE_2026_04.md` — conditional note specifying the weakest adapter-coverage audit compatible with the repository's multi-module experimental scope.
+- `docs/ENVIRONMENT_PIN_INTEGRITY_NOTE_2026_04.md` — conditional note specifying the weakest environment-hash audit compatible with the repository's reproducibility boundary.
+- `docs/SUMMARY_TRACEABILITY_NOTE_2026_04.md` — conditional note specifying the weakest summary-to-artifact traceability audit compatible with the repository's result-reporting scope.
+- `docs/PIPELINE_SCOPE_NOTE_2026_04.md` — conditional note specifying the weakest non-overreach audit compatible with the repository's exploration-only boundary.
+- `docs/CROSS_MODULE_COMPARABILITY_NOTE_2026_04.md` — conditional note specifying the weakest cross-module normalization audit compatible with the repository's unified-framework scope.
+- `docs/TEST_COVERAGE_BOUNDARY_NOTE_2026_04.md` — conditional note specifying the weakest test-boundary audit compatible with the repository's verification-pipeline scope.
+
 Project goal:
 
 Create a reproducible research infrastructure for experimentation,

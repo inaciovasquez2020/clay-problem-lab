@@ -427,3 +427,38 @@ def test_ddyo_theta_tail_ratio_decreases_multishell():
         assert ratios[2] <= ratios[3] + 1e-12
         assert ratios[0] < 1.0 - 1e-12
         assert ratios[3] <= 1.0 + 1e-12
+
+def test_ddyo_theta_tail_smallness_gap_single_shell():
+    X, Y, Z, h = make_grid(n=24)
+    u = base_velocity_shell(X, Y, Z, k=4)
+    j = shell_index_for_frequency(4)
+    wj = bandpass_vector(curl(u), j)
+
+    total = shell_residual(wj, j, h)
+    tail_50 = shell_residual_on_mask(wj, j, h, ~active_set_mask_theta(wj, j, h, theta=0.50))
+    tail_90 = shell_residual_on_mask(wj, j, h, ~active_set_mask_theta(wj, j, h, theta=0.90))
+
+    r50 = tail_50 / max(total, 1e-12)
+    r90 = tail_90 / max(total, 1e-12)
+
+    assert r50 < 0.95
+    assert r90 >= r50 - 1e-12
+
+
+def test_ddyo_theta_tail_smallness_gap_multishell():
+    X, Y, Z, h = make_grid(n=24)
+    u = aligned_multishell_velocity(X, Y, Z)
+
+    for k in [2, 4, 8]:
+        j = shell_index_for_frequency(k)
+        wj = bandpass_vector(curl(u), j)
+
+        total = shell_residual(wj, j, h)
+        tail_50 = shell_residual_on_mask(wj, j, h, ~active_set_mask_theta(wj, j, h, theta=0.50))
+        tail_90 = shell_residual_on_mask(wj, j, h, ~active_set_mask_theta(wj, j, h, theta=0.90))
+
+        r50 = tail_50 / max(total, 1e-12)
+        r90 = tail_90 / max(total, 1e-12)
+
+        assert r50 < 0.95
+        assert r90 >= r50 - 1e-12

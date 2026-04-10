@@ -379,3 +379,60 @@ def test_ddyo_commutator_epsilon_proxy_integer_dilation_stable():
     assert e1 < 0.5
     assert e2 < 0.5
     assert abs(e1 - e2) / max(abs(e1), 1e-12) < 2.0e-1
+
+
+def test_ddyo_exact_pairing_split_into_sym_and_rot():
+    X, Y, Z, _ = _dc_make_grid(n=48)
+    u = _dc_base_velocity_shell(X, Y, Z, k=4)
+    j = _dc_shell_index(4)
+
+    uj = _dc_bandpass_vector(u, j)
+    wj = _dc_bandpass_vector(_dc_curl(u), j)
+    Jj = _dc_grad_vector(uj)
+    Sj = _dc_sym_grad(uj)
+    Aj = _dc_skew_grad(uj)
+
+    full_density = np.sum(_dc_hprime(wj) * _dc_tensor_vec(Jj, wj), axis=0)
+    sym_density = np.sum(_dc_hprime(wj) * _dc_tensor_vec(Sj, wj), axis=0)
+    rot_density = np.sum(_dc_hprime(wj) * _dc_tensor_vec(Aj, wj), axis=0)
+
+    err = float(np.max(np.abs(full_density - (sym_density + rot_density))))
+    ref = max(1.0, float(np.max(np.abs(full_density))))
+    assert err <= 1e-10 * ref
+
+
+def test_ddyo_rotation_pairing_pointwise_vanishes_before_magnitude_bounds():
+    X, Y, Z, _ = _dc_make_grid(n=48)
+    u = _dc_base_velocity_shell(X, Y, Z, k=4)
+    j = _dc_shell_index(4)
+
+    uj = _dc_bandpass_vector(u, j)
+    wj = _dc_bandpass_vector(_dc_curl(u), j)
+    Sj = _dc_sym_grad(uj)
+    Aj = _dc_skew_grad(uj)
+
+    sym_density = np.sum(_dc_hprime(wj) * _dc_tensor_vec(Sj, wj), axis=0)
+    rot_density = np.sum(_dc_hprime(wj) * _dc_tensor_vec(Aj, wj), axis=0)
+
+    lhs = float(np.max(np.abs(rot_density)))
+    rhs = max(1.0, float(np.max(np.abs(sym_density))))
+    assert lhs <= 1e-10 * rhs
+
+
+def test_ddyo_symmetric_pairing_recovers_full_pairing_after_rotation_cancellation():
+    X, Y, Z, h = _dc_make_grid(n=48)
+    u = _dc_multishell_velocity(X, Y, Z)
+    j = _dc_shell_index(4)
+
+    uj = _dc_bandpass_vector(u, j)
+    wj = _dc_bandpass_vector(_dc_curl(u), j)
+    Jj = _dc_grad_vector(uj)
+    Sj = _dc_sym_grad(uj)
+    Aj = _dc_skew_grad(uj)
+
+    full = (2.0 ** (2 * j)) * _dc_volume_integral(np.sum(_dc_hprime(wj) * _dc_tensor_vec(Jj, wj), axis=0), h)
+    sym = (2.0 ** (2 * j)) * _dc_volume_integral(np.sum(_dc_hprime(wj) * _dc_tensor_vec(Sj, wj), axis=0), h)
+    rot = (2.0 ** (2 * j)) * _dc_volume_integral(np.sum(_dc_hprime(wj) * _dc_tensor_vec(Aj, wj), axis=0), h)
+
+    assert abs(rot) <= 1e-10 * max(1.0, abs(sym))
+    assert abs(full - sym) <= 1e-10 * max(1.0, abs(full), abs(sym))

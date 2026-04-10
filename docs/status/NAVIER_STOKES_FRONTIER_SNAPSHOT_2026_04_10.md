@@ -36,6 +36,12 @@
 - sampled epsilon-proxy integer-dilation stability verified
 - active wall: continuum commutator-absorbability lemma
 
+## Exact skew-adjoint reduction frontier
+- sampled exact pairing split into symmetric + rotational parts verified
+- sampled rotational pairing vanishes before magnitude bounds
+- sampled symmetric pairing recovers full pairing after cancellation
+- active wall: continuum exact skew-adjoint reduction before norm estimates
+
 ## Truthful frontier
 - sampled wall structure: verified
 - continuum DDYO high-high absorbability: open

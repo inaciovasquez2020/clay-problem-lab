@@ -82,7 +82,16 @@ replace sampled surrogate by a continuum-consistent critical residual and derive
 
 ## DDYO
 
-Current sampled residual:
+Continuum critical candidate:
+\[
+R_{\mathrm{DDYO}}[u]
+:=
+\sup_{j\in\mathbb Z} 2^{-j}\|\Delta_j u\|_{L^\infty(\mathbb R^3)}
+=
+\|u\|_{\dot B^{-1}_{\infty,\infty}}.
+\]
+
+Current sampled test layer:
 \[
 R_{\mathrm{DDYO}}^{\mathrm{test}}
 =
@@ -92,11 +101,16 @@ R_{\mathrm{DDYO}}^{\mathrm{test}}
 Status:
 - dyadic shell extraction tested
 - discrete velocity-envelope invariance tested
-- current test layer is a velocity-envelope surrogate
+- continuum critical candidate identified
+- sampled shell model aligned with the same weighted sup structure
 - continuum nonlinear flux closure not proved
 
 Open obstruction:
-derive continuum paraproduct closure for the selected critical envelope and isolate the high-high remainder.
+derive continuum paraproduct closure for
+\[
+R_{\mathrm{DDYO}}[u]=\|u\|_{\dot B^{-1}_{\infty,\infty}}
+\]
+and isolate the high-high remainder.
 
 ## Truthful frontier
 

@@ -42,6 +42,13 @@
 - sampled symmetric pairing recovers full pairing after cancellation
 - active wall: continuum exact skew-adjoint reduction before norm estimates
 
+## Symmetric commutator pairing frontier
+- sampled commutator pairing split into symmetric + rotational parts verified
+- sampled rotational commutator pairing lower-order proxy verified
+- sampled symmetric commutator pairing epsilon-proxy verified
+- sampled symmetric commutator pairing integer-dilation stability verified
+- active wall: continuum symmetric commutator pairing absorbability lemma
+
 ## Truthful frontier
 - sampled wall structure: verified
 - continuum DDYO high-high absorbability: open

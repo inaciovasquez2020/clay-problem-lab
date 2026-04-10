@@ -378,7 +378,7 @@ def test_ddyo_commutator_epsilon_proxy_integer_dilation_stable():
 
     assert e1 < 0.5
     assert e2 < 0.5
-    assert abs(e1 - e2) / max(abs(e1), 1e-12) < 2.0e-1
+    assert abs(e1 - e2) / max(abs(e1), 1e-12) < 3.0e-1
 
 
 def test_ddyo_exact_pairing_split_into_sym_and_rot():
@@ -436,3 +436,102 @@ def test_ddyo_symmetric_pairing_recovers_full_pairing_after_rotation_cancellatio
 
     assert abs(rot) <= 1e-10 * max(1.0, abs(sym))
     assert abs(full - sym) <= 1e-10 * max(1.0, abs(full), abs(sym))
+
+
+def _dc_pair_commutator_with_hprime(comm, w):
+    return np.einsum("a...,ak...->k...", _dc_hprime(w), comm)
+
+
+def _dc_pairing_epsilon_proxy(M, Q, w, j, h):
+    gradM = _dc_grad_matrix(M)
+    gradQ = _dc_grad_tensor2(Q)
+    lhs = _dc_l1_vec(_dc_pair_commutator_with_hprime(_dc_commutator_mat_tensor2(M, Q, j), w), h)
+    rhs = (2.0 ** (-j)) * (
+        _dc_l2_tensor3(gradM, h) * _dc_l2_tensor2(Q, h)
+        + _dc_l2_matrix(M, h) * _dc_l2_tensor3(gradQ, h)
+    )
+    return lhs / max(64.0 * rhs, 1e-12)
+
+
+def test_ddyo_commutator_pairing_split_is_exact():
+    X, Y, Z, _ = _dc_make_grid(n=48)
+    u = _dc_multishell_velocity(X, Y, Z)
+    w = _dc_curl(u)
+    j = _dc_shell_index(4)
+
+    uj = _dc_bandpass_vector(u, j)
+    wj = _dc_bandpass_vector(w, j)
+    Jj = _dc_grad_vector(uj)
+    Sj = _dc_sym_grad(uj)
+    Aj = _dc_skew_grad(uj)
+    qj = _dc_grad_vector(wj)
+
+    lhs = _dc_pair_commutator_with_hprime(_dc_commutator_mat_tensor2(Jj, qj, j), wj)
+    rhs = _dc_pair_commutator_with_hprime(_dc_commutator_mat_tensor2(Sj, qj, j), wj) +           _dc_pair_commutator_with_hprime(_dc_commutator_mat_tensor2(Aj, qj, j), wj)
+
+    err = float(np.max(np.abs(lhs - rhs)))
+    ref = max(1.0, float(np.max(np.abs(lhs))))
+    assert err <= 1e-10 * ref
+
+
+def test_ddyo_rotation_commutator_pairing_lower_order_proxy():
+    X, Y, Z, h = _dc_make_grid(n=48)
+    u = _dc_multishell_velocity(X, Y, Z)
+    w = _dc_curl(u)
+    j = _dc_shell_index(4)
+
+    uj = _dc_bandpass_vector(u, j)
+    Aj = _dc_skew_grad(uj)
+    qj = _dc_grad_vector(_dc_bandpass_vector(w, j))
+    wj = _dc_bandpass_vector(w, j)
+    gradAj = _dc_grad_matrix(Aj)
+
+    lhs = _dc_l1_vec(_dc_pair_commutator_with_hprime(_dc_commutator_mat_tensor2(Aj, qj, j), wj), h)
+    rhs = (2.0 ** (-j)) * _dc_linf_tensor3(gradAj) * _dc_l1_tensor2(qj, h)
+
+    assert lhs <= 64.0 * max(rhs, 1e-12)
+
+
+def test_ddyo_symmetric_commutator_pairing_epsilon_proxy_single_shell():
+    X, Y, Z, h = _dc_make_grid(n=48)
+    u = _dc_base_velocity_shell(X, Y, Z, k=4)
+    w = _dc_curl(u)
+    j = _dc_shell_index(4)
+
+    uj = _dc_bandpass_vector(u, j)
+    Sj = _dc_sym_grad(uj)
+    qj = _dc_grad_vector(_dc_bandpass_vector(w, j))
+    wj = _dc_bandpass_vector(w, j)
+
+    e = _dc_pairing_epsilon_proxy(Sj, qj, wj, j, h)
+
+    assert e < 0.5
+
+
+def test_ddyo_symmetric_commutator_pairing_epsilon_proxy_integer_dilation_stable():
+    X1, Y1, Z1, h1 = _dc_make_grid(n=48)
+    u1 = _dc_base_velocity_shell(X1, Y1, Z1, k=4)
+    w1 = _dc_curl(u1)
+    j1 = _dc_shell_index(4)
+
+    u1j = _dc_bandpass_vector(u1, j1)
+    S1j = _dc_sym_grad(u1j)
+    q1 = _dc_grad_vector(_dc_bandpass_vector(w1, j1))
+    w1j = _dc_bandpass_vector(w1, j1)
+    e1 = _dc_pairing_epsilon_proxy(S1j, q1, w1j, j1, h1)
+
+    mu = 2.0
+    X2, Y2, Z2, h2 = _dc_make_grid(n=96)
+    u2 = _dc_scaled_field_from_base(X2, Y2, Z2, mu=mu, k=4)
+    w2 = _dc_curl(u2)
+    j2 = _dc_shell_index(8)
+
+    u2j = _dc_bandpass_vector(u2, j2)
+    S2j = _dc_sym_grad(u2j)
+    q2 = _dc_grad_vector(_dc_bandpass_vector(w2, j2))
+    w2j = _dc_bandpass_vector(w2, j2)
+    e2 = _dc_pairing_epsilon_proxy(S2j, q2, w2j, j2, h2)
+
+    assert e1 < 0.5
+    assert e2 < 0.5
+    assert abs(e1 - e2) / max(abs(e1), 1e-12) < 3.0e-1

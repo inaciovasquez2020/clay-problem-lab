@@ -1,0 +1,36 @@
+# Navier--Stokes Frontier Snapshot (2026-04-10)
+
+## Verified sampled state
+- DDYO wall sampled layer: 31/31 tests passing.
+- Verified sampled DDYO components:
+  - exact pair partition
+  - single-shell advective cancellation
+  - single-shell skew cancellation
+  - positive strain contribution
+  - full-shell strain dominance proxy
+  - theta-active-set nonemptiness
+  - localized active-tail proxy split
+  - theta-tail monotonicity
+- J2B sampled frontier now includes:
+  - exact gradient-level stretch split into strain + skew
+  - shear-shell skew vanishing test
+  - product-rule bound
+    \[
+    \|\nabla(S\nabla\omega)\|_{L^1}
+    \le
+    \|\nabla S\|_{L^\infty}\|\nabla\omega\|_{L^1}
+    +
+    \|S\|_{L^\infty}\|\nabla^2\omega\|_{L^1}.
+    \]
+
+## DDYO commutator frontier
+- sampled same-scale commutator split verified
+- sampled same-scale commutator bound verified
+- sampled rotation-part cancellation against h' verified
+- sampled normalized commutator ratio integer-dilation stability verified
+
+## Truthful frontier
+- sampled wall structure: verified
+- continuum DDYO high-high absorbability: open
+- continuum J2B exact residual closure: open
+- full continuum solve / global regularity closure: open

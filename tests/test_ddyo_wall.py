@@ -384,3 +384,46 @@ def test_ddyo_theta_localized_proxy_split_controls_positive_hh_multishell():
         rhs_tail = (4.0 / 3.0) * lam_tail * shell_residual_on_mask(wj, j, h, tail)
 
         assert lhs <= (1.0 + 1e-9) * max(rhs_active + rhs_tail, 1e-12)
+
+def test_ddyo_theta_tail_ratio_decreases_single_shell():
+    X, Y, Z, h = make_grid(n=24)
+    u = base_velocity_shell(X, Y, Z, k=4)
+    j = shell_index_for_frequency(4)
+    wj = bandpass_vector(curl(u), j)
+
+    total = shell_residual(wj, j, h)
+    ratios = []
+
+    for theta in [0.25, 0.50, 0.75, 0.90]:
+        tail = ~active_set_mask_theta(wj, j, h, theta=theta)
+        tail_mass = shell_residual_on_mask(wj, j, h, tail)
+        ratios.append(tail_mass / max(total, 1e-12))
+
+    assert ratios[0] <= ratios[1] + 1e-12
+    assert ratios[1] <= ratios[2] + 1e-12
+    assert ratios[2] <= ratios[3] + 1e-12
+    assert ratios[0] < 1.0 - 1e-12
+    assert ratios[3] <= 1.0 + 1e-12
+
+
+def test_ddyo_theta_tail_ratio_decreases_multishell():
+    X, Y, Z, h = make_grid(n=24)
+    u = aligned_multishell_velocity(X, Y, Z)
+
+    for k in [2, 4, 8]:
+        j = shell_index_for_frequency(k)
+        wj = bandpass_vector(curl(u), j)
+
+        total = shell_residual(wj, j, h)
+        ratios = []
+
+        for theta in [0.25, 0.50, 0.75, 0.90]:
+            tail = ~active_set_mask_theta(wj, j, h, theta=theta)
+            tail_mass = shell_residual_on_mask(wj, j, h, tail)
+            ratios.append(tail_mass / max(total, 1e-12))
+
+        assert ratios[0] <= ratios[1] + 1e-12
+        assert ratios[1] <= ratios[2] + 1e-12
+        assert ratios[2] <= ratios[3] + 1e-12
+        assert ratios[0] < 1.0 - 1e-12
+        assert ratios[3] <= 1.0 + 1e-12

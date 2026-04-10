@@ -323,3 +323,64 @@ def test_ddyo_theta_active_set_nonempty_multishell():
         wj = bandpass_vector(curl(u), j)
         mask = active_set_mask_theta(wj, j, h, theta=0.5)
         assert np.any(mask)
+
+def shell_residual_on_mask(wj, j, h, mask):
+    return (2.0 ** (2 * j)) * volume_integral(np.where(mask, h_density(wj), 0.0), h)
+
+
+def positive_strain_hh_term_on_mask(Sj, wj, j, h, mask):
+    integrand = np.sum(hprime(wj) * strain_action(Sj, wj), axis=0)
+    return (2.0 ** (2 * j)) * volume_integral(np.where(mask, np.maximum(integrand, 0.0), 0.0), h)
+
+
+def positive_lambda_sup_on_mask(Sj, mask):
+    lam = np.maximum(max_eigenvalue_field(Sj), 0.0)
+    if not np.any(mask):
+        return 0.0
+    return float(np.max(lam[mask]))
+
+
+def test_ddyo_theta_localized_proxy_split_controls_positive_hh_single_shell():
+    X, Y, Z, h = make_grid(n=24)
+    u = base_velocity_shell(X, Y, Z, k=4)
+    j = shell_index_for_frequency(4)
+    uj = bandpass_vector(u, j)
+    Sj = sym_grad(uj)
+    wj = bandpass_vector(curl(u), j)
+
+    active = active_set_mask_theta(wj, j, h, theta=0.5)
+    tail = ~active
+
+    lhs = positive_strain_hh_term(Sj, wj, j, h)
+
+    lam_active = positive_lambda_sup_on_mask(Sj, active)
+    lam_tail = positive_lambda_sup_on_mask(Sj, tail)
+
+    rhs_active = (4.0 / 3.0) * lam_active * shell_residual_on_mask(wj, j, h, active)
+    rhs_tail = (4.0 / 3.0) * lam_tail * shell_residual_on_mask(wj, j, h, tail)
+
+    assert lhs <= (1.0 + 1e-9) * max(rhs_active + rhs_tail, 1e-12)
+
+
+def test_ddyo_theta_localized_proxy_split_controls_positive_hh_multishell():
+    X, Y, Z, h = make_grid(n=24)
+    u = aligned_multishell_velocity(X, Y, Z)
+
+    for k in [2, 4, 8]:
+        j = shell_index_for_frequency(k)
+        uj = bandpass_vector(u, j)
+        Sj = sym_grad(uj)
+        wj = bandpass_vector(curl(u), j)
+
+        active = active_set_mask_theta(wj, j, h, theta=0.5)
+        tail = ~active
+
+        lhs = positive_strain_hh_term(Sj, wj, j, h)
+
+        lam_active = positive_lambda_sup_on_mask(Sj, active)
+        lam_tail = positive_lambda_sup_on_mask(Sj, tail)
+
+        rhs_active = (4.0 / 3.0) * lam_active * shell_residual_on_mask(wj, j, h, active)
+        rhs_tail = (4.0 / 3.0) * lam_tail * shell_residual_on_mask(wj, j, h, tail)
+
+        assert lhs <= (1.0 + 1e-9) * max(rhs_active + rhs_tail, 1e-12)

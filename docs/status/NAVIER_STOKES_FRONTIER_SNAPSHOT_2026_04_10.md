@@ -29,6 +29,13 @@
 - sampled rotation-part cancellation against h' verified
 - sampled normalized commutator ratio integer-dilation stability verified
 
+## DDYO commutator absorbability frontier
+- sampled strain/rotation commutator split verified
+- sampled strain commutator Kato--Ponce proxy bound verified
+- sampled rotation commutator lower-order proxy verified
+- sampled epsilon-proxy integer-dilation stability verified
+- active wall: continuum commutator-absorbability lemma
+
 ## Truthful frontier
 - sampled wall structure: verified
 - continuum DDYO high-high absorbability: open

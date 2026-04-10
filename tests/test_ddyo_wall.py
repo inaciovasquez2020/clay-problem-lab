@@ -296,3 +296,30 @@ def test_ddyo_normalized_active_lambda_is_integer_dilation_stable():
     q2 = active_lambda_max(S2j, w2j, j2, h2) / (2.0 ** j2)
 
     assert abs(q1 - q2) / max(abs(q1), 1e-12) < 5e-2
+
+def active_set_mask_theta(wj, j, h, theta):
+    volume = float(np.prod(wj.shape[1:]) * (h ** 3))
+    threshold = theta * (2.0 ** (-j)) * lp_norm_vector(wj, 4.0 / 3.0, h) / (volume ** 0.75)
+    return pointwise_norm(wj) >= threshold
+
+
+def test_ddyo_theta_active_set_nonempty_single_shell():
+    X, Y, Z, h = make_grid(n=24)
+    u = base_velocity_shell(X, Y, Z, k=4)
+    j = shell_index_for_frequency(4)
+    wj = bandpass_vector(curl(u), j)
+
+    mask = active_set_mask_theta(wj, j, h, theta=0.5)
+
+    assert np.any(mask)
+
+
+def test_ddyo_theta_active_set_nonempty_multishell():
+    X, Y, Z, h = make_grid(n=24)
+    u = aligned_multishell_velocity(X, Y, Z)
+
+    for k in [2, 4, 8]:
+        j = shell_index_for_frequency(k)
+        wj = bandpass_vector(curl(u), j)
+        mask = active_set_mask_theta(wj, j, h, theta=0.5)
+        assert np.any(mask)

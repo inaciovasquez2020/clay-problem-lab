@@ -20,3 +20,13 @@ This declaration may be changed to COMPLETE only after:
 1. a theorem-level RA1n proof is present in-repo;
 2. all dependent status files agree;
 3. no frontier file declares the same object open.
+
+
+## Canonical combined gradient-test reference
+
+The combined canonical reference for the currently recorded gradient tests is:
+
+`docs/math/DDYO_COMBINED_GRADIENT_TESTS.md`
+
+Status: Conditional.
+

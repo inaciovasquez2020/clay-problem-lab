@@ -33,6 +33,6 @@ The DDYO shell-product frontier is reduced to the theorem-level proof of
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.
 
 No theorem-level proof of the gradient bound is currently recorded in this repository.

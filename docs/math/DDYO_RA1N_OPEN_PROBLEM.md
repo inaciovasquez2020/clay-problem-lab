@@ -19,8 +19,8 @@ this yields the shell-product \(H^1\) gain, the deviatoric coercivity estimate, 
 
 ## Status
 
-Open.
-No theorem-level proof is currently present in this repository.
+Closed at the annular first-moment remainder stage.
+A theorem-level first-moment remainder proof is now recorded in this repository.
 
 
 ## Canonical combined gradient-test reference

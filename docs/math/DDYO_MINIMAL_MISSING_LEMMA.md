@@ -20,6 +20,6 @@ Consequently, together with the recorded annular-potential route, one obtains RA
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.
 
 No theorem-level proof of the required explicit construction of \(G_j\) is currently present in this repository.

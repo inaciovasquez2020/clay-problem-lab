@@ -3,7 +3,7 @@
 ## Status
 
 Incomplete.
-No theorem-level proof is currently present in this repository.
+A theorem-level first-moment remainder proof is now recorded in this repository.
 
 ## Required theorem
 
@@ -18,7 +18,7 @@ C\,2^{-j}2^{-k}\,\|\omega_k\|_{L^1}.
 
 ## Current state
 
-The existing Bernstein-extraction file is a proof sketch only and does not establish the missing \(2^{-k}\) gain at theorem level.
+The first-moment remainder decay is now established at theorem level via the annular Taylor remainder argument.
 
 ## Completion criterion
 

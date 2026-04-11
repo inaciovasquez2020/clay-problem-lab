@@ -15,6 +15,6 @@ To prove it in this repository, one still needs the exact construction of \(G_j\
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.
 
 No theorem-level derivation of the gradient bound is currently present in this repository.

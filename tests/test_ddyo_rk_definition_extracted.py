@@ -44,3 +44,22 @@ def test_canonical_terminal_obstruction_doc_exists():
     assert r"r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi)" in s
     assert "canonical terminal obstruction" in s
     assert "unconditional RA1n closure" in s
+
+
+def test_quantitative_decay_closure_target_exists():
+    p = Path("docs/math/DDYO_RA1N_QUANTITATIVE_DECAY_CLOSURE_TARGET.md")
+    assert p.exists(), "missing quantitative decay closure target doc"
+    s = p.read_text()
+    assert r"r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi)" in s
+    assert r"2^{-k(2+|\alpha|)}" in s
+    assert "unconditional RA1n closure" in s
+    assert "Open." in s
+
+def test_final_normal_form_status_exists():
+    p = Path("docs/status/DDYO_RA1N_FINAL_NORMAL_FORM_2026_04_11.md")
+    assert p.exists(), "missing final normal form status doc"
+    s = p.read_text()
+    assert "Status: CONDITIONAL" in s
+    assert r"r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi)" in s
+    assert "Weakest sufficient closure upgrade" in s
+    assert "unconditional RA1n closure" in s

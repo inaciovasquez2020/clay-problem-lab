@@ -25,3 +25,12 @@ def test_ra1n_status_file_records_single_remaining_theorem():
     assert r"r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi)" in s
     assert "single remaining theorem" in s
     assert "unconditional RA1n closure" in s
+
+
+def test_single_remaining_theorem_doc_exists():
+    p = Path("docs/math/DDYO_RA1N_SINGLE_REMAINING_THEOREM.md")
+    assert p.exists(), "missing single remaining theorem doc"
+    s = p.read_text()
+    assert r"r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi)" in s
+    assert "unconditional RA1n closure" in s
+    assert "Open." in s

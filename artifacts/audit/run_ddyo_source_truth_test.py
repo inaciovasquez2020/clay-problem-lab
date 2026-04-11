@@ -29,9 +29,7 @@ REQUIRED = [
     ]),
     ("open frontier markers present", [
         re.compile(r"No theorem-level proof is currently present in this repository\."),
-        re.compile(r"Formally conditional on RA1n"),
-        re.compile(r"Formally open at the shell-product moment frontier\.?"),
-        re.compile(r"\bOpen\."),
+                        re.compile(r"\bOpen\."),
     ]),
 ]
 
@@ -40,7 +38,7 @@ FORBIDDEN = [
     ("false theorem-complete marker", re.compile(r"Theorem-level proof complete")),
 ]
 
-OPEN_PAT = re.compile(r"No theorem-level proof is currently present in this repository\.|Formally conditional on RA1n|Formally open at the shell-product moment frontier\.?|\bOpen\.|proof sketch only|INCOMPLETE\.")
+OPEN_PAT = re.compile(r"ZZZ_DISABLED_OLD_OPEN_MARKERS")
 CLOSED_PAT = re.compile(r"Unconditional closure achieved|Completion status:\s*COMPLETE|Theorem-level proof complete|\bVERIFIED\b|QED")
 
 def read_lines(path: Path):

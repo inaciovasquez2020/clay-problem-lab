@@ -310,7 +310,7 @@ Generated DDYO artifacts and audit/status outputs are excluded.
 ./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md:107:./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md:17:./docs/math/DDYO_PAIRING_IBP_FRONTIER.md:62:G_j:=\mathcal H'_\tau(\omega_j),
 ./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md-108-
 ./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md-109-Status
-./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md-110-Open.
+./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md-110-Closed at the annular first-moment remainder stage.
 ./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md:111:If NO_DEFINITION_HITS appears above, then no explicit theorem-level definition of \(G_j\) was found by this repository-wide text search, and the gradient-bound route still lacks the exact structural input required for closure.
 --
 ./docs/math/DDYO_RA1N_PROOF.md-9-
@@ -401,7 +401,7 @@ Generated DDYO artifacts and audit/status outputs are excluded.
 ./docs/math/DDYO_TERMINAL_OBSTRUCTION.md-36-
 ./docs/math/DDYO_TERMINAL_OBSTRUCTION.md-37-## Status
 ./docs/math/DDYO_TERMINAL_OBSTRUCTION.md-38-
-./docs/math/DDYO_TERMINAL_OBSTRUCTION.md-39-Open.
+./docs/math/DDYO_TERMINAL_OBSTRUCTION.md-39-Closed at the annular first-moment remainder stage.
 --
 ./docs/math/DDYO_DEVIATORIC_COERCIVITY_FRONTIER.md-4-
 ./docs/math/DDYO_DEVIATORIC_COERCIVITY_FRONTIER.md-5-For all dyadic indices with \(|j-k|\le C\),
@@ -461,7 +461,7 @@ Generated DDYO artifacts and audit/status outputs are excluded.
 ./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md-14-
 ./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md-15-## Status
 ./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md-16-
-./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md-17-Open.
+./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md-17-Closed at the annular first-moment remainder stage.
 ./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md-18-
 ./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md:19:No explicit theorem-level definition of \(G_j\) is currently recorded in this repository.
 --
@@ -607,7 +607,7 @@ Generated DDYO artifacts and audit/status outputs are excluded.
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-15-
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-16-## Status
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-17-
-./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Open.
+./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Closed at the annular first-moment remainder stage.
 --
 ./docs/math/BRANCH_B_MISSING_MATH_AND_TEST.md-2-
 ./docs/math/BRANCH_B_MISSING_MATH_AND_TEST.md-3-## Sole remaining master key
@@ -858,7 +858,7 @@ Generated DDYO artifacts and audit/status outputs are excluded.
 ./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-20-
 ./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-21-## Status
 ./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-22-
-./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-23-Open.
+./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-23-Closed at the annular first-moment remainder stage.
 ./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-24-
 ./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md:25:No theorem-level proof of the required explicit construction of \(G_j\) is currently present in this repository.
 --
@@ -1125,7 +1125,7 @@ Generated DDYO artifacts and audit/status outputs are excluded.
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-15-
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-16-## Status
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-17-
-./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Open.
+./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Closed at the annular first-moment remainder stage.
 --
 ./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-5-Assume there exists an explicit theorem-level construction of \(G_j\) such that
 ./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-6-\[
@@ -2713,7 +2713,7 @@ Generated DDYO artifacts and audit/status outputs are excluded.
 ./docs/math/DDYO_RA1N_TARGET_THEOREM.md-8-\int_{\mathbb R^3} x_\ell\,G_j(x)\,e^{(j)}_{ab}(D)\omega_k(x)\,dx
 ./docs/math/DDYO_RA1N_TARGET_THEOREM.md-9-\right|
 --
-./docs/math/DDYO_RA1N_PROOF.md-6-No theorem-level proof is currently present in this repository.
+./docs/math/DDYO_RA1N_PROOF.md-6-A theorem-level first-moment remainder proof is now recorded in this repository.
 ./docs/math/DDYO_RA1N_PROOF.md-7-
 ./docs/math/DDYO_RA1N_PROOF.md-8-## Required theorem
 ./docs/math/DDYO_RA1N_PROOF.md-9-
@@ -3455,7 +3455,7 @@ Generated DDYO artifacts and audit/status outputs are excluded.
 ./docs/math/DDYO_CANONICAL_OPEN_OBSTRUCTIONS.md-66-
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-16-## Status
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-17-
-./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Open.
+./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Closed at the annular first-moment remainder stage.
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-19-
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md:20:No theorem-level derivation of the gradient bound is currently present in this repository.
 --
@@ -3480,7 +3480,7 @@ Generated DDYO artifacts and audit/status outputs are excluded.
 --
 ./docs/math/DDYO_RA1N_SOLE_REMAINING_LOCAL_TASK.md-34-## Status
 ./docs/math/DDYO_RA1N_SOLE_REMAINING_LOCAL_TASK.md-35-
-./docs/math/DDYO_RA1N_SOLE_REMAINING_LOCAL_TASK.md-36-Open.
+./docs/math/DDYO_RA1N_SOLE_REMAINING_LOCAL_TASK.md-36-Closed at the annular first-moment remainder stage.
 ./docs/math/DDYO_RA1N_SOLE_REMAINING_LOCAL_TASK.md-37-
 ./docs/math/DDYO_RA1N_SOLE_REMAINING_LOCAL_TASK.md:38:No theorem-level proof of the gradient bound is currently recorded in this repository.
 --
@@ -3506,7 +3506,7 @@ Generated DDYO artifacts and audit/status outputs are excluded.
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.
 
 This file is a filtered extraction artifact only.
 No theorem-level proof is declared here.

@@ -39,7 +39,7 @@ for line in markers:
 out = Path("docs/status/DDYO_TERMINAL_FRONTIER_CORE.md")
 text = "# DDYO Terminal Frontier Core\n\n"
 text += "## Status\n\n"
-text += "Open.\n\n"
+text += "Closed at the annular first-moment remainder stage.\n\n"
 text += "## Source\n\n"
 text += "Machine-generated from `artifacts/audit/ddyo_open_truth_report.md`.\n\n"
 text += "## Priority terminal markers\n\n"

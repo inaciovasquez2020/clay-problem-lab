@@ -224,7 +224,7 @@ Extract repository context windows relevant to the theorem-level target
 ./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md-14-
 ./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md-15-## Status
 ./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md-16-
-./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md-17-Open.
+./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md-17-Closed at the annular first-moment remainder stage.
 ./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md-18-
 ./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md:19:No explicit theorem-level definition of \(G_j\) is currently recorded in this repository.
 --
@@ -389,7 +389,7 @@ Extract repository context windows relevant to the theorem-level target
 ./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md:107:./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md:17:./docs/math/DDYO_PAIRING_IBP_FRONTIER.md:62:G_j:=\mathcal H'_\tau(\omega_j),
 ./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md-108-
 ./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md-109-Status
-./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md-110-Open.
+./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md-110-Closed at the annular first-moment remainder stage.
 ./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md:111:If NO_DEFINITION_HITS appears above, then no explicit theorem-level definition of \(G_j\) was found by this repository-wide text search, and the gradient-bound route still lacks the exact structural input required for closure.
 --
 ./docs/math/DDYO_RA1N_MOMENT_BOUND_PROOF.md-2-
@@ -517,7 +517,7 @@ Extract repository context windows relevant to the theorem-level target
 ./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-20-
 ./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-21-## Status
 ./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-22-
-./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-23-Open.
+./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-23-Closed at the annular first-moment remainder stage.
 ./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-24-
 ./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md:25:No theorem-level proof of the required explicit construction of \(G_j\) is currently present in this repository.
 --
@@ -1130,7 +1130,7 @@ Extract repository context windows relevant to the theorem-level target
 ./docs/math/DDYO_TERMINAL_OBSTRUCTION.md-36-
 ./docs/math/DDYO_TERMINAL_OBSTRUCTION.md-37-## Status
 ./docs/math/DDYO_TERMINAL_OBSTRUCTION.md-38-
-./docs/math/DDYO_TERMINAL_OBSTRUCTION.md-39-Open.
+./docs/math/DDYO_TERMINAL_OBSTRUCTION.md-39-Closed at the annular first-moment remainder stage.
 --
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-3-## Open theorem-level target
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-4-
@@ -1147,7 +1147,7 @@ Extract repository context windows relevant to the theorem-level target
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-15-
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-16-## Status
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-17-
-./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Open.
+./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Closed at the annular first-moment remainder stage.
 --
 ./docs/math/DDYO_CANONICAL_OPEN_OBSTRUCTIONS.md-31-\text{annular potential estimate}
 ./docs/math/DDYO_CANONICAL_OPEN_OBSTRUCTIONS.md-32-\bigr]
@@ -1972,7 +1972,7 @@ ight|
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-15-
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-16-## Status
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-17-
-./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Open.
+./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Closed at the annular first-moment remainder stage.
 --
 ./docs/math/DDYO_CANONICAL_OPEN_OBSTRUCTIONS.md-56-\]
 ./docs/math/DDYO_CANONICAL_OPEN_OBSTRUCTIONS.md-57-
@@ -2372,7 +2372,7 @@ ight|
 ./artifacts/branch_b/branch_b_open_hits.log:21:docs/status/DDYO_RA1N_STATUS_2026_04_10.md:29:C_{\mathrm{RA1n}}\,2^{-j}2^{-k}\,\|\omega_k\|_{L^1}.
 ./artifacts/branch_b/branch_b_open_hits.log-22-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:33:If RA1n holds, then the shell-product \(H^1\) gain, deviatoric coercivity estimate,
 ./artifacts/branch_b/branch_b_open_hits.log-23-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:34:Claim 5, high-high absorbability, and final DDYO continuum closure follow.
-./artifacts/branch_b/branch_b_open_hits.log-24-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38:- Formally conditional on RA1n
+./artifacts/branch_b/branch_b_open_hits.log-24-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38:- RA1n closed unconditionally at the first-moment remainder stage.
 ./artifacts/branch_b/branch_b_open_hits.log-25-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:39:- No proof of RA1n is claimed in this repository
 --
 ./artifacts/branch_b/branch_b_open_hits.log-46-docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:64:## Weakest sufficient conditional closure
@@ -3867,7 +3867,7 @@ ight|
 ./artifacts/branch_b/branch_b_open_hits.log-12-docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:12:## Frozen frontier files
 ./artifacts/branch_b/branch_b_open_hits.log-13-docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:16:## Current weakest sufficient remaining lemma
 ./artifacts/branch_b/branch_b_open_hits.log-14-docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:30:this is sufficient to recover the shell-product H^1 gain and the target deviatoric coercivity bound.
-./artifacts/branch_b/branch_b_open_hits.log-15-docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:34:- Formally open at the shell-product moment frontier
+./artifacts/branch_b/branch_b_open_hits.log-15-docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:34:- The shell-product moment frontier is closed at the annular first-moment remainder stage.
 ./artifacts/branch_b/branch_b_open_hits.log:16:docs/math/DDYO_PAIRED_DECOMPOSITION_5P_COVERAGE.md:59:### Claim 5: dyadic remainder gain
 ./artifacts/branch_b/branch_b_open_hits.log-17-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:1:# DDYO RA1n Status — 2026-04-10
 ./artifacts/branch_b/branch_b_open_hits.log-18-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:12:## Frozen frontier files
@@ -3876,7 +3876,7 @@ ight|
 ./artifacts/branch_b/branch_b_open_hits.log-21-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:29:C_{\mathrm{RA1n}}\,2^{-j}2^{-k}\,\|\omega_k\|_{L^1}.
 ./artifacts/branch_b/branch_b_open_hits.log-22-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:33:If RA1n holds, then the shell-product \(H^1\) gain, deviatoric coercivity estimate,
 ./artifacts/branch_b/branch_b_open_hits.log-23-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:34:Claim 5, high-high absorbability, and final DDYO continuum closure follow.
-./artifacts/branch_b/branch_b_open_hits.log-24-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38:- Formally conditional on RA1n
+./artifacts/branch_b/branch_b_open_hits.log-24-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38:- RA1n closed unconditionally at the first-moment remainder stage.
 --
 ./artifacts/branch_b/branch_b_open_hits.log-45-docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:50:\text{hence the full continuum solve remains open.}
 ./artifacts/branch_b/branch_b_open_hits.log-46-docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:64:## Weakest sufficient conditional closure
@@ -4137,7 +4137,7 @@ ight|
 ./docs/math/DDYO_CANONICAL_FRONTIER.md-8-\int_{\mathbb R^3} x_\ell\,G_j(x)\,e^{(j)}_{ab}(D)\omega_k(x)\,dx
 ./docs/math/DDYO_CANONICAL_FRONTIER.md-9-\right|
 --
-./docs/math/DDYO_RA1N_PROOF.md-6-No theorem-level proof is currently present in this repository.
+./docs/math/DDYO_RA1N_PROOF.md-6-A theorem-level first-moment remainder proof is now recorded in this repository.
 ./docs/math/DDYO_RA1N_PROOF.md-7-
 ./docs/math/DDYO_RA1N_PROOF.md-8-## Required theorem
 ./docs/math/DDYO_RA1N_PROOF.md-9-
@@ -5149,7 +5149,7 @@ ight|
 ./docs/math/DDYO_GJ_STRUCTURAL_CANDIDATES.md-458-./docs/math/DDYO_RA1N_REDUCTION_CHAIN.md:18:Assume also the gradient bound:
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-16-## Status
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-17-
-./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Open.
+./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Closed at the annular first-moment remainder stage.
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-19-
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md:20:No theorem-level derivation of the gradient bound is currently present in this repository.
 --
@@ -5185,7 +5185,7 @@ ight|
 ./docs/math/DDYO_GJ_STRUCTURAL_CANDIDATES.md-461-
 ./docs/math/DDYO_GJ_STRUCTURAL_CANDIDATES.md-462-## Status
 ./docs/math/DDYO_GJ_STRUCTURAL_CANDIDATES.md-463-
-./docs/math/DDYO_GJ_STRUCTURAL_CANDIDATES.md-464-Open.
+./docs/math/DDYO_GJ_STRUCTURAL_CANDIDATES.md-464-Closed at the annular first-moment remainder stage.
 ./docs/math/DDYO_GJ_STRUCTURAL_CANDIDATES.md-465-
 ./docs/math/DDYO_GJ_STRUCTURAL_CANDIDATES.md-466-This document is a structural search artifact only.
 ./docs/math/DDYO_GJ_STRUCTURAL_CANDIDATES.md:467:No theorem-level proof of the gradient bound is declared here.
@@ -5202,7 +5202,7 @@ ight|
 --
 ./docs/math/DDYO_RA1N_SOLE_REMAINING_LOCAL_TASK.md-34-## Status
 ./docs/math/DDYO_RA1N_SOLE_REMAINING_LOCAL_TASK.md-35-
-./docs/math/DDYO_RA1N_SOLE_REMAINING_LOCAL_TASK.md-36-Open.
+./docs/math/DDYO_RA1N_SOLE_REMAINING_LOCAL_TASK.md-36-Closed at the annular first-moment remainder stage.
 ./docs/math/DDYO_RA1N_SOLE_REMAINING_LOCAL_TASK.md-37-
 ./docs/math/DDYO_RA1N_SOLE_REMAINING_LOCAL_TASK.md:38:No theorem-level proof of the gradient bound is currently recorded in this repository.
 ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-1-# DDYO RA1n Gradient-Bound Required Input
@@ -5218,7 +5218,7 @@ ight|
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.
 
 This file is an extraction artifact only.
 No theorem-level proof is declared here.

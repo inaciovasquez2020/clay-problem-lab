@@ -34,3 +34,13 @@ def test_single_remaining_theorem_doc_exists():
     assert r"r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi)" in s
     assert "unconditional RA1n closure" in s
     assert "Open." in s
+
+
+def test_canonical_terminal_obstruction_doc_exists():
+    p = Path("docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION_2026_04_11.md")
+    assert p.exists(), "missing canonical terminal obstruction doc"
+    s = p.read_text()
+    assert "Status: OPEN" in s
+    assert r"r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi)" in s
+    assert "canonical terminal obstruction" in s
+    assert "unconditional RA1n closure" in s

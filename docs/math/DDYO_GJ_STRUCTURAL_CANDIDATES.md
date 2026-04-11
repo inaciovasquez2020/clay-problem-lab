@@ -461,7 +461,7 @@ Repository-wide structural search for the exact construction of \(G_j\) sufficie
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.
 
 This document is a structural search artifact only.
 No theorem-level proof of the gradient bound is declared here.

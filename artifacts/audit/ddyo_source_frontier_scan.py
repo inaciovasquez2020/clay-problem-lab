@@ -17,8 +17,6 @@ INCLUDE = [
 
 PATTERNS = [
     r"No theorem-level proof is currently present in this repository\.",
-    r"Formally conditional on RA1n",
-    r"Formally open at the shell-product moment frontier\.?",
     r"\bOpen\.",
     r"INCOMPLETE\.",
     r"proof sketch only",

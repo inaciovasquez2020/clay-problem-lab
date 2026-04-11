@@ -671,4 +671,4 @@ All nongenerated repository files, excluding `artifacts/**`, `docs/status/**`, a
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.

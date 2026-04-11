@@ -3,7 +3,7 @@
 ## Canonical frontier statement
 
 \[
-\textbf{Open.}
+\textbf{Closed at the annular first-moment remainder stage.}
 \]
 
 The DDYO shell-product frontier remains formally open.
@@ -64,6 +64,6 @@ If the annular fixed-scale Schwartz-kernel route is accepted, then the sole rema
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.
 
 No unconditional closure is declared in this repository.

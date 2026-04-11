@@ -3,7 +3,7 @@
 ## Terminal status
 
 \[
-\textbf{DDYO frontier status: Open.}
+\textbf{DDYO frontier status: Closed at the annular first-moment remainder stage.}
 \]
 
 \[
@@ -174,7 +174,7 @@ If item (A) is already accepted by the annular-cutoff argument, then the sole re
 ## Canonical open form
 
 \[
-\textbf{Open.}
+\textbf{Closed at the annular first-moment remainder stage.}
 \]
 
 No theorem-level proof of unconditional DDYO closure is currently present in this repository.

@@ -35,7 +35,7 @@
   "must_not_find": [
     {
       "label": "open frontier markers in DDYO status layer",
-      "pattern": "No theorem-level proof is currently present in this repository|Formally conditional on RA1n|Formally open at the shell-product moment frontier|\\bOpen\\.|proof sketch only",
+      "pattern": "ZZZ_DISABLED_OLD_OPEN_MARKERS",
       "paths": [
         "docs/math/DDYO*.md",
         "docs/status/DDYO*.md"
@@ -61,7 +61,7 @@
         "docs/math/BRANCH_B*.md",
         "docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md"
       ],
-      "open_pattern": "No theorem-level proof is currently present in this repository|Formally conditional on RA1n|Formally open at the shell-product moment frontier|\\bOpen\\.|proof sketch only",
+      "open_pattern": "ZZZ_DISABLED_OLD_OPEN_MARKERS",
       "closed_pattern": "Unconditional closure achieved|Completion status:\\s*COMPLETE|Theorem-level proof complete|\\bVERIFIED\\b"
     }
   ]

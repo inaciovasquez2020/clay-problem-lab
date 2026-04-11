@@ -2,7 +2,7 @@
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.
 
 ## Candidate definition lines from top nongenerated leads
 

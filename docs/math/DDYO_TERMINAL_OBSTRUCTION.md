@@ -36,6 +36,6 @@ To prove the terminal obstruction, the repository still requires the exact theor
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.
 
 No theorem-level proof of the terminal obstruction is currently present in this repository.

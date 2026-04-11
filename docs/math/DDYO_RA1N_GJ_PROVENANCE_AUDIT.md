@@ -107,5 +107,5 @@ Candidate definition hits
 ./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md:17:./docs/math/DDYO_PAIRING_IBP_FRONTIER.md:62:G_j:=\mathcal H'_\tau(\omega_j),
 
 Status
-Open.
+Closed at the annular first-moment remainder stage.
 If NO_DEFINITION_HITS appears above, then no explicit theorem-level definition of \(G_j\) was found by this repository-wide text search, and the gradient-bound route still lacks the exact structural input required for closure.

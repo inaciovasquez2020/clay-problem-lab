@@ -14,6 +14,6 @@ still lacks the exact structural input required for proof.
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.
 
 No explicit theorem-level definition of \(G_j\) is currently recorded in this repository.

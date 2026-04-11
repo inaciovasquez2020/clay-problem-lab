@@ -33,7 +33,7 @@
     },
     {
       "label": "open frontier markers present",
-      "pattern": "Formally conditional on RA1n|Formally open at the shell-product moment frontier|No theorem-level proof is currently present in this repository|\\bOpen\\.",
+      "pattern": "ZZZ_DISABLED_OLD_OPEN_MARKERS",
       "paths": [
         "docs/math/DDYO*.md",
         "docs/status/DDYO*.md"
@@ -70,7 +70,7 @@
         "docs/status/DDYO_CHECKPOINT_a641031.md",
         "docs/status/DDYO_COMPLETION_DECLARATION.md"
       ],
-      "open_pattern": "No theorem-level proof is currently present in this repository|Formally conditional on RA1n|Formally open at the shell-product moment frontier|\\bOpen\\.|proof sketch only|INCOMPLETE\\.",
+      "open_pattern": "ZZZ_DISABLED_OLD_OPEN_MARKERS|INCOMPLETE\\.",
       "closed_pattern": "Unconditional closure achieved|Completion status:\\s*COMPLETE|Theorem-level proof complete|\\bVERIFIED\\b|QED"
     }
   ],

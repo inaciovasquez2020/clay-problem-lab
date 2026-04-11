@@ -2,7 +2,7 @@
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.
 
 ## Top lead file
 

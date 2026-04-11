@@ -25,4 +25,4 @@ Explicit candidate definition syntax for `G_j` was detected in nongenerated lead
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.

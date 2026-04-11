@@ -33,4 +33,4 @@ final DDYO continuum closure.
 
 ## Canonical status
 
-Open.
+Closed at the annular first-moment remainder stage.

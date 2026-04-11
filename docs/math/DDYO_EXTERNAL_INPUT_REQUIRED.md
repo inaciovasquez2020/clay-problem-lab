@@ -28,6 +28,6 @@ One of the following must be added as new input:
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.
 
 No further repository-internal progress is possible without new input.

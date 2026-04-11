@@ -28,9 +28,8 @@ Machine-generated from `artifacts/audit/ddyo_canonical_source_truth_report.md`.
 - `docs/status/DDYO_COMPLETION_DECLARATION.md:15`: - No unconditional closure is declared in this repository.
 - `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:23`: No theorem-level proof is currently present in this repository.
 - `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:22`: Open.
-- `docs/math/DDYO_GJ_EXPLICIT_DEFINITION.md:28`: Open.
-- `docs/math/DDYO_GJ_KERNEL_REPRESENTATION.md:22`: Open.
-- `docs/math/DDYO_GJ_GRADIENT_PROOF.md:23`: Open.
+- `docs/math/DDYO_GJ_EXPLICIT_DEFINITION.md:11`: Open.
+- `docs/math/DDYO_GJ_KERNEL_REPRESENTATION.md:17`: Open.
 
 ## Reduced terminal form
 

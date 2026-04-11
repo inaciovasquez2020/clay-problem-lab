@@ -1,0 +1,68 @@
+{
+  "name": "DDYO Completion Truth Test",
+  "scope": [
+    "docs/math/DDYO*.md",
+    "docs/status/DDYO*.md",
+    "docs/math/BRANCH_B*.md",
+    "docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md",
+    "docs/status/SCIENTIFIC_MATURITY_CURRENT.md"
+  ],
+  "must_exist": [
+    "artifacts/audit/ddyo_status_consistency_2026_04_11.sh",
+    "docs/math/DDYO_RA1N_PROOF.md",
+    "docs/status/DDYO_COMPLETION_DECLARATION.md"
+  ],
+  "must_run": [
+    "./artifacts/audit/ddyo_status_consistency_2026_04_11.sh",
+    "python3 -m pytest -q"
+  ],
+  "must_find": [
+    {
+      "label": "explicit unconditional completion declaration",
+      "pattern": "Unconditional closure achieved\\.|Completion status:\\s*COMPLETE",
+      "paths": [
+        "docs/status/DDYO_COMPLETION_DECLARATION.md"
+      ]
+    },
+    {
+      "label": "theorem-level RA1n proof marker",
+      "pattern": "Theorem-level proof complete\\.|Theorem\\s*\\(RA1n|QED",
+      "paths": [
+        "docs/math/DDYO_RA1N_PROOF.md"
+      ]
+    }
+  ],
+  "must_not_find": [
+    {
+      "label": "open frontier markers in DDYO status layer",
+      "pattern": "No theorem-level proof is currently present in this repository|Formally conditional on RA1n|Formally open at the shell-product moment frontier|\\bOpen\\.|proof sketch only",
+      "paths": [
+        "docs/math/DDYO*.md",
+        "docs/status/DDYO*.md"
+      ]
+    },
+    {
+      "label": "conditional or premature completion claims",
+      "pattern": "VERIFIED via RA1n|continuum DDYO high-high absorbability:\\s*VERIFIED|RA1n verified via Bernstein Extraction|Unconditional closure achieved|Completion status:\\s*COMPLETE",
+      "paths": [
+        "docs/math/DDYO*.md",
+        "docs/status/DDYO*.md",
+        "docs/math/BRANCH_B*.md",
+        "docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md"
+      ]
+    }
+  ],
+  "forbid_mixed_states": [
+    {
+      "label": "simultaneous open and complete markers in DDYO frontier scope",
+      "paths": [
+        "docs/math/DDYO*.md",
+        "docs/status/DDYO*.md",
+        "docs/math/BRANCH_B*.md",
+        "docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md"
+      ],
+      "open_pattern": "No theorem-level proof is currently present in this repository|Formally conditional on RA1n|Formally open at the shell-product moment frontier|\\bOpen\\.|proof sketch only",
+      "closed_pattern": "Unconditional closure achieved|Completion status:\\s*COMPLETE|Theorem-level proof complete|\\bVERIFIED\\b"
+    }
+  ]
+}

@@ -1,13 +1,15 @@
 # DDYO Completion Truth Test
 
-- UTC: 2026-04-11T11:59:57.976905+00:00
+- UTC: 2026-04-11T11:40:44.352365+00:00
 - Spec: `artifacts/audit/ddyo_completion_truth_spec.json`
-- Scope files: 46
+- Scope files: 44
 
 
 ## Required files
 
-PASS
+FAIL
+- missing: `docs/math/DDYO_RA1N_PROOF.md`
+- missing: `docs/status/DDYO_COMPLETION_DECLARATION.md`
 
 ## Required commands
 
@@ -18,13 +20,13 @@ PASS
 DDYO_STATUS_CONSISTENCY: PASS
 
 EXPECTED_OPEN_FRONTIER_MARKERS:
-docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25:No theorem-level proof is currently present in this repository.
-docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:34:- Formally open at the shell-product moment frontier
 docs/math/DDYO_RA1N_TARGET_THEOREM.md:23:No theorem-level proof is currently present in this repository.
 docs/math/DDYO_RA1N_OPEN_PROBLEM.md:23:No theorem-level proof is currently present in this repository.
-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38:- Formally conditional on RA1n
 docs/status/DDYO_CHECKPOINT_a641031.md:35:- Formally open at the shell-product moment frontier
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38:- Formally conditional on RA1n
 docs/math/DDYO_SOLVE_REQUIREMENTS.md:73:Formally open at the shell-product moment frontier.
+docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:34:- Formally open at the shell-product moment frontier
+docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25:No theorem-level proof is currently present in this repository.
 
 ```
 ### `python3 -m pytest -q`
@@ -32,7 +34,7 @@ docs/math/DDYO_SOLVE_REQUIREMENTS.md:73:Formally open at the shell-product momen
 
 ```text
 ...............................................................          [100%]
-63 passed in 25.06s
+63 passed in 25.83s
 
 ```
 
@@ -41,10 +43,7 @@ docs/math/DDYO_SOLVE_REQUIREMENTS.md:73:Formally open at the shell-product momen
 ### explicit unconditional completion declaration
 FAIL
 ### theorem-level RA1n proof marker
-PASS
-- `docs/math/DDYO_RA1N_PROOF.md:4`: Theorem-level proof complete.
-- `docs/math/DDYO_RA1N_PROOF.md:6`: ## Theorem (RA1n First-Moment Estimate)
-- `docs/math/DDYO_RA1N_PROOF.md:19`: QED.
+FAIL
 
 ## Forbidden markers
 
@@ -63,28 +62,20 @@ FAIL
 - `docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:34`: - Formally open at the shell-product moment frontier
 - `docs/status/DDYO_CHECKPOINT_a641031.md:35`: - Formally open at the shell-product moment frontier
 ### conditional or premature completion claims
-PASS
+FAIL
+- `docs/math/DDYO_RA1N_MOMENT_BOUND_PROOF.md:23`: - **Status**: Proof sketch only; repository frontier remains conditional on RA1n.
+- `docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38`: - Formally conditional on RA1n
+- `docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:59`: - `docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:54:- continuum DDYO high-high absorbability: OPEN; conditional on RA1n`
+- `docs/math/BRANCH_B_FINAL_FRONTIER.md:257`: L54: - continuum DDYO high-high absorbability: OPEN; conditional on RA1n
+- `docs/math/BRANCH_B_MISSING_MATH_AND_TEST.md:81`: - continuum DDYO high-high absorbability: OPEN; conditional on RA1n
+- `docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:54`: - continuum DDYO high-high absorbability: OPEN; conditional on RA1n
 
 ## Mixed-state contradictions
 
 ### simultaneous open and complete markers in DDYO frontier scope
-FAIL
-#### open
-- `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:22`: Open.
-- `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:23`: No theorem-level proof is currently present in this repository.
-- `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:24`: Open.
-- `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25`: No theorem-level proof is currently present in this repository.
-- `docs/math/DDYO_SOLVE_REQUIREMENTS.md:73`: Formally open at the shell-product moment frontier.
-- `docs/math/DDYO_RA1N_TARGET_THEOREM.md:22`: Open.
-- `docs/math/DDYO_RA1N_TARGET_THEOREM.md:23`: No theorem-level proof is currently present in this repository.
-- `docs/math/DDYO_CANONICAL_FRONTIER.md:36`: Open.
-- `docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38`: - Formally conditional on RA1n
-- `docs/status/DDYO_RA1N_STATUS_2026_04_10.md:39`: - RA1n open; proof sketch only in DDYO_RA1N_MOMENT_BOUND_PROOF.md
-- `docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:34`: - Formally open at the shell-product moment frontier
-- `docs/status/DDYO_CHECKPOINT_a641031.md:35`: - Formally open at the shell-product moment frontier
-#### closed
-- `docs/math/DDYO_RA1N_PROOF.md:4`: Theorem-level proof complete.
+PASS
 
 ## Verdict
 
 COMPLETION_TRUTH_TEST: FAIL
+

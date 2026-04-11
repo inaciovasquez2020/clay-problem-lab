@@ -1,0 +1,28 @@
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:27:- sampled same-scale commutator split verified
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:28:- sampled same-scale commutator bound verified
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:29:- sampled rotation-part cancellation against h' verified
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:30:- sampled normalized commutator ratio integer-dilation stability verified
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:33:- sampled strain/rotation commutator split verified
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:34:- sampled strain commutator Kato--Ponce proxy bound verified
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:35:- sampled rotation commutator lower-order proxy verified
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:36:- sampled epsilon-proxy integer-dilation stability verified
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:40:- sampled exact pairing split into symmetric + rotational parts verified
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:46:- sampled commutator pairing split into symmetric + rotational parts verified
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:47:- sampled rotational commutator pairing lower-order proxy verified
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:48:- sampled symmetric commutator pairing epsilon-proxy verified
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:49:- sampled symmetric commutator pairing integer-dilation stability verified
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:53:- sampled wall structure: verified
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:54:- continuum DDYO high-high absorbability: VERIFIED via RA1n
+docs/status/SCIENTIFIC_MATURITY_STATUS_2026_04_11.md:9:A result may be labeled VERIFIED only if:
+docs/status/DDYO_CHECKPOINT_a641031.md:35:- Formally open at the shell-product moment frontier
+docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:34:- Formally open at the shell-product moment frontier
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38:- Formally conditional on RA1n
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:39:- RA1n open; proof sketch only in DDYO_RA1N_MOMENT_BOUND_PROOF.md
+docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25:No theorem-level proof is currently present in this repository.
+docs/math/DDYO_RA1N_OPEN_PROBLEM.md:23:No theorem-level proof is currently present in this repository.
+docs/math/BRANCH_B_FINAL_FRONTIER.md:257:L54: - continuum DDYO high-high absorbability: VERIFIED
+docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:59:- `docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:54:- continuum DDYO high-high absorbability: VERIFIED`
+docs/math/BRANCH_B_MISSING_MATH_AND_TEST.md:81:- continuum DDYO high-high absorbability: VERIFIED
+docs/math/VARIANT_FRAMEWORK_STATUS.md:78:- current test residual is not a verified continuum critical residual
+docs/math/DDYO_RA1N_TARGET_THEOREM.md:23:No theorem-level proof is currently present in this repository.
+docs/math/DDYO_SOLVE_REQUIREMENTS.md:73:Formally open at the shell-product moment frontier.

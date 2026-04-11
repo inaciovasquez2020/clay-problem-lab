@@ -36,4 +36,4 @@ Claim 5, high-high absorbability, and final DDYO continuum closure follow.
 ## Status
 - Computationally closed
 - Formally conditional on RA1n
-- RA1n verified via Bernstein Extraction in DDYO_RA1N_MOMENT_BOUND_PROOF.md
+- RA1n open; proof sketch only in DDYO_RA1N_MOMENT_BOUND_PROOF.md

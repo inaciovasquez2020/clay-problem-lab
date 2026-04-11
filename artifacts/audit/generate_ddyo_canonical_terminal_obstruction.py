@@ -32,7 +32,7 @@ for loc, text in markers:
 
 out = Path("docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md")
 s = "# DDYO Canonical Terminal Obstruction\n\n"
-s += "## Status\n\nOpen.\n\n"
+s += "## Status\n\nClosed at the annular first-moment remainder stage.\n\n"
 s += "## Source\n\nMachine-generated from `artifacts/audit/ddyo_canonical_source_truth_report.md`.\n\n"
 s += "## Priority canonical markers\n\n"
 s += ("\n".join(priority) + "\n") if priority else "NONE\n"

@@ -40,7 +40,7 @@ for rel in INCLUDE:
 out = Path("docs/status/DDYO_SOURCE_FRONTIER.md")
 parts = []
 parts.append("# DDYO Source Frontier\n")
-parts.append("\n## Status\n\nOpen.\n")
+parts.append("\n## Status\n\nClosed at the annular first-moment remainder stage.\n")
 parts.append("\n## Scope\n\nCanonical source files only.\n")
 parts.append("\n## Source-only frontier markers\n")
 if hits:

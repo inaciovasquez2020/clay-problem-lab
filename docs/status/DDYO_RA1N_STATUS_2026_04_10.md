@@ -58,3 +58,12 @@ Reference:
 
 Status: Conditional.
 
+
+## Canonical combined gradient-test reference
+
+The combined canonical reference for the currently recorded gradient tests is:
+
+`docs/math/DDYO_COMBINED_GRADIENT_TESTS.md`
+
+Status: Conditional.
+

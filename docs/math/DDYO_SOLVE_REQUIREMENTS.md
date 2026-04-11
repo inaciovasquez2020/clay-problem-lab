@@ -21,7 +21,7 @@ C\,2^{-j}2^{-k}\,\|\omega_k\|_{L^1}.
 ### 3. Shell-product Hardy gain
 For all dyadic indices with \(|j-k|\le C\) and all tensor indices \(a,b\),
 \[
-\bigl\|\,G_j\cdot e^{(j)}_{ab}(D)\omega_k\,\bigr\|_{H^1}
+\bigl\|G_j\cdot e^{(j)}_{ab}(D)\omega_k\bigr\|_{H^1}
 \le
 C\,2^{-j}2^{-k}\,\|\omega_k\|_{L^1}.
 \]
@@ -36,18 +36,7 @@ For all dyadic indices with \(|j-k|\le C\),
 \le
 C\,2^{-j}2^{-k}\,
 \|\nabla S_k\|_{L^\infty}\,
-\|\omega_k\|_{L^1},
-\]
-or equivalently, for every \(\varepsilon\in(0,1)\),
-\[
-\left|
-\int G_j\cdot
-\Bigl(\sum_{a,b}\partial_b S_k^a\,e^{(j)}_{ab}(D)\omega_k\Bigr)\,dx
-\right|
-\le
-\varepsilon\,\mathcal D_{j,k}[u]
-+
-C_\varepsilon\Bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\Bigr)_{j,k}.
+\|\omega_k\|_{L^1}.
 \]
 
 ### 5. Claim 5 / paired remainder closure

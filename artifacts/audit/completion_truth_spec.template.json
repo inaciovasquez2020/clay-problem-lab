@@ -1,0 +1,61 @@
+{
+  "name": "PROJECT Completion Truth Test",
+  "scope": [
+    "docs/**/*.md",
+    "proofs/**/*.md",
+    "src/**/*",
+    "tests/**/*"
+  ],
+  "must_exist": [
+    "docs/status/COMPLETION_DECLARATION.md",
+    "proofs/MAIN_PROOF.md"
+  ],
+  "must_run": [
+    "python3 -m pytest -q"
+  ],
+  "must_find": [
+    {
+      "label": "explicit unconditional completion declaration",
+      "pattern": "Unconditional closure achieved\\.|Completion status:\\s*COMPLETE",
+      "paths": [
+        "docs/status/COMPLETION_DECLARATION.md"
+      ]
+    },
+    {
+      "label": "theorem-level proof marker",
+      "pattern": "Theorem-level proof complete\\.|Theorem\\s*\\(|QED",
+      "paths": [
+        "proofs/MAIN_PROOF.md"
+      ]
+    }
+  ],
+  "must_not_find": [
+    {
+      "label": "open frontier markers",
+      "pattern": "No theorem-level proof is currently present in this repository|Formally conditional on|Formally open at|\\bOpen\\.|proof sketch only|conjectural|conditional",
+      "paths": [
+        "docs/**/*.md",
+        "proofs/**/*.md"
+      ]
+    },
+    {
+      "label": "premature completion claims",
+      "pattern": "verified via|VERIFIED via|closure follows if|assuming|under hypothesis",
+      "paths": [
+        "docs/**/*.md",
+        "proofs/**/*.md"
+      ]
+    }
+  ],
+  "forbid_mixed_states": [
+    {
+      "label": "simultaneous open and complete markers",
+      "paths": [
+        "docs/**/*.md",
+        "proofs/**/*.md"
+      ],
+      "open_pattern": "No theorem-level proof is currently present in this repository|Formally conditional on|Formally open at|\\bOpen\\.|proof sketch only|conjectural|conditional",
+      "closed_pattern": "Unconditional closure achieved|Completion status:\\s*COMPLETE|Theorem-level proof complete|\\bVERIFIED\\b|QED"
+    }
+  ]
+}

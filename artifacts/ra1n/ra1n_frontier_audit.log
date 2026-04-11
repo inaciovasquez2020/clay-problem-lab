@@ -1,0 +1,22 @@
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:54:- continuum DDYO high-high absorbability: open
+docs/status/DDYO_CHECKPOINT_a641031.md:17:## Sole remaining theorem-level object
+docs/math/DDYO_DEVIATORIC_H1_BMO_ROUTE.md:3:## Weakest sufficient remaining lemma
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:39:- No proof of RA1n is claimed in this repository
+docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:3:## Precise missing theorem
+docs/math/DDYO_RA1N_CONDITIONAL.md:6:## Conditional statement
+docs/math/BRANCH_B_FINAL_FRONTIER.md:7:### Precise missing theorem
+docs/math/BRANCH_B_FINAL_FRONTIER.md:10:## Precise missing theorem
+docs/math/BRANCH_B_FINAL_FRONTIER.md:33:### Weakest sufficient remaining lemma
+docs/math/BRANCH_B_FINAL_FRONTIER.md:36:## Weakest sufficient remaining lemma
+docs/math/BRANCH_B_FINAL_FRONTIER.md:68:### Sole remaining theorem-level object
+docs/math/BRANCH_B_FINAL_FRONTIER.md:71:## Sole remaining theorem-level object
+docs/math/BRANCH_B_FINAL_FRONTIER.md:145:### 2. First-moment shell-product control
+docs/math/BRANCH_B_FINAL_FRONTIER.md:204:### Conditional statement
+docs/math/BRANCH_B_FINAL_FRONTIER.md:207:## Conditional statement
+docs/math/BRANCH_B_FINAL_FRONTIER.md:257:L54: - continuum DDYO high-high absorbability: open
+docs/math/DDYO_DEVIATORIC_COERCIVITY_FRONTIER.md:3:## Sole remaining theorem-level object
+docs/math/BRANCH_B_MISSING_MATH_AND_TEST.md:81:- continuum DDYO high-high absorbability: open
+docs/math/DDYO_SHELL_PRODUCT_MOMENT_FRONTIER.md:3:## Weakest sufficient remaining lemma
+docs/math/DDYO_SOLVE_REQUIREMENTS.md:11:### 2. First-moment shell-product control
+docs/math/DDYO_SOLVE_REQUIREMENTS.md:68:The sole real missing object is Item 2, or any equivalent estimate strong enough to imply Item 4.
+docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:59:- `docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:54:- continuum DDYO high-high absorbability: open`

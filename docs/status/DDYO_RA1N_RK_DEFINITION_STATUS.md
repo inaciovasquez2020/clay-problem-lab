@@ -1,12 +1,23 @@
 # DDYO RA1n r_k Definition Status
 
-Status: PARTIAL
+Status: EXTRACTED
 
 Result:
-Candidate repository source lines mentioning `r_k` or remainder-symbol language were indexed in `docs/audit/DDYO_RA1N_RK_SOURCE_INDEX.md`.
+A single exact repository occurrence has been promoted into the canonical exact definition of `r_k(ξ)`.
+
+Canonical definition:
+\[
+r_k=\widehat G_k-P_k\widehat G_k.
+\]
+
+Canonical location:
+`docs/math/DDYO_RA1N_CANONICAL_RK_DEFINITION.md`
+
+Audit source:
+`docs/audit/DDYO_RA1N_RK_SOURCE_INDEX.md`
 
 Consequence:
-Unconditional RA1n closure still requires extraction of a single exact formula for `r_k(ξ)` from one repository source of truth.
+The definition stage is closed.
 
-Canonical next object:
-Promote one indexed occurrence into the canonical exact definition of `r_k(ξ)`.
+Remaining frontier:
+Derive the exact theorem-level symbol derivative estimate for this canonical `r_k(ξ)` without any inadmissible volume-absorption step.

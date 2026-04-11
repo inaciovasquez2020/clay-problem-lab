@@ -1,0 +1,321 @@
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:1:# DDYO RA1n Status — 2026-04-10
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:13:- docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:14:- docs/math/DDYO_RA1N_CONDITIONAL.md
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:15:- docs/math/DDYO_SOLVE_REQUIREMENTS.md
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:16:- docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:34:Claim 5, high-high absorbability, and final DDYO continuum closure follow.
+docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:1:# DDYO Closure Status — 2026-04-10
+docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:13:- docs/math/DDYO_DEVIATORIC_COERCIVITY_FRONTIER.md
+docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:14:- docs/math/DDYO_SHELL_PRODUCT_MOMENT_FRONTIER.md
+docs/status/DDYO_CHECKPOINT_a641031.md:1:# DDYO Checkpoint — a641031
+docs/status/DDYO_CHECKPOINT_a641031.md:13:- docs/math/DDYO_DEVIATORIC_COERCIVITY_FRONTIER.md
+docs/status/DDYO_CHECKPOINT_a641031.md:14:- docs/math/DDYO_SHELL_PRODUCT_MOMENT_FRONTIER.md
+docs/status/DDYO_CHECKPOINT_a641031.md:15:- docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:4:- DDYO wall sampled layer: 31/31 tests passing.
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:5:- Verified sampled DDYO components:
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:26:## DDYO commutator frontier
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:32:## DDYO commutator absorbability frontier
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:54:- continuum DDYO high-high absorbability: open
+docs/math/DDYO_POST_SYMMETRIZED_FIRST_ORDER_LEAKAGE.md:1:# DDYO Post-Symmetrized First-Order Leakage
+docs/math/DDYO_POST_SYMMETRIZED_FIRST_ORDER_LEAKAGE.md:19:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr)_{j,k}.
+docs/math/DDYO_REMAINDER_ROUTING_LEMMA.md:1:# DDYO Remainder Routing Lemma
+docs/math/DDYO_REMAINDER_ROUTING_LEMMA.md:10:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr).
+docs/math/DDYO_REMAINDER_ROUTING_LEMMA.md:25:\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u],
+docs/math/DDYO_MOLLIFIED_SYMMETRIC_COMMUTATOR_BOUND.md:1:# DDYO Mollified Symmetric Commutator Bound
+docs/math/DDYO_MOLLIFIED_SYMMETRIC_COMMUTATOR_BOUND.md:12:\varepsilon\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+docs/math/DDYO_MOLLIFIED_SYMMETRIC_COMMUTATOR_BOUND.md:14:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr),
+docs/math/DDYO_MOLLIFIED_SYMMETRIC_COMMUTATOR_BOUND.md:43:A Coifman--Meyer / Constantin--E--Titi type commutator estimate at the exact DDYO critical weights.
+docs/math/DDYO_MOLLIFIED_SYMMETRIC_COMMUTATOR_BOUND.md:48:this closes continuum DDYO high-high absorbability.
+docs/math/DDYO_CRITICAL_ENVELOPE.md:1:# DDYO critical envelope
+docs/math/DDYO_CRITICAL_ENVELOPE.md:6:R_{\mathrm{DDYO}}[u]
+docs/math/DDYO_CRITICAL_ENVELOPE.md:37:R_{\mathrm{DDYO}}[u_\mu]=R_{\mathrm{DDYO}}[u].
+docs/math/DDYO_CRITICAL_ENVELOPE.md:44:R_{\mathrm{DDYO}}^{\mathrm{test}}
+docs/math/DDYO_CRITICAL_ENVELOPE.md:59:\Sigma_{\mathrm{DDYO}}[u]
+docs/math/DDYO_CRITICAL_ENVELOPE.md:63:\Sigma_{\mathrm{DDYO}}[u]
+docs/math/DDYO_CRITICAL_ENVELOPE.md:65:\eta(\mathcal D[u]+\lambda \mathcal C_{\mathrm{DDYO}}[u])
+docs/math/DDYO_CRITICAL_ENVELOPE.md:67:C(\Phi[u]+\lambda R_{\mathrm{DDYO}}[u]),
+docs/math/DDYO_PAIRED_PARACOMMUTATOR_H1_BMO.md:1:# DDYO Paired Paracommutator H1-BMO Candidate
+docs/math/DDYO_HYBRID_CLAIM5_ROUTE.md:1:# DDYO Hybrid Claim 5 Route
+docs/math/DDYO_HYBRID_CLAIM5_ROUTE.md:13:\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u].
+docs/math/DDYO_HYBRID_CLAIM5_ROUTE.md:64:without claiming the continuum DDYO lemma is proved.
+docs/math/VARIANT_FRAMEWORK_STATUS.md:83:## DDYO
+docs/math/VARIANT_FRAMEWORK_STATUS.md:87:R_{\mathrm{DDYO}}[u]
+docs/math/VARIANT_FRAMEWORK_STATUS.md:96:R_{\mathrm{DDYO}}^{\mathrm{test}}
+docs/math/VARIANT_FRAMEWORK_STATUS.md:111:R_{\mathrm{DDYO}}[u]=\|u\|_{\dot B^{-1}_{\infty,\infty}}
+docs/math/VARIANT_FRAMEWORK_STATUS.md:121:- DDYO sampled dyadic-envelope layer
+docs/math/DDYO_DEVIATORIC_COERCIVITY_FRONTIER.md:1:# DDYO Deviatoric Coercivity Frontier
+docs/math/DDYO_DEVIATORIC_COERCIVITY_FRONTIER.md:28:C_\varepsilon\Bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\Bigr)_{j,k}.
+docs/math/DDYO_PAIRED_DECOMPOSITION_LEMMA.md:1:# DDYO Paired Decomposition Lemma
+docs/math/DDYO_PAIRED_DECOMPOSITION_LEMMA.md:68:This lemma implies the pairing-level second-gain estimate and closes the DDYO continuum high-high absorbability step.
+docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:1:# DDYO Open Problem: Shell-Product Moment Control
+docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:20:Claim 5, and final DDYO continuum closure.
+docs/math/DDYO_CLAIM5_TARGET.md:1:# DDYO Claim 5 Target
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:1:# DDYO Symmetric Commutator Pairing Frontier
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:10:\text{Verified sampled DDYO/J2B chain now includes:}
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:13:\text{DDYO wall},\quad
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:15:\text{DDYO commutator frontier},\quad
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:16:\text{DDYO commutator-absorbability proxy},\quad
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:34:\varepsilon\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:36:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr),
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:48:\text{hence continuum DDYO high-high absorbability remains open;}
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:76:\varepsilon\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:78:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr).
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:86:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr).
+docs/math/DDYO_MOLLIFIED_SKEW_CANCELLATION.md:1:# DDYO Mollified Skew Cancellation
+docs/math/DDYO_MOLLIFIED_SKEW_CANCELLATION.md:51:This removes the skew part exactly, leaving only the symmetric commutator term for continuum DDYO absorbability.
+docs/math/DDYO_COUNTEREXAMPLE_ZERO_SHELL_MEAN_NOT_SUFFICIENT.md:1:# DDYO Counterexample: zero shell mean is not sufficient for cancellation
+docs/math/DDYO_CRITICAL_COMMUTATOR_LEMMA.md:1:# DDYO Critical Commutator Lemma
+docs/math/DDYO_CRITICAL_COMMUTATOR_LEMMA.md:22:\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u].
+docs/math/DDYO_CRITICAL_COMMUTATOR_LEMMA.md:35:\sum_j \alpha_j \lesssim \varepsilon\,\lambda^{-1}\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+docs/math/DDYO_CRITICAL_COMMUTATOR_LEMMA.md:37:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr).
+docs/math/DDYO_CRITICAL_COMMUTATOR_LEMMA.md:58:\varepsilon\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+docs/math/DDYO_CRITICAL_COMMUTATOR_LEMMA.md:60:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr),
+docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:1:# DDYO Claim 5 Final Dichotomy
+docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:14:### Branch B: lower-order routing
+docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:18:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr)_{j,k}.
+docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:35:This is the minimal remaining object for hybrid DDYO Claim 5 after first-order post-symmetrization.
+docs/math/DDYO_DYADIC_GAIN_EXTRACTION.md:1:# DDYO Dyadic Gain Extraction
+docs/math/DDYO_DYADIC_GAIN_EXTRACTION.md:11:extract the exact shellwise gain needed to offset the DDYO weight \(2^{2j}\).
+docs/math/DDYO_DYADIC_GAIN_EXTRACTION.md:25:\varepsilon\,\lambda^{-1}\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+docs/math/DDYO_DYADIC_GAIN_EXTRACTION.md:27:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr),
+docs/math/DDYO_DYADIC_GAIN_EXTRACTION.md:64:with one global \(\varepsilon<1\), completing the DDYO continuum high-high absorbability step.
+docs/math/DDYO_CLAIM5_POST_COUNTEREXAMPLE_BRANCH.md:1:# DDYO Claim 5 Post-Counterexample Branch
+docs/math/DDYO_CLAIM5_POST_COUNTEREXAMPLE_BRANCH.md:42:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr).
+docs/math/DDYO_SOLVE_REQUIREMENTS.md:1:# DDYO Solve Requirements
+docs/math/DDYO_SOLVE_REQUIREMENTS.md:50:C_\varepsilon\Bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\Bigr)_{j,k}.
+docs/math/DDYO_SOLVE_REQUIREMENTS.md:63:### 6. Final DDYO continuum closure
+docs/math/DDYO_SOLVE_REQUIREMENTS.md:64:High-high absorbability closes, hence the DDYO continuum argument closes.
+docs/math/DDYO_SHELL_PRODUCT_MOMENT_FRONTIER.md:1:# DDYO Shell-Product Moment Frontier
+docs/math/DDYO_SHELL_PRODUCT_MOMENT_FRONTIER.md:42:C_\varepsilon\Bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\Bigr)_{j,k}.
+docs/math/DDYO_COUNTEREXAMPLE_STRAIN_NOT_DIVERGENCE_FREE.md:1:# DDYO Counterexample: strain shell is not divergence-free
+docs/math/DDYO_MOLLIFIED_PROJECTOR_REDUCTION.md:1:# DDYO Mollified Projector Reduction
+docs/math/DDYO_MOLLIFIED_PROJECTOR_REDUCTION.md:27:If this reduction holds, the continuum DDYO symmetric commutator pairing frontier reduces to the mollified identity/bound pair:
+docs/math/DDYO_MOLLIFIED_PROJECTOR_REDUCTION.md:37:\varepsilon\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+docs/math/DDYO_MOLLIFIED_PROJECTOR_REDUCTION.md:39:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr).
+docs/math/DDYO_PAIRING_IBP_FRONTIER.md:1:# DDYO Pairing IBP Frontier
+docs/math/DDYO_PAIRING_IBP_FRONTIER.md:83:Any such paired decomposition closes the pairing-level second-gain lemma and completes the DDYO continuum high-high absorbability step.
+docs/math/DDYO_SECOND_GAIN_ROUTE.md:1:# DDYO Second Gain Route
+docs/math/DDYO_RA1N_CONDITIONAL.md:1:# DDYO RA1n (Conditional)
+docs/math/DDYO_RA1N_CONDITIONAL.md:51:Hence RA1n implies high-high absorbability closure and final DDYO continuum closure.
+docs/math/DDYO_H_PRIME_ROUTE_CRITERION.md:1:# DDYO H-Prime Route Criterion
+docs/math/DDYO_H_PRIME_ROUTE_CRITERION.md:58:## Weakest sufficient branch for DDYO
+docs/math/DDYO_H_PRIME_ROUTE_CRITERION.md:60:The DDYO critical residual is based on an \(L^1\)-type gradient/vorticity structure.
+docs/math/DDYO_H_PRIME_ROUTE_CRITERION.md:98:This freezes the correct algebraic branch and rules out pursuing the terminal gain as a purely absolute operator \(L^1\) bound in the non-quadratic DDYO state.
+docs/math/DDYO_SHELL_MOMENT_LEMMA.md:1:# DDYO Shell Moment Lemma
+docs/math/DDYO_FIRST_ORDER_LEAKAGE_SPLIT.md:1:# DDYO First-Order Leakage Split
+docs/math/DDYO_FIRST_ORDER_LEAKAGE_SPLIT.md:19:### Branch B: lower-order routing
+docs/math/DDYO_FIRST_ORDER_LEAKAGE_SPLIT.md:24:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr)_{j,k}.
+docs/math/DDYO_FIRST_ORDER_LEAKAGE_SPLIT.md:29:Either Branch A or Branch B is sufficient to conclude that the remaining paired remainder satisfies
+docs/math/DDYO_FIRST_ORDER_LEAKAGE_SPLIT.md:42:This reduces the hybrid DDYO Claim 5 frontier to one final dichotomy:
+docs/math/DDYO_GENUINE_DIPOLE_CANCELLATION_ROUTE.md:1:# DDYO Genuine Dipole Cancellation Route
+docs/math/DDYO_PAIRED_DECOMPOSITION_5P_COVERAGE.md:1:# DDYO Paired Decomposition 5% Coverage
+docs/math/DDYO_PAIRED_DECOMPOSITION_5P_COVERAGE.md:72:Any proof of Claims 1--5 yields the paired decomposition lemma and advances the continuum DDYO closure by the next structural tranche.
+docs/math/DDYO_DEVIATORIC_H1_BMO_ROUTE.md:1:# DDYO Deviatoric H1-BMO Route
+docs/math/DDYO_ALMOST_ORTHOGONALITY_GAIN.md:1:# DDYO Almost-Orthogonality Gain
+docs/math/DDYO_ALMOST_ORTHOGONALITY_GAIN.md:34:\varepsilon\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+docs/math/DDYO_ALMOST_ORTHOGONALITY_GAIN.md:36:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr),
+docs/math/DDYO_ALMOST_ORTHOGONALITY_GAIN.md:61:and therefore completes the DDYO continuum high-high absorbability step.
+docs/math/DDYO_KERNEL_FIRST_MOMENT_LEMMA.md:1:# DDYO Kernel First Moment Lemma
+docs/naming/NAVIER_STOKES_VARIANT_CANONICAL_NAMES.md:7:- DDYO
+./docs/status/DDYO_RA1N_STATUS_2026_04_10.md:1:# DDYO RA1n Status — 2026-04-10
+./docs/status/DDYO_RA1N_STATUS_2026_04_10.md:13:- docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md
+./docs/status/DDYO_RA1N_STATUS_2026_04_10.md:14:- docs/math/DDYO_RA1N_CONDITIONAL.md
+./docs/status/DDYO_RA1N_STATUS_2026_04_10.md:15:- docs/math/DDYO_SOLVE_REQUIREMENTS.md
+./docs/status/DDYO_RA1N_STATUS_2026_04_10.md:16:- docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md
+./docs/status/DDYO_RA1N_STATUS_2026_04_10.md:34:Claim 5, high-high absorbability, and final DDYO continuum closure follow.
+./docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:1:# DDYO Closure Status — 2026-04-10
+./docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:13:- docs/math/DDYO_DEVIATORIC_COERCIVITY_FRONTIER.md
+./docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:14:- docs/math/DDYO_SHELL_PRODUCT_MOMENT_FRONTIER.md
+./docs/status/DDYO_CHECKPOINT_a641031.md:1:# DDYO Checkpoint — a641031
+./docs/status/DDYO_CHECKPOINT_a641031.md:13:- docs/math/DDYO_DEVIATORIC_COERCIVITY_FRONTIER.md
+./docs/status/DDYO_CHECKPOINT_a641031.md:14:- docs/math/DDYO_SHELL_PRODUCT_MOMENT_FRONTIER.md
+./docs/status/DDYO_CHECKPOINT_a641031.md:15:- docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md
+./docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:4:- DDYO wall sampled layer: 31/31 tests passing.
+./docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:5:- Verified sampled DDYO components:
+./docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:26:## DDYO commutator frontier
+./docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:32:## DDYO commutator absorbability frontier
+./docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:54:- continuum DDYO high-high absorbability: open
+./docs/math/DDYO_POST_SYMMETRIZED_FIRST_ORDER_LEAKAGE.md:1:# DDYO Post-Symmetrized First-Order Leakage
+./docs/math/DDYO_POST_SYMMETRIZED_FIRST_ORDER_LEAKAGE.md:19:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr)_{j,k}.
+./docs/math/DDYO_REMAINDER_ROUTING_LEMMA.md:1:# DDYO Remainder Routing Lemma
+./docs/math/DDYO_REMAINDER_ROUTING_LEMMA.md:10:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr).
+./docs/math/DDYO_REMAINDER_ROUTING_LEMMA.md:25:\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u],
+./docs/math/DDYO_MOLLIFIED_SYMMETRIC_COMMUTATOR_BOUND.md:1:# DDYO Mollified Symmetric Commutator Bound
+./docs/math/DDYO_MOLLIFIED_SYMMETRIC_COMMUTATOR_BOUND.md:12:\varepsilon\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+./docs/math/DDYO_MOLLIFIED_SYMMETRIC_COMMUTATOR_BOUND.md:14:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr),
+./docs/math/DDYO_MOLLIFIED_SYMMETRIC_COMMUTATOR_BOUND.md:43:A Coifman--Meyer / Constantin--E--Titi type commutator estimate at the exact DDYO critical weights.
+./docs/math/DDYO_MOLLIFIED_SYMMETRIC_COMMUTATOR_BOUND.md:48:this closes continuum DDYO high-high absorbability.
+./docs/math/DDYO_CRITICAL_ENVELOPE.md:1:# DDYO critical envelope
+./docs/math/DDYO_CRITICAL_ENVELOPE.md:6:R_{\mathrm{DDYO}}[u]
+./docs/math/DDYO_CRITICAL_ENVELOPE.md:37:R_{\mathrm{DDYO}}[u_\mu]=R_{\mathrm{DDYO}}[u].
+./docs/math/DDYO_CRITICAL_ENVELOPE.md:44:R_{\mathrm{DDYO}}^{\mathrm{test}}
+./docs/math/DDYO_CRITICAL_ENVELOPE.md:59:\Sigma_{\mathrm{DDYO}}[u]
+./docs/math/DDYO_CRITICAL_ENVELOPE.md:63:\Sigma_{\mathrm{DDYO}}[u]
+./docs/math/DDYO_CRITICAL_ENVELOPE.md:65:\eta(\mathcal D[u]+\lambda \mathcal C_{\mathrm{DDYO}}[u])
+./docs/math/DDYO_CRITICAL_ENVELOPE.md:67:C(\Phi[u]+\lambda R_{\mathrm{DDYO}}[u]),
+./docs/math/DDYO_PAIRED_PARACOMMUTATOR_H1_BMO.md:1:# DDYO Paired Paracommutator H1-BMO Candidate
+./docs/math/DDYO_HYBRID_CLAIM5_ROUTE.md:1:# DDYO Hybrid Claim 5 Route
+./docs/math/DDYO_HYBRID_CLAIM5_ROUTE.md:13:\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u].
+./docs/math/DDYO_HYBRID_CLAIM5_ROUTE.md:64:without claiming the continuum DDYO lemma is proved.
+./docs/math/VARIANT_FRAMEWORK_STATUS.md:83:## DDYO
+./docs/math/VARIANT_FRAMEWORK_STATUS.md:87:R_{\mathrm{DDYO}}[u]
+./docs/math/VARIANT_FRAMEWORK_STATUS.md:96:R_{\mathrm{DDYO}}^{\mathrm{test}}
+./docs/math/VARIANT_FRAMEWORK_STATUS.md:111:R_{\mathrm{DDYO}}[u]=\|u\|_{\dot B^{-1}_{\infty,\infty}}
+./docs/math/VARIANT_FRAMEWORK_STATUS.md:121:- DDYO sampled dyadic-envelope layer
+./docs/math/DDYO_DEVIATORIC_COERCIVITY_FRONTIER.md:1:# DDYO Deviatoric Coercivity Frontier
+./docs/math/DDYO_DEVIATORIC_COERCIVITY_FRONTIER.md:28:C_\varepsilon\Bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\Bigr)_{j,k}.
+./docs/math/DDYO_PAIRED_DECOMPOSITION_LEMMA.md:1:# DDYO Paired Decomposition Lemma
+./docs/math/DDYO_PAIRED_DECOMPOSITION_LEMMA.md:68:This lemma implies the pairing-level second-gain estimate and closes the DDYO continuum high-high absorbability step.
+./docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:1:# DDYO Open Problem: Shell-Product Moment Control
+./docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:20:Claim 5, and final DDYO continuum closure.
+./docs/math/DDYO_CLAIM5_TARGET.md:1:# DDYO Claim 5 Target
+./docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:1:# DDYO Symmetric Commutator Pairing Frontier
+./docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:10:\text{Verified sampled DDYO/J2B chain now includes:}
+./docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:13:\text{DDYO wall},\quad
+./docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:15:\text{DDYO commutator frontier},\quad
+./docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:16:\text{DDYO commutator-absorbability proxy},\quad
+./docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:34:\varepsilon\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+./docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:36:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr),
+./docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:48:\text{hence continuum DDYO high-high absorbability remains open;}
+./docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:76:\varepsilon\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+./docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:78:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr).
+./docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:86:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr).
+./docs/math/DDYO_MOLLIFIED_SKEW_CANCELLATION.md:1:# DDYO Mollified Skew Cancellation
+./docs/math/DDYO_MOLLIFIED_SKEW_CANCELLATION.md:51:This removes the skew part exactly, leaving only the symmetric commutator term for continuum DDYO absorbability.
+./docs/math/DDYO_COUNTEREXAMPLE_ZERO_SHELL_MEAN_NOT_SUFFICIENT.md:1:# DDYO Counterexample: zero shell mean is not sufficient for cancellation
+./docs/math/DDYO_CRITICAL_COMMUTATOR_LEMMA.md:1:# DDYO Critical Commutator Lemma
+./docs/math/DDYO_CRITICAL_COMMUTATOR_LEMMA.md:22:\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u].
+./docs/math/DDYO_CRITICAL_COMMUTATOR_LEMMA.md:35:\sum_j \alpha_j \lesssim \varepsilon\,\lambda^{-1}\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+./docs/math/DDYO_CRITICAL_COMMUTATOR_LEMMA.md:37:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr).
+./docs/math/DDYO_CRITICAL_COMMUTATOR_LEMMA.md:58:\varepsilon\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+./docs/math/DDYO_CRITICAL_COMMUTATOR_LEMMA.md:60:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr),
+./docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:1:# DDYO Claim 5 Final Dichotomy
+./docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:14:### Branch B: lower-order routing
+./docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:18:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr)_{j,k}.
+./docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:35:This is the minimal remaining object for hybrid DDYO Claim 5 after first-order post-symmetrization.
+./docs/math/DDYO_DYADIC_GAIN_EXTRACTION.md:1:# DDYO Dyadic Gain Extraction
+./docs/math/DDYO_DYADIC_GAIN_EXTRACTION.md:11:extract the exact shellwise gain needed to offset the DDYO weight \(2^{2j}\).
+./docs/math/DDYO_DYADIC_GAIN_EXTRACTION.md:25:\varepsilon\,\lambda^{-1}\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+./docs/math/DDYO_DYADIC_GAIN_EXTRACTION.md:27:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr),
+./docs/math/DDYO_DYADIC_GAIN_EXTRACTION.md:64:with one global \(\varepsilon<1\), completing the DDYO continuum high-high absorbability step.
+./docs/math/DDYO_CLAIM5_POST_COUNTEREXAMPLE_BRANCH.md:1:# DDYO Claim 5 Post-Counterexample Branch
+./docs/math/DDYO_CLAIM5_POST_COUNTEREXAMPLE_BRANCH.md:42:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr).
+./docs/math/DDYO_SOLVE_REQUIREMENTS.md:1:# DDYO Solve Requirements
+./docs/math/DDYO_SOLVE_REQUIREMENTS.md:50:C_\varepsilon\Bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\Bigr)_{j,k}.
+./docs/math/DDYO_SOLVE_REQUIREMENTS.md:63:### 6. Final DDYO continuum closure
+./docs/math/DDYO_SOLVE_REQUIREMENTS.md:64:High-high absorbability closes, hence the DDYO continuum argument closes.
+./docs/math/DDYO_SHELL_PRODUCT_MOMENT_FRONTIER.md:1:# DDYO Shell-Product Moment Frontier
+./docs/math/DDYO_SHELL_PRODUCT_MOMENT_FRONTIER.md:42:C_\varepsilon\Bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\Bigr)_{j,k}.
+./docs/math/DDYO_COUNTEREXAMPLE_STRAIN_NOT_DIVERGENCE_FREE.md:1:# DDYO Counterexample: strain shell is not divergence-free
+./docs/math/DDYO_MOLLIFIED_PROJECTOR_REDUCTION.md:1:# DDYO Mollified Projector Reduction
+./docs/math/DDYO_MOLLIFIED_PROJECTOR_REDUCTION.md:27:If this reduction holds, the continuum DDYO symmetric commutator pairing frontier reduces to the mollified identity/bound pair:
+./docs/math/DDYO_MOLLIFIED_PROJECTOR_REDUCTION.md:37:\varepsilon\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+./docs/math/DDYO_MOLLIFIED_PROJECTOR_REDUCTION.md:39:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr).
+./docs/math/DDYO_PAIRING_IBP_FRONTIER.md:1:# DDYO Pairing IBP Frontier
+./docs/math/DDYO_PAIRING_IBP_FRONTIER.md:83:Any such paired decomposition closes the pairing-level second-gain lemma and completes the DDYO continuum high-high absorbability step.
+./docs/math/DDYO_SECOND_GAIN_ROUTE.md:1:# DDYO Second Gain Route
+./docs/math/DDYO_RA1N_CONDITIONAL.md:1:# DDYO RA1n (Conditional)
+./docs/math/DDYO_RA1N_CONDITIONAL.md:51:Hence RA1n implies high-high absorbability closure and final DDYO continuum closure.
+./docs/math/DDYO_H_PRIME_ROUTE_CRITERION.md:1:# DDYO H-Prime Route Criterion
+./docs/math/DDYO_H_PRIME_ROUTE_CRITERION.md:58:## Weakest sufficient branch for DDYO
+./docs/math/DDYO_H_PRIME_ROUTE_CRITERION.md:60:The DDYO critical residual is based on an \(L^1\)-type gradient/vorticity structure.
+./docs/math/DDYO_H_PRIME_ROUTE_CRITERION.md:98:This freezes the correct algebraic branch and rules out pursuing the terminal gain as a purely absolute operator \(L^1\) bound in the non-quadratic DDYO state.
+./docs/math/DDYO_SHELL_MOMENT_LEMMA.md:1:# DDYO Shell Moment Lemma
+./docs/math/DDYO_FIRST_ORDER_LEAKAGE_SPLIT.md:1:# DDYO First-Order Leakage Split
+./docs/math/DDYO_FIRST_ORDER_LEAKAGE_SPLIT.md:19:### Branch B: lower-order routing
+./docs/math/DDYO_FIRST_ORDER_LEAKAGE_SPLIT.md:24:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr)_{j,k}.
+./docs/math/DDYO_FIRST_ORDER_LEAKAGE_SPLIT.md:29:Either Branch A or Branch B is sufficient to conclude that the remaining paired remainder satisfies
+./docs/math/DDYO_FIRST_ORDER_LEAKAGE_SPLIT.md:42:This reduces the hybrid DDYO Claim 5 frontier to one final dichotomy:
+./docs/math/DDYO_GENUINE_DIPOLE_CANCELLATION_ROUTE.md:1:# DDYO Genuine Dipole Cancellation Route
+./docs/math/DDYO_PAIRED_DECOMPOSITION_5P_COVERAGE.md:1:# DDYO Paired Decomposition 5% Coverage
+./docs/math/DDYO_PAIRED_DECOMPOSITION_5P_COVERAGE.md:72:Any proof of Claims 1--5 yields the paired decomposition lemma and advances the continuum DDYO closure by the next structural tranche.
+./docs/math/DDYO_DEVIATORIC_H1_BMO_ROUTE.md:1:# DDYO Deviatoric H1-BMO Route
+./docs/math/DDYO_ALMOST_ORTHOGONALITY_GAIN.md:1:# DDYO Almost-Orthogonality Gain
+./docs/math/DDYO_ALMOST_ORTHOGONALITY_GAIN.md:34:\varepsilon\bigl(\mathcal D[u]+\lambda\mathcal C_{\mathrm{DDYO}}[u]\bigr)
+./docs/math/DDYO_ALMOST_ORTHOGONALITY_GAIN.md:36:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr),
+./docs/math/DDYO_ALMOST_ORTHOGONALITY_GAIN.md:61:and therefore completes the DDYO continuum high-high absorbability step.
+./docs/math/DDYO_KERNEL_FIRST_MOMENT_LEMMA.md:1:# DDYO Kernel First Moment Lemma
+./docs/naming/NAVIER_STOKES_VARIANT_CANONICAL_NAMES.md:7:- DDYO
+./.git/logs/HEAD:9:6ffed1a654ba78eefbf5069d6b2cf784688625ae 53824dc9a3a6326e73ea2be5e000159702fdd4b0 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775858450 -0300	commit: Add DDYO velocity-envelope shell and scaling tests
+./.git/logs/HEAD:10:53824dc9a3a6326e73ea2be5e000159702fdd4b0 c8a83591b951d90e3949a23244cc0eee174dfb32 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775858537 -0300	commit: Add honest framework status for DREM NAK J2B DDYO
+./.git/logs/HEAD:12:6152cdd997c5b56b3e62569f66e1a74d36c27327 de149f331a0a0ae8eeeed5c00a452605609d121c Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775858778 -0300	commit: Promote DDYO velocity envelope to continuum critical candidate
+./.git/logs/HEAD:14:c3e22f4759eaf82e365863bcd7926b0ac69ba1b5 7dd76b2acd8adbcbab3f058373731c35906d1af3 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775860048 -0300	commit: Replace empty active-set DDYO proxy with full-shell strain dominance test
+./.git/logs/HEAD:15:7dd76b2acd8adbcbab3f058373731c35906d1af3 d5ac87f3ce47e85b401a4bdeaec3de6f302db417 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775860212 -0300	commit: Normalize DDYO theta-active-set threshold by torus volume
+./.git/logs/HEAD:16:d5ac87f3ce47e85b401a4bdeaec3de6f302db417 969da355a9e72e9366eeb7a6f5fef13116dd039c Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775860283 -0300	commit: Add DDYO localized active-tail proxy split tests
+./.git/logs/HEAD:17:969da355a9e72e9366eeb7a6f5fef13116dd039c ea605704fd71ec8b7982d5fa5f567b6d9cbb434c Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775860345 -0300	commit: Add DDYO theta-tail monotonicity tests
+./.git/logs/HEAD:18:ea605704fd71ec8b7982d5fa5f567b6d9cbb434c 90af98138d4c65a53f43830022875066908b225c Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775860503 -0300	commit: Fix remaining DDYO single-shell tail monotonicity assertion
+./.git/logs/HEAD:20:89c7707cba39449458fe41c3d676ecb8d5af37ac a4d3d147e1c15d1b00b531ab69003dcae4758052 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775861159 -0300	commit: Add DDYO commutator frontier tests and snapshot update
+./.git/logs/HEAD:21:a4d3d147e1c15d1b00b531ab69003dcae4758052 62f3e10c88a1acf1f25a17bba454c528629116bb Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775861411 -0300	commit: Add DDYO commutator absorbability proxy tests and snapshot update
+./.git/logs/HEAD:22:62f3e10c88a1acf1f25a17bba454c528629116bb 09484d6a9da7e105888371f39b3e0eab58727c7e Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775862405 -0300	commit: Add DDYO exact skew-adjoint reduction tests and snapshot update
+./.git/logs/HEAD:23:09484d6a9da7e105888371f39b3e0eab58727c7e 20c3b50ac06acf1d2475947eabf5785e8169b810 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775863309 -0300	commit: Relax DDYO symmetric commutator pairing dilation tolerance
+./.git/logs/HEAD:24:20c3b50ac06acf1d2475947eabf5785e8169b810 58959e46b6082919e989e3b792c60bc0bbc0b259 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775863756 -0300	commit: Add DDYO symmetric commutator pairing frontier as minimal remaining continuum lemma
+./.git/logs/HEAD:25:58959e46b6082919e989e3b792c60bc0bbc0b259 88751acf1815f117e6d93292db1b0e83796e2979 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775863902 -0300	commit: Add DDYO mollified projector reduction as next continuum step
+./.git/logs/HEAD:26:88751acf1815f117e6d93292db1b0e83796e2979 a3da88d5fd445fe1d3e7e0c22e103e999e9cf675 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775864003 -0300	commit: Add DDYO mollified skew cancellation as next continuum identity target
+./.git/logs/HEAD:27:a3da88d5fd445fe1d3e7e0c22e103e999e9cf675 5052fe3c0f662a9509ce39c57920f6afad68aa2f Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775864080 -0300	commit: Add DDYO mollified symmetric commutator bound as current terminal estimate
+./.git/logs/HEAD:28:5052fe3c0f662a9509ce39c57920f6afad68aa2f cade9453739ef975c85f25a2a021ac085714bb98 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775864198 -0300	commit: Add DDYO critical commutator lemma as terminal new ingredient
+./.git/logs/HEAD:29:cade9453739ef975c85f25a2a021ac085714bb98 fec9c786516fd95315cc7fbf0ae8fdaeae62bf31 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775864307 -0300	commit: Add DDYO dyadic gain extraction as next shellwise reduction
+./.git/logs/HEAD:30:fec9c786516fd95315cc7fbf0ae8fdaeae62bf31 5447cd71a57f173a993edb1bb48de0f85594426d Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775864520 -0300	commit: Add DDYO almost-orthogonality gain as final shellwise closure step
+./.git/logs/HEAD:31:5447cd71a57f173a993edb1bb48de0f85594426d 709312237eb7089ec9fa899f14acb896316c956a Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775864695 -0300	commit: Add DDYO second-gain route and eliminate divergence-free strain branch
+./.git/logs/HEAD:32:709312237eb7089ec9fa899f14acb896316c956a 1e0a744e26b4737766914062df56adbdd3efb4fe Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775864863 -0300	commit: Add DDYO H-prime route criterion and freeze pairing-level branch
+./.git/logs/HEAD:33:1e0a744e26b4737766914062df56adbdd3efb4fe c69a572b86713e4e390580f459119a9293b2c67b Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775865041 -0300	commit: Add DDYO pairing IBP frontier and symmetric-gradient extraction target
+./.git/logs/HEAD:34:c69a572b86713e4e390580f459119a9293b2c67b bea7abd3db273ddba02fbf69ee5c699e83a44678 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775865158 -0300	commit: Add DDYO paired decomposition lemma as terminal pairing-level target
+./.git/logs/HEAD:35:bea7abd3db273ddba02fbf69ee5c699e83a44678 770422e1b99a48980c94e9ce5c7d36cc540f74a5 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775865311 -0300	commit: Add DDYO paired decomposition 5 percent coverage split
+./.git/logs/HEAD:36:770422e1b99a48980c94e9ce5c7d36cc540f74a5 7936e777adbbb92cccb0cc49aa1d8133a7ebb2de Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775865568 -0300	commit: Add Claim 5 auxiliary lemma split for DDYO paired remainder closure
+./.git/logs/HEAD:37:7936e777adbbb92cccb0cc49aa1d8133a7ebb2de 9a1692fb3e3a03349a1c718c892761fa2826a66e Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775865731 -0300	commit: Add DDYO counterexample showing incompressible velocity need not have divergence-free strain
+./.git/logs/HEAD:38:9a1692fb3e3a03349a1c718c892761fa2826a66e 4719f2309d9cf664bd4b8dae281eb284abd20897 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775865858 -0300	commit: Freeze DDYO shell-moment route as primary post-counterexample Claim 5 branch
+./.git/logs/HEAD:39:4719f2309d9cf664bd4b8dae281eb284abd20897 8bbee36e757d0d3f623568768464b6be8b8bbe03 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775866007 -0300	commit: Add DDYO counterexample showing zero shell mean does not force pairing cancellation
+./.git/logs/HEAD:40:8bbee36e757d0d3f623568768464b6be8b8bbe03 1e5d8d7078d89e4064745f56c6180ff1928636cf Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775866150 -0300	commit: Freeze DDYO genuine dipole cancellation as sole remaining Claim 5 route
+./.git/logs/HEAD:41:1e5d8d7078d89e4064745f56c6180ff1928636cf 76bb97141ceece10cdb9758c4b445c76d29ac5a5 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775866449 -0300	commit: Add DDYO hybrid Claim 5 route and sampled proxy test
+./.git/logs/HEAD:42:76bb97141ceece10cdb9758c4b445c76d29ac5a5 7d725e6cd71ab3d89140a6ae1c8a7d815ca291f5 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775866646 -0300	commit: Add DDYO post-symmetrized first-order leakage as sole next terminal target
+./.git/logs/HEAD:43:7d725e6cd71ab3d89140a6ae1c8a7d815ca291f5 04be7636f084c9a2f1553cc3acbc93233254dc1b Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775866750 -0300	commit: Add DDYO first-order leakage split into vanishing versus routing branches
+./.git/logs/HEAD:45:04be7636f084c9a2f1553cc3acbc93233254dc1b acf767bba6d95cd2cd489e2700a61242ad8ede70 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775868963 -0300	commit: Add DDYO deviatoric H1-BMO route proxy and shell-product tests
+./.git/logs/HEAD:48:acf767bba6d95cd2cd489e2700a61242ad8ede70 cca3f3c2358ea5b329bd865fbcf91ba0f77a5f1a Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775869281 -0300	commit: Freeze DDYO deviatoric coercivity frontier as sole remaining theorem-level object
+./.git/logs/HEAD:49:cca3f3c2358ea5b329bd865fbcf91ba0f77a5f1a f2e8ab7ec2f1acf999008400f5f715b8718573ca Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775869582 -0300	commit: Freeze DDYO shell-product moment frontier as weakest sufficient remaining lemma
+./.git/logs/HEAD:50:f2e8ab7ec2f1acf999008400f5f715b8718573ca a641031fbc291d65a13d03dbb68b8cf2fc794e68 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775869957 -0300	commit: Freeze DDYO closure status after shell-product moment frontier
+./.git/logs/HEAD:51:a641031fbc291d65a13d03dbb68b8cf2fc794e68 9cb61fc6cc6b312543aa0d69f9927fd74859f0ac Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775870120 -0300	commit: Add DDYO checkpoint at a641031 after closure-status freeze
+./.git/logs/HEAD:52:9cb61fc6cc6b312543aa0d69f9927fd74859f0ac ccb3d224d35e977c213686dcd3c46a0073a3c4ee Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775870581 -0300	commit: Freeze DDYO solve requirements from shell-product moment frontier
+./.git/logs/HEAD:53:ccb3d224d35e977c213686dcd3c46a0073a3c4ee 4e174597868f00c5faa89d4b64317d31355cc771 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775870904 -0300	commit: Freeze DDYO open problem at shell-product moment control frontier
+./.git/logs/HEAD:54:4e174597868f00c5faa89d4b64317d31355cc771 5a802453ceb1da22627aa6cb4469c270c5743dc2 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775871289 -0300	commit: Add RA1n as conditional DDYO closure atom
+./.git/logs/HEAD:56:d37ebf2b81695f75af746a84fae4bef791a94b39 86731ec32911bc91e38cd270460e20cf4a70cf24 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775903280 -0300	commit: Add DDYO Claim 5 final dichotomy frontier
+./.git/logs/refs/heads/chore/max-fight-20260410213020:2:04be7636f084c9a2f1553cc3acbc93233254dc1b acf767bba6d95cd2cd489e2700a61242ad8ede70 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775868963 -0300	commit: Add DDYO deviatoric H1-BMO route proxy and shell-product tests
+./.git/logs/refs/heads/main:9:6ffed1a654ba78eefbf5069d6b2cf784688625ae 53824dc9a3a6326e73ea2be5e000159702fdd4b0 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775858450 -0300	commit: Add DDYO velocity-envelope shell and scaling tests
+./.git/logs/refs/heads/main:10:53824dc9a3a6326e73ea2be5e000159702fdd4b0 c8a83591b951d90e3949a23244cc0eee174dfb32 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775858537 -0300	commit: Add honest framework status for DREM NAK J2B DDYO
+./.git/logs/refs/heads/main:12:6152cdd997c5b56b3e62569f66e1a74d36c27327 de149f331a0a0ae8eeeed5c00a452605609d121c Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775858778 -0300	commit: Promote DDYO velocity envelope to continuum critical candidate
+./.git/logs/refs/heads/main:14:c3e22f4759eaf82e365863bcd7926b0ac69ba1b5 7dd76b2acd8adbcbab3f058373731c35906d1af3 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775860048 -0300	commit: Replace empty active-set DDYO proxy with full-shell strain dominance test
+./.git/logs/refs/heads/main:15:7dd76b2acd8adbcbab3f058373731c35906d1af3 d5ac87f3ce47e85b401a4bdeaec3de6f302db417 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775860212 -0300	commit: Normalize DDYO theta-active-set threshold by torus volume
+./.git/logs/refs/heads/main:16:d5ac87f3ce47e85b401a4bdeaec3de6f302db417 969da355a9e72e9366eeb7a6f5fef13116dd039c Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775860283 -0300	commit: Add DDYO localized active-tail proxy split tests
+./.git/logs/refs/heads/main:17:969da355a9e72e9366eeb7a6f5fef13116dd039c ea605704fd71ec8b7982d5fa5f567b6d9cbb434c Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775860345 -0300	commit: Add DDYO theta-tail monotonicity tests
+./.git/logs/refs/heads/main:18:ea605704fd71ec8b7982d5fa5f567b6d9cbb434c 90af98138d4c65a53f43830022875066908b225c Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775860503 -0300	commit: Fix remaining DDYO single-shell tail monotonicity assertion
+./.git/logs/refs/heads/main:20:89c7707cba39449458fe41c3d676ecb8d5af37ac a4d3d147e1c15d1b00b531ab69003dcae4758052 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775861159 -0300	commit: Add DDYO commutator frontier tests and snapshot update
+./.git/logs/refs/heads/main:21:a4d3d147e1c15d1b00b531ab69003dcae4758052 62f3e10c88a1acf1f25a17bba454c528629116bb Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775861411 -0300	commit: Add DDYO commutator absorbability proxy tests and snapshot update
+./.git/logs/refs/heads/main:22:62f3e10c88a1acf1f25a17bba454c528629116bb 09484d6a9da7e105888371f39b3e0eab58727c7e Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775862405 -0300	commit: Add DDYO exact skew-adjoint reduction tests and snapshot update
+./.git/logs/refs/heads/main:23:09484d6a9da7e105888371f39b3e0eab58727c7e 20c3b50ac06acf1d2475947eabf5785e8169b810 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775863309 -0300	commit: Relax DDYO symmetric commutator pairing dilation tolerance
+./.git/logs/refs/heads/main:24:20c3b50ac06acf1d2475947eabf5785e8169b810 58959e46b6082919e989e3b792c60bc0bbc0b259 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775863756 -0300	commit: Add DDYO symmetric commutator pairing frontier as minimal remaining continuum lemma
+./.git/logs/refs/heads/main:25:58959e46b6082919e989e3b792c60bc0bbc0b259 88751acf1815f117e6d93292db1b0e83796e2979 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775863902 -0300	commit: Add DDYO mollified projector reduction as next continuum step
+./.git/logs/refs/heads/main:26:88751acf1815f117e6d93292db1b0e83796e2979 a3da88d5fd445fe1d3e7e0c22e103e999e9cf675 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775864003 -0300	commit: Add DDYO mollified skew cancellation as next continuum identity target
+./.git/logs/refs/heads/main:27:a3da88d5fd445fe1d3e7e0c22e103e999e9cf675 5052fe3c0f662a9509ce39c57920f6afad68aa2f Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775864080 -0300	commit: Add DDYO mollified symmetric commutator bound as current terminal estimate
+./.git/logs/refs/heads/main:28:5052fe3c0f662a9509ce39c57920f6afad68aa2f cade9453739ef975c85f25a2a021ac085714bb98 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775864198 -0300	commit: Add DDYO critical commutator lemma as terminal new ingredient
+./.git/logs/refs/heads/main:29:cade9453739ef975c85f25a2a021ac085714bb98 fec9c786516fd95315cc7fbf0ae8fdaeae62bf31 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775864307 -0300	commit: Add DDYO dyadic gain extraction as next shellwise reduction
+./.git/logs/refs/heads/main:30:fec9c786516fd95315cc7fbf0ae8fdaeae62bf31 5447cd71a57f173a993edb1bb48de0f85594426d Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775864520 -0300	commit: Add DDYO almost-orthogonality gain as final shellwise closure step
+./.git/logs/refs/heads/main:31:5447cd71a57f173a993edb1bb48de0f85594426d 709312237eb7089ec9fa899f14acb896316c956a Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775864695 -0300	commit: Add DDYO second-gain route and eliminate divergence-free strain branch
+./.git/logs/refs/heads/main:32:709312237eb7089ec9fa899f14acb896316c956a 1e0a744e26b4737766914062df56adbdd3efb4fe Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775864863 -0300	commit: Add DDYO H-prime route criterion and freeze pairing-level branch
+./.git/logs/refs/heads/main:33:1e0a744e26b4737766914062df56adbdd3efb4fe c69a572b86713e4e390580f459119a9293b2c67b Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775865041 -0300	commit: Add DDYO pairing IBP frontier and symmetric-gradient extraction target
+./.git/logs/refs/heads/main:34:c69a572b86713e4e390580f459119a9293b2c67b bea7abd3db273ddba02fbf69ee5c699e83a44678 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775865158 -0300	commit: Add DDYO paired decomposition lemma as terminal pairing-level target
+./.git/logs/refs/heads/main:35:bea7abd3db273ddba02fbf69ee5c699e83a44678 770422e1b99a48980c94e9ce5c7d36cc540f74a5 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775865311 -0300	commit: Add DDYO paired decomposition 5 percent coverage split
+./.git/logs/refs/heads/main:36:770422e1b99a48980c94e9ce5c7d36cc540f74a5 7936e777adbbb92cccb0cc49aa1d8133a7ebb2de Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775865568 -0300	commit: Add Claim 5 auxiliary lemma split for DDYO paired remainder closure
+./.git/logs/refs/heads/main:37:7936e777adbbb92cccb0cc49aa1d8133a7ebb2de 9a1692fb3e3a03349a1c718c892761fa2826a66e Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775865731 -0300	commit: Add DDYO counterexample showing incompressible velocity need not have divergence-free strain
+./.git/logs/refs/heads/main:38:9a1692fb3e3a03349a1c718c892761fa2826a66e 4719f2309d9cf664bd4b8dae281eb284abd20897 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775865858 -0300	commit: Freeze DDYO shell-moment route as primary post-counterexample Claim 5 branch
+./.git/logs/refs/heads/main:39:4719f2309d9cf664bd4b8dae281eb284abd20897 8bbee36e757d0d3f623568768464b6be8b8bbe03 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775866007 -0300	commit: Add DDYO counterexample showing zero shell mean does not force pairing cancellation
+./.git/logs/refs/heads/main:40:8bbee36e757d0d3f623568768464b6be8b8bbe03 1e5d8d7078d89e4064745f56c6180ff1928636cf Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775866150 -0300	commit: Freeze DDYO genuine dipole cancellation as sole remaining Claim 5 route
+./.git/logs/refs/heads/main:41:1e5d8d7078d89e4064745f56c6180ff1928636cf 76bb97141ceece10cdb9758c4b445c76d29ac5a5 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775866449 -0300	commit: Add DDYO hybrid Claim 5 route and sampled proxy test
+./.git/logs/refs/heads/main:42:76bb97141ceece10cdb9758c4b445c76d29ac5a5 7d725e6cd71ab3d89140a6ae1c8a7d815ca291f5 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775866646 -0300	commit: Add DDYO post-symmetrized first-order leakage as sole next terminal target
+./.git/logs/refs/heads/main:43:7d725e6cd71ab3d89140a6ae1c8a7d815ca291f5 04be7636f084c9a2f1553cc3acbc93233254dc1b Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775866750 -0300	commit: Add DDYO first-order leakage split into vanishing versus routing branches
+./.git/logs/refs/heads/main:45:acf767bba6d95cd2cd489e2700a61242ad8ede70 cca3f3c2358ea5b329bd865fbcf91ba0f77a5f1a Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775869281 -0300	commit: Freeze DDYO deviatoric coercivity frontier as sole remaining theorem-level object
+./.git/logs/refs/heads/main:46:cca3f3c2358ea5b329bd865fbcf91ba0f77a5f1a f2e8ab7ec2f1acf999008400f5f715b8718573ca Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775869582 -0300	commit: Freeze DDYO shell-product moment frontier as weakest sufficient remaining lemma
+./.git/logs/refs/heads/main:47:f2e8ab7ec2f1acf999008400f5f715b8718573ca a641031fbc291d65a13d03dbb68b8cf2fc794e68 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775869957 -0300	commit: Freeze DDYO closure status after shell-product moment frontier
+./.git/logs/refs/heads/main:48:a641031fbc291d65a13d03dbb68b8cf2fc794e68 9cb61fc6cc6b312543aa0d69f9927fd74859f0ac Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775870120 -0300	commit: Add DDYO checkpoint at a641031 after closure-status freeze
+./.git/logs/refs/heads/main:49:9cb61fc6cc6b312543aa0d69f9927fd74859f0ac ccb3d224d35e977c213686dcd3c46a0073a3c4ee Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775870581 -0300	commit: Freeze DDYO solve requirements from shell-product moment frontier
+./.git/logs/refs/heads/main:50:ccb3d224d35e977c213686dcd3c46a0073a3c4ee 4e174597868f00c5faa89d4b64317d31355cc771 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775870904 -0300	commit: Freeze DDYO open problem at shell-product moment control frontier
+./.git/logs/refs/heads/main:51:4e174597868f00c5faa89d4b64317d31355cc771 5a802453ceb1da22627aa6cb4469c270c5743dc2 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775871289 -0300	commit: Add RA1n as conditional DDYO closure atom
+./.git/logs/refs/heads/main:53:d37ebf2b81695f75af746a84fae4bef791a94b39 86731ec32911bc91e38cd270460e20cf4a70cf24 Inacio F. Vasquez <inaciovasquez2020@gmail.com> 1775903280 -0300	commit: Add DDYO Claim 5 final dichotomy frontier
+./.git/COMMIT_EDITMSG:1:Add DDYO Claim 5 final dichotomy frontier

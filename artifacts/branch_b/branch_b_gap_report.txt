@@ -1,0 +1,26 @@
+=== BRANCH B GAP REPORT ===
+derivative_commutator_bound: MISSING
+stress_transport_potential: MISSING
+s2_defect_budget: MISSING
+f2_flux_budget: MISSING
+final_branch_b_theorem: FOUND
+  - docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md
+      L14: ### Branch B: lower-order routing
+      L22: Either branch implies that the remaining paired remainder satisfies
+a2_term: MISSING
+t_term: MISSING
+b2_term: MISSING
+=== POSSIBLE OPEN ITEMS / PLACEHOLDERS ===
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:L14: - docs/math/DDYO_RA1N_CONDITIONAL.md
+docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:L1: # DDYO Open Problem: Shell-Product Moment Control
+docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:L35: This is the minimal remaining object for hybrid DDYO Claim 5 after first-order post-symmetrization.
+docs/math/DDYO_RA1N_CONDITIONAL.md:L1: # DDYO RA1n (Conditional)
+docs/math/DDYO_FIRST_ORDER_LEAKAGE_SPLIT.md:L29: Either Branch A or Branch B is sufficient to conclude that the remaining paired remainder satisfies
+=== MISSING CHECKS ===
+derivative_commutator_bound
+stress_transport_potential
+s2_defect_budget
+f2_flux_budget
+a2_term
+t_term
+b2_term

@@ -26,7 +26,10 @@ def _j2b_d1_scalar(f, axis):
 
 def _j2b_grad_vector(v):
     return np.stack(
-        [np.stack([_j2b_d1_scalar(v[c], a) for a in range(3)], axis=0) for c in range(3)],
+        [
+            np.stack([_j2b_d1_scalar(v[c], a) for a in range(3)], axis=0)
+            for c in range(3)
+        ],
         axis=0,
     )
 
@@ -35,7 +38,10 @@ def _j2b_grad_matrix(M):
     return np.stack(
         [
             np.stack(
-                [np.stack([_j2b_d1_scalar(M[a, b], k) for k in range(3)], axis=0) for b in range(3)],
+                [
+                    np.stack([_j2b_d1_scalar(M[a, b], k) for k in range(3)], axis=0)
+                    for b in range(3)
+                ],
                 axis=0,
             )
             for a in range(3)
@@ -48,7 +54,10 @@ def _j2b_grad_tensor2(T):
     return np.stack(
         [
             np.stack(
-                [np.stack([_j2b_d1_scalar(T[a, b], k) for k in range(3)], axis=0) for b in range(3)],
+                [
+                    np.stack([_j2b_d1_scalar(T[a, b], k) for k in range(3)], axis=0)
+                    for b in range(3)
+                ],
                 axis=0,
             )
             for a in range(3)
@@ -88,7 +97,9 @@ def _j2b_tensor_tensor(T, Q):
 
 
 def _j2b_product_rule_left(gradS, q, S, gradq):
-    return np.einsum("abk...,bc...->ack...", gradS, q) + np.einsum("ab...,bck...->ack...", S, gradq)
+    return np.einsum("abk...,bc...->ack...", gradS, q) + np.einsum(
+        "ab...,bck...->ack...", S, gradq
+    )
 
 
 def _j2b_vec_norm(v):
@@ -104,19 +115,19 @@ def _j2b_tensor3_norm(T):
 
 
 def _j2b_l1_scalar(f, h):
-    return float(np.sum(np.abs(f)) * (h ** 3))
+    return float(np.sum(np.abs(f)) * (h**3))
 
 
 def _j2b_l1_vec(v, h):
-    return float(np.sum(_j2b_vec_norm(v)) * (h ** 3))
+    return float(np.sum(_j2b_vec_norm(v)) * (h**3))
 
 
 def _j2b_l1_mat(M, h):
-    return float(np.sum(_j2b_mat_norm(M)) * (h ** 3))
+    return float(np.sum(_j2b_mat_norm(M)) * (h**3))
 
 
 def _j2b_l1_tensor3(T, h):
-    return float(np.sum(_j2b_tensor3_norm(T)) * (h ** 3))
+    return float(np.sum(_j2b_tensor3_norm(T)) * (h**3))
 
 
 def _j2b_linf_mat(M):
@@ -139,10 +150,9 @@ def _j2b_base_velocity_shell(X, Y, Z, k=2):
 
 
 def _j2b_multishell_velocity(X, Y, Z):
-    return (
-        1.00 * _j2b_base_velocity_shell(X, Y, Z, k=2)
-        + 0.40 * _j2b_base_velocity_shell(X, Y, Z, k=4)
-    )
+    return 1.00 * _j2b_base_velocity_shell(
+        X, Y, Z, k=2
+    ) + 0.40 * _j2b_base_velocity_shell(X, Y, Z, k=4)
 
 
 def _j2b_shear_shell(X, Y, Z, k=4):
@@ -200,6 +210,8 @@ def test_j2b_strain_product_rule_bound():
     grad_strain_q = _j2b_grad_tensor2(strain_q)
 
     lhs = _j2b_l1_tensor3(grad_strain_q, h)
-    rhs = _j2b_linf_tensor3(gradS) * _j2b_l1_mat(q, h) + _j2b_linf_mat(S) * _j2b_l1_tensor3(gradq, h)
+    rhs = _j2b_linf_tensor3(gradS) * _j2b_l1_mat(q, h) + _j2b_linf_mat(
+        S
+    ) * _j2b_l1_tensor3(gradq, h)
 
     assert lhs <= (1.0 + 1e-9) * max(rhs, 1e-12)

@@ -26,7 +26,10 @@ def _dc_d1_scalar(f, axis):
 
 def _dc_grad_vector(v):
     return np.stack(
-        [np.stack([_dc_d1_scalar(v[c], a) for a in range(3)], axis=0) for c in range(3)],
+        [
+            np.stack([_dc_d1_scalar(v[c], a) for a in range(3)], axis=0)
+            for c in range(3)
+        ],
         axis=0,
     )
 
@@ -91,11 +94,11 @@ def _dc_mat_norm(M):
 
 
 def _dc_l1_vec(v, h):
-    return float(np.sum(_dc_vec_norm(v)) * (h ** 3))
+    return float(np.sum(_dc_vec_norm(v)) * (h**3))
 
 
 def _dc_l1_scalar(f, h):
-    return float(np.sum(np.abs(f)) * (h ** 3))
+    return float(np.sum(np.abs(f)) * (h**3))
 
 
 def _dc_linf_mat(M):
@@ -103,7 +106,7 @@ def _dc_linf_mat(M):
 
 
 def _dc_volume_integral(f, h):
-    return float(np.sum(f) * (h ** 3))
+    return float(np.sum(f) * (h**3))
 
 
 def _dc_shell_index(k):
@@ -134,7 +137,9 @@ def _dc_scaled_field_from_base(X, Y, Z, mu=2.0, k=4):
 
 
 def _dc_commutator(u, w, j):
-    return _dc_bandpass_vector(_dc_advection(u, w), j) - _dc_advection(u, _dc_bandpass_vector(w, j))
+    return _dc_bandpass_vector(_dc_advection(u, w), j) - _dc_advection(
+        u, _dc_bandpass_vector(w, j)
+    )
 
 
 def test_ddyo_commutator_split_is_exact():
@@ -162,7 +167,11 @@ def test_ddyo_same_scale_commutator_bound_single_shell():
     comm = _dc_commutator(uj, wj, j)
 
     lhs = _dc_l1_vec(comm, h)
-    rhs = (2.0 ** (-j)) * _dc_linf_mat(_dc_grad_vector(uj)) * _dc_l1_vec(_dc_grad_vector(wj), h)
+    rhs = (
+        (2.0 ** (-j))
+        * _dc_linf_mat(_dc_grad_vector(uj))
+        * _dc_l1_vec(_dc_grad_vector(wj), h)
+    )
 
     assert lhs <= 8.0 * max(rhs, 1e-12)
 
@@ -192,7 +201,11 @@ def test_ddyo_normalized_commutator_ratio_integer_dilation_stable():
     u1j = _dc_bandpass_vector(u1, j1)
     w1j = _dc_bandpass_vector(w1, j1)
     lhs1 = _dc_l1_vec(_dc_commutator(u1j, w1j, j1), h1)
-    rhs1 = (2.0 ** (-j1)) * _dc_linf_mat(_dc_grad_vector(u1j)) * _dc_l1_vec(_dc_grad_vector(w1j), h1)
+    rhs1 = (
+        (2.0 ** (-j1))
+        * _dc_linf_mat(_dc_grad_vector(u1j))
+        * _dc_l1_vec(_dc_grad_vector(w1j), h1)
+    )
     q1 = lhs1 / max(rhs1, 1e-12)
 
     mu = 2.0
@@ -204,21 +217,32 @@ def test_ddyo_normalized_commutator_ratio_integer_dilation_stable():
     u2j = _dc_bandpass_vector(u2, j2)
     w2j = _dc_bandpass_vector(w2, j2)
     lhs2 = _dc_l1_vec(_dc_commutator(u2j, w2j, j2), h2)
-    rhs2 = (2.0 ** (-j2)) * _dc_linf_mat(_dc_grad_vector(u2j)) * _dc_l1_vec(_dc_grad_vector(w2j), h2)
+    rhs2 = (
+        (2.0 ** (-j2))
+        * _dc_linf_mat(_dc_grad_vector(u2j))
+        * _dc_l1_vec(_dc_grad_vector(w2j), h2)
+    )
     q2 = lhs2 / max(rhs2, 1e-12)
 
     assert abs(q1 - q2) / max(abs(q1), 1e-12) < 1.5e-1
 
+
 def _dc_bandpass_matrix(M, j):
     return np.stack(
-        [np.stack([_dc_bandpass_scalar(M[a, b], j) for b in range(3)], axis=0) for a in range(3)],
+        [
+            np.stack([_dc_bandpass_scalar(M[a, b], j) for b in range(3)], axis=0)
+            for a in range(3)
+        ],
         axis=0,
     )
 
 
 def _dc_bandpass_tensor2(T, j):
     return np.stack(
-        [np.stack([_dc_bandpass_scalar(T[a, b], j) for b in range(3)], axis=0) for a in range(3)],
+        [
+            np.stack([_dc_bandpass_scalar(T[a, b], j) for b in range(3)], axis=0)
+            for a in range(3)
+        ],
         axis=0,
     )
 
@@ -227,7 +251,10 @@ def _dc_grad_matrix(M):
     return np.stack(
         [
             np.stack(
-                [np.stack([_dc_d1_scalar(M[a, b], k) for k in range(3)], axis=0) for b in range(3)],
+                [
+                    np.stack([_dc_d1_scalar(M[a, b], k) for k in range(3)], axis=0)
+                    for b in range(3)
+                ],
                 axis=0,
             )
             for a in range(3)
@@ -240,7 +267,10 @@ def _dc_grad_tensor2(T):
     return np.stack(
         [
             np.stack(
-                [np.stack([_dc_d1_scalar(T[a, b], k) for k in range(3)], axis=0) for b in range(3)],
+                [
+                    np.stack([_dc_d1_scalar(T[a, b], k) for k in range(3)], axis=0)
+                    for b in range(3)
+                ],
                 axis=0,
             )
             for a in range(3)
@@ -262,19 +292,19 @@ def _dc_tensor3_norm(T):
 
 
 def _dc_l1_tensor2(Q, h):
-    return float(np.sum(_dc_tensor2_norm(Q)) * (h ** 3))
+    return float(np.sum(_dc_tensor2_norm(Q)) * (h**3))
 
 
 def _dc_l2_matrix(M, h):
-    return float(np.sqrt(np.sum(M * M) * (h ** 3)))
+    return float(np.sqrt(np.sum(M * M) * (h**3)))
 
 
 def _dc_l2_tensor2(Q, h):
-    return float(np.sqrt(np.sum(Q * Q) * (h ** 3)))
+    return float(np.sqrt(np.sum(Q * Q) * (h**3)))
 
 
 def _dc_l2_tensor3(T, h):
-    return float(np.sqrt(np.sum(T * T) * (h ** 3)))
+    return float(np.sqrt(np.sum(T * T) * (h**3)))
 
 
 def _dc_linf_tensor3(T):
@@ -282,7 +312,9 @@ def _dc_linf_tensor3(T):
 
 
 def _dc_commutator_mat_tensor2(M, Q, j):
-    return _dc_bandpass_tensor2(_dc_mat_tensor2(M, Q), j) - _dc_mat_tensor2(M, _dc_bandpass_tensor2(Q, j))
+    return _dc_bandpass_tensor2(_dc_mat_tensor2(M, Q), j) - _dc_mat_tensor2(
+        M, _dc_bandpass_tensor2(Q, j)
+    )
 
 
 def _dc_commutator_epsilon_proxy(M, Q, j, h):
@@ -430,9 +462,15 @@ def test_ddyo_symmetric_pairing_recovers_full_pairing_after_rotation_cancellatio
     Sj = _dc_sym_grad(uj)
     Aj = _dc_skew_grad(uj)
 
-    full = (2.0 ** (2 * j)) * _dc_volume_integral(np.sum(_dc_hprime(wj) * _dc_tensor_vec(Jj, wj), axis=0), h)
-    sym = (2.0 ** (2 * j)) * _dc_volume_integral(np.sum(_dc_hprime(wj) * _dc_tensor_vec(Sj, wj), axis=0), h)
-    rot = (2.0 ** (2 * j)) * _dc_volume_integral(np.sum(_dc_hprime(wj) * _dc_tensor_vec(Aj, wj), axis=0), h)
+    full = (2.0 ** (2 * j)) * _dc_volume_integral(
+        np.sum(_dc_hprime(wj) * _dc_tensor_vec(Jj, wj), axis=0), h
+    )
+    sym = (2.0 ** (2 * j)) * _dc_volume_integral(
+        np.sum(_dc_hprime(wj) * _dc_tensor_vec(Sj, wj), axis=0), h
+    )
+    rot = (2.0 ** (2 * j)) * _dc_volume_integral(
+        np.sum(_dc_hprime(wj) * _dc_tensor_vec(Aj, wj), axis=0), h
+    )
 
     assert abs(rot) <= 1e-10 * max(1.0, abs(sym))
     assert abs(full - sym) <= 1e-10 * max(1.0, abs(full), abs(sym))
@@ -445,7 +483,9 @@ def _dc_pair_commutator_with_hprime(comm, w):
 def _dc_pairing_epsilon_proxy(M, Q, w, j, h):
     gradM = _dc_grad_matrix(M)
     gradQ = _dc_grad_tensor2(Q)
-    lhs = _dc_l1_vec(_dc_pair_commutator_with_hprime(_dc_commutator_mat_tensor2(M, Q, j), w), h)
+    lhs = _dc_l1_vec(
+        _dc_pair_commutator_with_hprime(_dc_commutator_mat_tensor2(M, Q, j), w), h
+    )
     rhs = (2.0 ** (-j)) * (
         _dc_l2_tensor3(gradM, h) * _dc_l2_tensor2(Q, h)
         + _dc_l2_matrix(M, h) * _dc_l2_tensor3(gradQ, h)
@@ -467,7 +507,9 @@ def test_ddyo_commutator_pairing_split_is_exact():
     qj = _dc_grad_vector(wj)
 
     lhs = _dc_pair_commutator_with_hprime(_dc_commutator_mat_tensor2(Jj, qj, j), wj)
-    rhs = _dc_pair_commutator_with_hprime(_dc_commutator_mat_tensor2(Sj, qj, j), wj) +           _dc_pair_commutator_with_hprime(_dc_commutator_mat_tensor2(Aj, qj, j), wj)
+    rhs = _dc_pair_commutator_with_hprime(
+        _dc_commutator_mat_tensor2(Sj, qj, j), wj
+    ) + _dc_pair_commutator_with_hprime(_dc_commutator_mat_tensor2(Aj, qj, j), wj)
 
     err = float(np.max(np.abs(lhs - rhs)))
     ref = max(1.0, float(np.max(np.abs(lhs))))
@@ -486,7 +528,9 @@ def test_ddyo_rotation_commutator_pairing_lower_order_proxy():
     wj = _dc_bandpass_vector(w, j)
     gradAj = _dc_grad_matrix(Aj)
 
-    lhs = _dc_l1_vec(_dc_pair_commutator_with_hprime(_dc_commutator_mat_tensor2(Aj, qj, j), wj), h)
+    lhs = _dc_l1_vec(
+        _dc_pair_commutator_with_hprime(_dc_commutator_mat_tensor2(Aj, qj, j), wj), h
+    )
     rhs = (2.0 ** (-j)) * _dc_linf_tensor3(gradAj) * _dc_l1_tensor2(qj, h)
 
     assert lhs <= 64.0 * max(rhs, 1e-12)

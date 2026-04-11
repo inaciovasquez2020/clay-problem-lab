@@ -1,6 +1,7 @@
 import math
 import numpy as np
 
+
 def test_zero_shell_mean_does_not_imply_pairing_cancellation():
     n = 96
     grid = np.linspace(0.0, 2.0 * math.pi, n, endpoint=False)
@@ -16,9 +17,9 @@ def test_zero_shell_mean_does_not_imply_pairing_cancellation():
     S13 = 0.5 * d_x_u3
     omega2 = -d_x_u3
 
-    mean_S13 = np.sum(S13) * (h ** 3)
-    mean_omega2 = np.sum(omega2) * (h ** 3)
-    pairing = np.sum(S13 * omega2) * (h ** 3)
+    mean_S13 = np.sum(S13) * (h**3)
+    mean_omega2 = np.sum(omega2) * (h**3)
+    pairing = np.sum(S13 * omega2) * (h**3)
 
     assert abs(mean_S13) < 1e-12
     assert abs(mean_omega2) < 1e-12

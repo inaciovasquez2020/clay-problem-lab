@@ -41,7 +41,7 @@ def sym_grad(u, h):
 
 def drem_residual(w, h):
     mag = np.sqrt(np.sum(w * w, axis=0))
-    return np.sum(mag ** 1.5) * (h ** 3)
+    return np.sum(mag**1.5) * (h**3)
 
 
 def matrix_exp_symmetric_field(S, tau):
@@ -73,7 +73,7 @@ def regularized_alignment_defect(w, S, tau=4.0, eps=1e-12):
 def nak_regularized_residual(w, S, h, tau=4.0):
     mag = np.sqrt(np.sum(w * w, axis=0))
     defect = regularized_alignment_defect(w, S, tau=tau)
-    return np.sum(defect * (mag ** 1.5)) * (h ** 3)
+    return np.sum(defect * (mag**1.5)) * (h**3)
 
 
 def test_regularized_nak_defect_in_unit_interval():
@@ -119,7 +119,7 @@ def test_regularized_nak_torus_integer_dilation_scales_cubically():
     S2 = sym_grad(u2, h2)
     r2 = nak_regularized_residual(w2, S2, h2, tau=4.0)
 
-    assert abs(r2 - (mu ** 3) * r1) / max((mu ** 3) * r1, 1e-12) < 8e-2
+    assert abs(r2 - (mu**3) * r1) / max((mu**3) * r1, 1e-12) < 8e-2
 
 
 def test_regularized_projector_trace_one():

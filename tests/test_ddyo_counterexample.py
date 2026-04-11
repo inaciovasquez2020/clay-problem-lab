@@ -1,14 +1,19 @@
 import math
 import numpy as np
 
+
 def deriv(f, h, axis):
     return (np.roll(f, -1, axis=axis) - np.roll(f, 1, axis=axis)) / (2.0 * h)
+
 
 def laplacian(f, h):
     out = np.zeros_like(f)
     for axis in (-3, -2, -1):
-        out += (np.roll(f, -1, axis=axis) - 2.0 * f + np.roll(f, 1, axis=axis)) / (h * h)
+        out += (np.roll(f, -1, axis=axis) - 2.0 * f + np.roll(f, 1, axis=axis)) / (
+            h * h
+        )
     return out
+
 
 def test_incompressible_velocity_can_have_non_divergence_free_strain():
     n = 48
@@ -16,11 +21,14 @@ def test_incompressible_velocity_can_have_non_divergence_free_strain():
     h = float(grid[1] - grid[0])
     X, Y, Z = np.meshgrid(grid, grid, grid, indexing="ij")
 
-    u = np.stack([
-        np.sin(Y),
-        np.sin(Z),
-        np.sin(X),
-    ], axis=0)
+    u = np.stack(
+        [
+            np.sin(Y),
+            np.sin(Z),
+            np.sin(X),
+        ],
+        axis=0,
+    )
 
     grad = np.zeros((3, 3, n, n, n), dtype=float)
     spatial_axes = (-3, -2, -1)

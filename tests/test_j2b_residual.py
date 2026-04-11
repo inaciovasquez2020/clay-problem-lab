@@ -60,18 +60,18 @@ def tensor_pointwise_norm(T):
 
 def drem_residual(w, h):
     mag = np.sqrt(np.sum(w * w, axis=0))
-    return np.sum(mag ** 1.5) * (h ** 3)
+    return np.sum(mag**1.5) * (h**3)
 
 
 def j2b_residual(grad_w, h):
     mag = tensor_pointwise_norm(grad_w)
-    return np.sum(mag) * (h ** 3)
+    return np.sum(mag) * (h**3)
 
 
 def j2b_sigma(grad_S, grad_w, h):
     magS = tensor_pointwise_norm(grad_S)
     magW = tensor_pointwise_norm(grad_w)
-    return np.sum(magS * magW) * (h ** 3)
+    return np.sum(magS * magW) * (h**3)
 
 
 def test_j2b_residual_nonnegative():
@@ -97,7 +97,7 @@ def test_j2b_torus_integer_dilation_scales_cubically():
     grad_w2 = grad_vector(w2, h2)
     r2 = j2b_residual(grad_w2, h2)
 
-    assert abs(r2 - (mu ** 3) * r1) / max((mu ** 3) * r1, 1e-12) < 7e-2
+    assert abs(r2 - (mu**3) * r1) / max((mu**3) * r1, 1e-12) < 7e-2
 
 
 def test_j2b_sigma_holder_l1_linf_form():
@@ -121,8 +121,8 @@ def test_j2b_residual_dominates_no_more_than_sampled_higher_norm():
     w = curl(u, h)
     grad_w = grad_vector(w, h)
     mag = tensor_pointwise_norm(grad_w)
-    l1 = np.sum(mag) * (h ** 3)
-    l12 = (np.sum(mag ** 1.2) * (h ** 3)) ** (1.0 / 1.2)
+    l1 = np.sum(mag) * (h**3)
+    l12 = (np.sum(mag**1.2) * (h**3)) ** (1.0 / 1.2)
     volume = (2.0 * math.pi) ** 3
     rhs = (volume ** (1.0 - 1.0 / 1.2)) * l12
     assert l1 <= rhs * (1.0 + 1e-9)

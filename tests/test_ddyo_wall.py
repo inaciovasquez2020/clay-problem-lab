@@ -70,7 +70,7 @@ def bandpass_vector(v, j):
 
 
 def volume_integral(f, h):
-    return float(np.sum(f) * (h ** 3))
+    return float(np.sum(f) * (h**3))
 
 
 def pointwise_norm(v):
@@ -93,7 +93,7 @@ def h_density(v, eps=1e-12):
 
 def lp_norm_vector(v, p, h):
     mag = pointwise_norm(v)
-    return float(np.power(np.sum(np.power(mag, p)) * (h ** 3), 1.0 / p))
+    return float(np.power(np.sum(np.power(mag, p)) * (h**3), 1.0 / p))
 
 
 def advection(u, w):
@@ -284,7 +284,7 @@ def test_ddyo_normalized_active_lambda_is_integer_dilation_stable():
     u1j = bandpass_vector(u1, j1)
     S1j = sym_grad(u1j)
     w1j = bandpass_vector(curl(u1), j1)
-    q1 = active_lambda_max(S1j, w1j, j1, h1) / (2.0 ** j1)
+    q1 = active_lambda_max(S1j, w1j, j1, h1) / (2.0**j1)
 
     mu = 2.0
     X2, Y2, Z2, h2 = make_grid(n=64)
@@ -293,13 +293,16 @@ def test_ddyo_normalized_active_lambda_is_integer_dilation_stable():
     u2j = bandpass_vector(u2, j2)
     S2j = sym_grad(u2j)
     w2j = bandpass_vector(curl(u2), j2)
-    q2 = active_lambda_max(S2j, w2j, j2, h2) / (2.0 ** j2)
+    q2 = active_lambda_max(S2j, w2j, j2, h2) / (2.0**j2)
 
     assert abs(q1 - q2) / max(abs(q1), 1e-12) < 5e-2
 
+
 def active_set_mask_theta(wj, j, h, theta):
-    volume = float(np.prod(wj.shape[1:]) * (h ** 3))
-    threshold = theta * (2.0 ** (-j)) * lp_norm_vector(wj, 4.0 / 3.0, h) / (volume ** 0.75)
+    volume = float(np.prod(wj.shape[1:]) * (h**3))
+    threshold = (
+        theta * (2.0 ** (-j)) * lp_norm_vector(wj, 4.0 / 3.0, h) / (volume**0.75)
+    )
     return pointwise_norm(wj) >= threshold
 
 
@@ -324,13 +327,16 @@ def test_ddyo_theta_active_set_nonempty_multishell():
         mask = active_set_mask_theta(wj, j, h, theta=0.5)
         assert np.any(mask)
 
+
 def shell_residual_on_mask(wj, j, h, mask):
     return (2.0 ** (2 * j)) * volume_integral(np.where(mask, h_density(wj), 0.0), h)
 
 
 def positive_strain_hh_term_on_mask(Sj, wj, j, h, mask):
     integrand = np.sum(hprime(wj) * strain_action(Sj, wj), axis=0)
-    return (2.0 ** (2 * j)) * volume_integral(np.where(mask, np.maximum(integrand, 0.0), 0.0), h)
+    return (2.0 ** (2 * j)) * volume_integral(
+        np.where(mask, np.maximum(integrand, 0.0), 0.0), h
+    )
 
 
 def positive_lambda_sup_on_mask(Sj, mask):
@@ -385,6 +391,7 @@ def test_ddyo_theta_localized_proxy_split_controls_positive_hh_multishell():
 
         assert lhs <= (1.0 + 1e-9) * max(rhs_active + rhs_tail, 1e-12)
 
+
 def test_ddyo_theta_tail_ratio_decreases_single_shell():
     X, Y, Z, h = make_grid(n=24)
     u = base_velocity_shell(X, Y, Z, k=4)
@@ -428,6 +435,7 @@ def test_ddyo_theta_tail_ratio_decreases_multishell():
         assert ratios[0] < 1.0 - 1e-12
         assert ratios[3] <= 1.0 + 1e-12
 
+
 def test_ddyo_theta_tail_smallness_gap_single_shell():
     X, Y, Z, h = make_grid(n=24)
     u = base_velocity_shell(X, Y, Z, k=4)
@@ -435,8 +443,12 @@ def test_ddyo_theta_tail_smallness_gap_single_shell():
     wj = bandpass_vector(curl(u), j)
 
     total = shell_residual(wj, j, h)
-    tail_50 = shell_residual_on_mask(wj, j, h, ~active_set_mask_theta(wj, j, h, theta=0.50))
-    tail_90 = shell_residual_on_mask(wj, j, h, ~active_set_mask_theta(wj, j, h, theta=0.90))
+    tail_50 = shell_residual_on_mask(
+        wj, j, h, ~active_set_mask_theta(wj, j, h, theta=0.50)
+    )
+    tail_90 = shell_residual_on_mask(
+        wj, j, h, ~active_set_mask_theta(wj, j, h, theta=0.90)
+    )
 
     r50 = tail_50 / max(total, 1e-12)
     r90 = tail_90 / max(total, 1e-12)
@@ -454,8 +466,12 @@ def test_ddyo_theta_tail_smallness_gap_multishell():
         wj = bandpass_vector(curl(u), j)
 
         total = shell_residual(wj, j, h)
-        tail_50 = shell_residual_on_mask(wj, j, h, ~active_set_mask_theta(wj, j, h, theta=0.50))
-        tail_90 = shell_residual_on_mask(wj, j, h, ~active_set_mask_theta(wj, j, h, theta=0.90))
+        tail_50 = shell_residual_on_mask(
+            wj, j, h, ~active_set_mask_theta(wj, j, h, theta=0.50)
+        )
+        tail_90 = shell_residual_on_mask(
+            wj, j, h, ~active_set_mask_theta(wj, j, h, theta=0.90)
+        )
 
         r50 = tail_50 / max(total, 1e-12)
         r90 = tail_90 / max(total, 1e-12)

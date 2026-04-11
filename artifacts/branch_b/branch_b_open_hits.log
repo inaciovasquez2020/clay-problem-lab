@@ -1,0 +1,94 @@
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:14:- J2B sampled frontier now includes:
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:26:## DDYO commutator frontier
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:32:## DDYO commutator absorbability frontier
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:39:## Exact skew-adjoint reduction frontier
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:45:## Symmetric commutator pairing frontier
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:52:## Truthful frontier
+docs/math/DDYO_DEVIATORIC_H1_BMO_ROUTE.md:39:A deterministic proxy for the missing lemma is:
+docs/math/DDYO_DEVIATORIC_H1_BMO_ROUTE.md:49:This document records the current frontier route only.
+docs/status/DDYO_CHECKPOINT_a641031.md:12:## Frozen frontier files
+docs/status/DDYO_CHECKPOINT_a641031.md:31:this is sufficient for the shell-product H^1 gain and the target deviatoric coercivity bound.
+docs/status/DDYO_CHECKPOINT_a641031.md:35:- Formally open at the shell-product moment frontier
+docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:12:## Frozen frontier files
+docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:16:## Current weakest sufficient remaining lemma
+docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:30:this is sufficient to recover the shell-product H^1 gain and the target deviatoric coercivity bound.
+docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:34:- Formally open at the shell-product moment frontier
+docs/math/DDYO_PAIRED_DECOMPOSITION_5P_COVERAGE.md:59:### Claim 5: dyadic remainder gain
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:1:# DDYO RA1n Status — 2026-04-10
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:12:## Frozen frontier files
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:18:## RA1n (conditional closure atom)
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:19:Assume there exists \(C_{\mathrm{RA1n}}<\infty\) such that for all dyadic indices with \(|j-k|\le C\), all tensor indices \(a,b\), and all coordinate indices \(\ell\),
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:29:C_{\mathrm{RA1n}}\,2^{-j}2^{-k}\,\|\omega_k\|_{L^1}.
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:33:If RA1n holds, then the shell-product \(H^1\) gain, deviatoric coercivity estimate,
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:34:Claim 5, high-high absorbability, and final DDYO continuum closure follow.
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38:- Formally conditional on RA1n
+docs/status/DDYO_RA1N_STATUS_2026_04_10.md:39:- No proof of RA1n is claimed in this repository
+docs/math/DDYO_GENUINE_DIPOLE_CANCELLATION_ROUTE.md:13:## Sole remaining Claim 5 route
+docs/math/DDYO_GENUINE_DIPOLE_CANCELLATION_ROUTE.md:49:This is the sole remaining primary route for Claim 5 after elimination of divergence-free strain and pure mean-zero cancellation.
+docs/math/DDYO_COUNTEREXAMPLE_ZERO_SHELL_MEAN_NOT_SUFFICIENT.md:49:Therefore any Claim 5 route that uses only
+docs/math/DREM_RESIDUAL_STATUS.md:46:The missing closure lemma is an estimate of the form
+docs/math/DDYO_FIRST_ORDER_LEAKAGE_SPLIT.md:19:### Branch B: lower-order routing
+docs/math/DDYO_FIRST_ORDER_LEAKAGE_SPLIT.md:29:Either Branch A or Branch B is sufficient to conclude that the remaining paired remainder satisfies
+docs/math/DDYO_FIRST_ORDER_LEAKAGE_SPLIT.md:42:This reduces the hybrid DDYO Claim 5 frontier to one final dichotomy:
+docs/math/DDYO_H_PRIME_ROUTE_CRITERION.md:11:Therefore the weakest sufficient next step is to declare the admissible \(\mathcal H\)-model and route criterion explicitly.
+docs/math/DDYO_HYBRID_CLAIM5_ROUTE.md:1:# DDYO Hybrid Claim 5 Route
+docs/math/DDYO_HYBRID_CLAIM5_ROUTE.md:5:The remaining Claim 5 branch is the hybrid route:
+docs/math/DDYO_DEVIATORIC_COERCIVITY_FRONTIER.md:53:This file records the exact remaining mathematical frontier only.
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:3:## Verified sampled frontier
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:6:\text{Verified sampled frontier} = 49/49.
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:14:\text{J2B frontier},\quad
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:15:\text{DDYO commutator frontier},\quad
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:18:\text{symmetric commutator pairing frontier}.
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:40:## Truthful frontier
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:45:\text{continuum symmetric commutator pairing absorbability remains open;}
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:48:\text{hence continuum DDYO high-high absorbability remains open;}
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:50:\text{hence the full continuum solve remains open.}
+docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:64:## Weakest sufficient conditional closure
+docs/math/DDYO_RA1N_CONDITIONAL.md:1:# DDYO RA1n (Conditional)
+docs/math/DDYO_RA1N_CONDITIONAL.md:4:RA1n = Rigidity Atom 1n
+docs/math/DDYO_RA1N_CONDITIONAL.md:8:Assume there exists a constant \(C_{\mathrm{RA1n}}<\infty\) such that for all dyadic indices with \(|j-k|\le C\), all tensor indices \(a,b\), and all coordinate indices \(\ell\),
+docs/math/DDYO_RA1N_CONDITIONAL.md:18:C_{\mathrm{RA1n}}\,2^{-j}2^{-k}\,\|\omega_k\|_{L^1}.
+docs/math/DDYO_RA1N_CONDITIONAL.md:23:RA1n implies the shell-product \(H^1\) gain
+docs/math/DDYO_RA1N_CONDITIONAL.md:30:Hence RA1n implies the deviatoric coercivity estimate
+docs/math/DDYO_RA1N_CONDITIONAL.md:42:Hence RA1n implies Claim 5 / paired remainder closure
+docs/math/DDYO_RA1N_CONDITIONAL.md:51:Hence RA1n implies high-high absorbability closure and final DDYO continuum closure.
+docs/math/DDYO_PAIRED_PARACOMMUTATOR_H1_BMO.md:26:This is an admissible alternate route for Claim 5.
+docs/math/VARIANT_FRAMEWORK_STATUS.md:56:- continuum evolution identity conditional on spectral gap
+docs/math/VARIANT_FRAMEWORK_STATUS.md:115:## Truthful frontier
+docs/math/DDYO_CLAIM5_TARGET.md:1:# DDYO Claim 5 Target
+docs/math/DDYO_CLAIM5_TARGET.md:3:## Sole remaining Claim 5 target
+docs/math/DDYO_CLAIM5_TARGET.md:23:This file freezes Claim 5 as the sole terminal remainder target.
+docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:3:## Precise missing theorem
+docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:19:this implies the shell-product H^1 gain, the deviatoric coercivity estimate,
+docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:20:Claim 5, and final DDYO continuum closure.
+docs/math/DDYO_SOLVE_REQUIREMENTS.md:53:### 5. Claim 5 / paired remainder closure
+docs/math/DDYO_SOLVE_REQUIREMENTS.md:68:The sole real missing object is Item 2, or any equivalent estimate strong enough to imply Item 4.
+docs/math/DDYO_SOLVE_REQUIREMENTS.md:73:Formally open at the shell-product moment frontier.
+docs/math/DDYO_SECOND_GAIN_ROUTE.md:84:The remaining frontier is a pairing-level or multiplier-level second-order cancellation.
+docs/math/NAK_SPECTRAL_GAP_LEMMA.md:3:## Minimal missing assumption
+docs/math/NAK_SPECTRAL_GAP_LEMMA.md:71:The weakest sufficient new ingredient is a uniform spectral-gap lemma for the top strain eigenvalue on the vorticity support.
+docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:1:# DDYO Claim 5 Final Dichotomy
+docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:14:### Branch B: lower-order routing
+docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:34:Conditional frontier.
+docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:35:This is the minimal remaining object for hybrid DDYO Claim 5 after first-order post-symmetrization.
+docs/math/DDYO_REMAINDER_ROUTING_LEMMA.md:6:The weakest sufficient routing statement is
+docs/math/DDYO_REMAINDER_ROUTING_LEMMA.md:27:then Claim 5 closes.
+docs/math/DDYO_PAIRING_IBP_FRONTIER.md:7:Thus the weakest sufficient next ingredient is to replace the monolithic pairing
+docs/math/DDYO_CLAIM5_POST_COUNTEREXAMPLE_BRANCH.md:1:# DDYO Claim 5 Post-Counterexample Branch
+docs/math/DDYO_CLAIM5_POST_COUNTEREXAMPLE_BRANCH.md:11:## Weakest remaining Claim 5 branch
+docs/math/DDYO_CLAIM5_POST_COUNTEREXAMPLE_BRANCH.md:54:This freezes the shell-moment / dipole-cancellation route as the primary remaining route for Claim 5 after elimination of the divergence-free strain branch.
+docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:1:# Branch B closure checklist
+docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:42:- `docs/status/DDYO_RA1N_STATUS_2026_04_10.md:1:# DDYO RA1n Status — 2026-04-10`
+docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:47:- `docs/status/DDYO_RA1N_STATUS_2026_04_10.md:34:Claim 5, high-high absorbability, and final DDYO continuum closure follow.`
+docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:57:- `docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:26:## DDYO commutator frontier`
+docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:58:- `docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:32:## DDYO commutator absorbability frontier`
+docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:79:- `docs/math/DDYO_HYBRID_CLAIM5_ROUTE.md:1:# DDYO Hybrid Claim 5 Route`
+docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:92:- `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:20:Claim 5, and final DDYO continuum closure.`
+docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:93:- `docs/math/DDYO_CLAIM5_TARGET.md:1:# DDYO Claim 5 Target`
+docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:97:- `docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:15:\text{DDYO commutator frontier},\quad`
+docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:101:- `docs/math/DDYO_SYMMETRIC_COMMUTATOR_PAIRING_FRONTIER.md:48:\text{hence continuum DDYO high-high absorbability remains open;}`
+docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:114:- `docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:1:# DDYO Claim 5 Final Dichotomy`
+docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:115:- `docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:14:### Branch B: lower-order routing`
+docs/math/BRANCH_B_CLOSURE_CHECKLIST.md:117:- `docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md:35:This is the minimal remaining object for hybrid DDYO Claim 5 after first-order post-symmetrization.`
+docs/math/DDYO_SHELL_PRODUCT_MOMENT_FRONTIER.md:48:The program remains formally open at the shell-product moment-control frontier.
+docs/math/DDYO_MOLLIFIED_PROJECTOR_REDUCTION.md:27:If this reduction holds, the continuum DDYO symmetric commutator pairing frontier reduces to the mollified identity/bound pair:

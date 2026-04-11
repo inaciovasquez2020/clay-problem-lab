@@ -27,7 +27,7 @@ def shell_mask(n, j):
     freq = fftfreq_integer(n)
     KX, KY, KZ = np.meshgrid(freq, freq, freq, indexing="ij")
     M = np.maximum.reduce([np.abs(KX), np.abs(KY), np.abs(KZ)])
-    lo = 2 ** j
+    lo = 2**j
     hi = 2 ** (j + 1)
     return (M >= lo) & (M < hi)
 

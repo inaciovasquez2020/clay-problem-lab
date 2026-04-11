@@ -1,0 +1,48 @@
+{
+  "derivative_commutator_bound": {
+    "status": "MISSING",
+    "hits": []
+  },
+  "stress_transport_potential": {
+    "status": "MISSING",
+    "hits": []
+  },
+  "s2_defect_budget": {
+    "status": "MISSING",
+    "hits": []
+  },
+  "f2_flux_budget": {
+    "status": "MISSING",
+    "hits": []
+  },
+  "final_branch_b_theorem": {
+    "status": "FOUND",
+    "hits": [
+      {
+        "file": "docs/math/DDYO_CLAIM5_FINAL_DICHOTOMY.md",
+        "lines": [
+          [
+            14,
+            "### Branch B: lower-order routing"
+          ],
+          [
+            22,
+            "Either branch implies that the remaining paired remainder satisfies"
+          ]
+        ]
+      }
+    ]
+  },
+  "a2_term": {
+    "status": "MISSING",
+    "hits": []
+  },
+  "t_term": {
+    "status": "MISSING",
+    "hits": []
+  },
+  "b2_term": {
+    "status": "MISSING",
+    "hits": []
+  }
+}

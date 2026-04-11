@@ -6,4 +6,5 @@ def simulate(n):
         steps += 1
     return steps
 
+
 print(simulate(100))

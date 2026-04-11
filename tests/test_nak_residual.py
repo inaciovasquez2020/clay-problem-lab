@@ -41,7 +41,7 @@ def sym_grad(u, h):
 
 def drem_residual(w, h):
     mag = np.sqrt(np.sum(w * w, axis=0))
-    return np.sum(mag ** 1.5) * (h ** 3)
+    return np.sum(mag**1.5) * (h**3)
 
 
 def principal_eigenvector_field(S):
@@ -58,14 +58,14 @@ def alignment_defect(w, S, eps=1e-12):
     what = w / np.maximum(mag, eps)
     e1 = principal_eigenvector_field(S)
     dot = np.sum(what * e1, axis=0)
-    defect = 1.0 - dot ** 2
+    defect = 1.0 - dot**2
     return np.clip(defect, 0.0, 1.0)
 
 
 def nak_residual(w, S, h):
     mag = np.sqrt(np.sum(w * w, axis=0))
     defect = alignment_defect(w, S)
-    return np.sum(defect * (mag ** 1.5)) * (h ** 3)
+    return np.sum(defect * (mag**1.5)) * (h**3)
 
 
 def test_nak_residual_nonnegative():
@@ -111,4 +111,4 @@ def test_nak_torus_integer_dilation_scales_cubically():
     S2 = sym_grad(u2, h2)
     r2 = nak_residual(w2, S2, h2)
 
-    assert abs(r2 - (mu ** 3) * r1) / max((mu ** 3) * r1, 1e-12) < 7e-2
+    assert abs(r2 - (mu**3) * r1) / max((mu**3) * r1, 1e-12) < 7e-2

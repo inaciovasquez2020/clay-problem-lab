@@ -1,6 +1,6 @@
 # DDYO Completion Truth Test
 
-- UTC: 2026-04-11T23:29:48.777984+00:00
+- UTC: 2026-04-11T23:35:29.836899+00:00
 - Spec: `artifacts/audit/ddyo_completion_truth_spec.json`
 - Scope files: 97
 
@@ -23,6 +23,22 @@ docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:3870:./artifacts/branch_b/branch_b_open_hit
 docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:3879:./artifacts/branch_b/branch_b_open_hits.log-24-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38:- Formally conditional on RA1n
 docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:4140:./docs/math/DDYO_RA1N_PROOF.md-6-No theorem-level proof is currently present in this repository.
 docs/math/DDYO_GJ_CONTEXT_EXTRACT_CLEAN.md:2716:./docs/math/DDYO_RA1N_PROOF.md-6-No theorem-level proof is currently present in this repository.
+docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:13:- `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25`: No theorem-level proof is currently present in this repository.
+docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:14:- `docs/math/DDYO_RA1N_TARGET_THEOREM.md:23`: No theorem-level proof is currently present in this repository.
+docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:16:- `docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38`: - Formally conditional on RA1n
+docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:17:- `docs/math/DDYO_SOLVE_REQUIREMENTS.md:62`: Formally open at the shell-product moment frontier.
+docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:18:- `docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:5`: - Formally open at the shell-product moment frontier
+docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:19:- `docs/status/DDYO_CHECKPOINT_a641031.md:5`: - Formally open at the shell-product moment frontier
+docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:14:- `docs/math/DDYO_RA1N_PROOF.md:6`: No theorem-level proof is currently present in this repository.
+docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:17:- `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:23`: No theorem-level proof is currently present in this repository.
+docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:20:- `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25`: No theorem-level proof is currently present in this repository.
+docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:22:- `docs/math/DDYO_SOLVE_REQUIREMENTS.md:62`: Formally open at the shell-product moment frontier.
+docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:24:- `docs/math/DDYO_RA1N_TARGET_THEOREM.md:23`: No theorem-level proof is currently present in this repository.
+docs/status/DDYO_FRONTIER_REGISTRY.md:13:- `docs/math/DDYO_RA1N_PROOF.md:6`: No theorem-level proof is currently present in this repository.
+docs/status/DDYO_FRONTIER_REGISTRY.md:18:- `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:23`: No theorem-level proof is currently present in this repository.
+docs/status/DDYO_FRONTIER_REGISTRY.md:21:- `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25`: No theorem-level proof is currently present in this repository.
+docs/status/DDYO_FRONTIER_REGISTRY.md:25:- `docs/math/DDYO_SOLVE_REQUIREMENTS.md:62`: Formally open at the shell-product moment frontier.
+docs/status/DDYO_FRONTIER_REGISTRY.md:27:- `docs/math/DDYO_RA1N_TARGET_THEOREM.md:23`: No theorem-level proof is currently present in this repository.
 docs/status/DDYO_SOURCE_FRONTIER.md:17:- `docs/math/DDYO_RA1N_PROOF.md:6`: No theorem-level proof is currently present in this repository.
 docs/status/DDYO_SOURCE_FRONTIER.md:20:- `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:23`: No theorem-level proof is currently present in this repository.
 docs/status/DDYO_SOURCE_FRONTIER.md:22:- `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25`: No theorem-level proof is currently present in this repository.
@@ -31,22 +47,6 @@ docs/status/DDYO_SOURCE_FRONTIER.md:25:- `docs/math/DDYO_SOLVE_REQUIREMENTS.md:6
 docs/status/DDYO_SOURCE_FRONTIER.md:26:- `docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38`: - Formally conditional on RA1n
 docs/status/DDYO_SOURCE_FRONTIER.md:28:- `docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:5`: - Formally open at the shell-product moment frontier
 docs/status/DDYO_SOURCE_FRONTIER.md:29:- `docs/status/DDYO_CHECKPOINT_a641031.md:5`: - Formally open at the shell-product moment frontier
-docs/status/DDYO_FRONTIER_REGISTRY.md:13:- `docs/math/DDYO_RA1N_PROOF.md:6`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_FRONTIER_REGISTRY.md:18:- `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:23`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_FRONTIER_REGISTRY.md:21:- `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_FRONTIER_REGISTRY.md:25:- `docs/math/DDYO_SOLVE_REQUIREMENTS.md:62`: Formally open at the shell-product moment frontier.
-docs/status/DDYO_FRONTIER_REGISTRY.md:27:- `docs/math/DDYO_RA1N_TARGET_THEOREM.md:23`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:14:- `docs/math/DDYO_RA1N_PROOF.md:6`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:17:- `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:23`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:20:- `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:22:- `docs/math/DDYO_SOLVE_REQUIREMENTS.md:62`: Formally open at the shell-product moment frontier.
-docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:24:- `docs/math/DDYO_RA1N_TARGET_THEOREM.md:23`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:13:- `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:14:- `docs/math/DDYO_RA1N_TARGET_THEOREM.md:23`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:16:- `docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38`: - Formally conditional on RA1n
-docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:17:- `docs/math/DDYO_SOLVE_REQUIREMENTS.md:62`: Formally open at the shell-product moment frontier.
-docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:18:- `docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:5`: - Formally open at the shell-product moment frontier
-docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:19:- `docs/status/DDYO_CHECKPOINT_a641031.md:5`: - Formally open at the shell-product moment frontier
 
 ```
 ### `python3 -m pytest -q`
@@ -83,7 +83,7 @@ tests/test_ddyo_rk_definition_extracted.py:56: AssertionError
 =========================== short test summary info ============================
 FAILED tests/test_ddyo_rk_definition_extracted.py::test_single_remaining_theorem_doc_exists
 FAILED tests/test_ddyo_rk_definition_extracted.py::test_quantitative_decay_closure_target_exists
-2 failed, 70 passed in 25.49s
+2 failed, 70 passed in 25.94s
 
 ```
 

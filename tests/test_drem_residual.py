@@ -36,7 +36,7 @@ def sym_grad(u, h):
 
 
 def lpnorm_scalar(f, p, h):
-    return (np.sum(np.abs(f) ** p) * (h ** 3)) ** (1.0 / p)
+    return (np.sum(np.abs(f) ** p) * (h**3)) ** (1.0 / p)
 
 
 def lpnorm_tensor(T, p, h):
@@ -51,7 +51,7 @@ def lpnorm_vector(v, p, h):
 
 def drem_residual(w, h):
     mag = np.sqrt(np.sum(w * w, axis=0))
-    return np.sum(np.abs(mag) ** 1.5) * (h ** 3)
+    return np.sum(np.abs(mag) ** 1.5) * (h**3)
 
 
 def stretch_positive_sigma(S, w, h, eps=1e-12):
@@ -59,7 +59,7 @@ def stretch_positive_sigma(S, w, h, eps=1e-12):
     what = w / np.maximum(mag, eps)
     quad = np.einsum("i...,ij...,j...->...", what, S, what)
     pos = np.maximum(quad, 0.0)
-    return np.sum(pos * (mag ** 1.5)) * (h ** 3)
+    return np.sum(pos * (mag**1.5)) * (h**3)
 
 
 def scaled_field_from_base(X, Y, Z, mu):
@@ -78,7 +78,7 @@ def test_drem_torus_integer_dilation_scales_cubically():
     w2 = curl(u2, h2)
     r2 = drem_residual(w2, h2)
 
-    assert abs(r2 - (mu ** 3) * r1) / max((mu ** 3) * r1, 1e-12) < 5e-2
+    assert abs(r2 - (mu**3) * r1) / max((mu**3) * r1, 1e-12) < 5e-2
 
 
 def test_drem_holder_structure():

@@ -28,7 +28,7 @@ def curl(u, h):
 
 
 def scalar_lpnorm(f, p, h):
-    return (np.sum(np.abs(f) ** p) * (h ** 3)) ** (1.0 / p)
+    return (np.sum(np.abs(f) ** p) * (h**3)) ** (1.0 / p)
 
 
 def vector_lpnorm(v, p, h):
@@ -82,6 +82,6 @@ def test_drem_gn_form_on_torus_sample():
     a = gradient_l2_of_vorticity_power(w, h)
     b = scalar_lpnorm(f, 2.0, h)
 
-    rhs = (a * b)
+    rhs = a * b
 
     assert lhs <= 10.0 * max(rhs, 1e-12)

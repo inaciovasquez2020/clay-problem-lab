@@ -51,6 +51,6 @@
 
 ## Truthful frontier
 - sampled wall structure: verified
-- continuum DDYO high-high absorbability: VERIFIED via RA1n
+- continuum DDYO high-high absorbability: OPEN; conditional on RA1n
 - continuum J2B exact residual closure: open
 - full continuum solve / global regularity closure: open

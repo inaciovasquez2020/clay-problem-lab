@@ -78,5 +78,5 @@ and then show that the antisymmetric contribution cancels in the full paired com
 - b2_term
 
 ## Truthful frontier
-- continuum DDYO high-high absorbability: VERIFIED
+- continuum DDYO high-high absorbability: OPEN; conditional on RA1n
 - full continuum solve / global regularity closure: open

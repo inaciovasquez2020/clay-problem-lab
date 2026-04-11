@@ -254,7 +254,7 @@ L32: ## DDYO commutator absorbability frontier
 L39: ## Exact skew-adjoint reduction frontier
 L45: ## Symmetric commutator pairing frontier
 L52: ## Truthful frontier
-L54: - continuum DDYO high-high absorbability: VERIFIED
+L54: - continuum DDYO high-high absorbability: OPEN; conditional on RA1n
 L55: - continuum J2B exact residual closure: open
 L56: - full continuum solve / global regularity closure: open
 ```

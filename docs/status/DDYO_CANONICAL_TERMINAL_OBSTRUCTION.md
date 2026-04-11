@@ -10,10 +10,8 @@ Machine-generated from `artifacts/audit/ddyo_canonical_source_truth_report.md`.
 
 ## Priority canonical markers
 
-- `docs/math/DDYO_RA1N_PROOF.md:6`: No theorem-level proof is currently present in this repository.
 - `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25`: No theorem-level proof is currently present in this repository.
 - `docs/math/DDYO_RA1N_TARGET_THEOREM.md:23`: No theorem-level proof is currently present in this repository.
-- `docs/math/DDYO_RA1N_PROOF.md:21`: The existing Bernstein-extraction file is a proof sketch only and does not establish the missing \(2^{-k}\) gain at theorem level.
 - `docs/status/DDYO_RA1N_STATUS_2026_04_10.md:39`: - RA1n open; proof sketch only in DDYO_RA1N_MOMENT_BOUND_PROOF.md
 - `docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38`: - Formally conditional on RA1n
 - `docs/math/DDYO_SOLVE_REQUIREMENTS.md:62`: Formally open at the shell-product moment frontier.
@@ -26,8 +24,6 @@ Machine-generated from `artifacts/audit/ddyo_canonical_source_truth_report.md`.
 
 - `docs/status/DDYO_COMPLETION_DECLARATION.md:5`: INCOMPLETE.
 - `docs/status/DDYO_COMPLETION_DECLARATION.md:15`: - No unconditional closure is declared in this repository.
-- `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:23`: No theorem-level proof is currently present in this repository.
-- `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:22`: Open.
 - `docs/math/DDYO_GJ_EXPLICIT_DEFINITION.md:11`: Open.
 - `docs/math/DDYO_GJ_KERNEL_REPRESENTATION.md:17`: Open.
 

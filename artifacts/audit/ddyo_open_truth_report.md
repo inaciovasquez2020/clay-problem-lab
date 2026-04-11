@@ -1,8 +1,8 @@
 # DDYO Open Frontier Truth Test
 
-- UTC: 2026-04-11T13:06:08.129794+00:00
+- UTC: 2026-04-11T13:08:44.180435+00:00
 - Spec: `artifacts/audit/ddyo_open_truth_spec.json`
-- Scope files: 61
+- Scope files: 62
 
 
 ## Required files
@@ -19,13 +19,18 @@ DDYO_STATUS_CONSISTENCY: PASS
 
 EXPECTED_OPEN_FRONTIER_MARKERS:
 docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25:No theorem-level proof is currently present in this repository.
-docs/math/DDYO_RA1N_TARGET_THEOREM.md:23:No theorem-level proof is currently present in this repository.
 docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38:- Formally conditional on RA1n
-docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:5:- Formally open at the shell-product moment frontier
+docs/status/DDYO_FRONTIER_REGISTRY.md:13:- `docs/math/DDYO_RA1N_PROOF.md:6`: No theorem-level proof is currently present in this repository.
+docs/status/DDYO_FRONTIER_REGISTRY.md:18:- `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:23`: No theorem-level proof is currently present in this repository.
+docs/status/DDYO_FRONTIER_REGISTRY.md:21:- `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25`: No theorem-level proof is currently present in this repository.
+docs/status/DDYO_FRONTIER_REGISTRY.md:25:- `docs/math/DDYO_SOLVE_REQUIREMENTS.md:62`: Formally open at the shell-product moment frontier.
+docs/status/DDYO_FRONTIER_REGISTRY.md:27:- `docs/math/DDYO_RA1N_TARGET_THEOREM.md:23`: No theorem-level proof is currently present in this repository.
 docs/math/DDYO_RA1N_OPEN_PROBLEM.md:23:No theorem-level proof is currently present in this repository.
-docs/math/DDYO_RA1N_PROOF.md:6:No theorem-level proof is currently present in this repository.
-docs/math/DDYO_SOLVE_REQUIREMENTS.md:62:Formally open at the shell-product moment frontier.
+docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:5:- Formally open at the shell-product moment frontier
 docs/status/DDYO_CHECKPOINT_a641031.md:5:- Formally open at the shell-product moment frontier
+docs/math/DDYO_SOLVE_REQUIREMENTS.md:62:Formally open at the shell-product moment frontier.
+docs/math/DDYO_RA1N_PROOF.md:6:No theorem-level proof is currently present in this repository.
+docs/math/DDYO_RA1N_TARGET_THEOREM.md:23:No theorem-level proof is currently present in this repository.
 
 ```
 ### `python3 -m pytest -q`
@@ -33,7 +38,7 @@ docs/status/DDYO_CHECKPOINT_a641031.md:5:- Formally open at the shell-product mo
 
 ```text
 ...............................................................          [100%]
-63 passed in 25.58s
+63 passed in 24.37s
 
 ```
 

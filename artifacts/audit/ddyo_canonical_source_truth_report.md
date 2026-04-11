@@ -1,6 +1,6 @@
 # DDYO Canonical Source Truth Test
-- UTC: 2026-04-11T13:45:15.183377+00:00
-- Scope files: 9
+- UTC: 2026-04-11T13:48:15.913492+00:00
+- Scope files: 12
 
 ## Canonical source set
 - `docs/math/DDYO_RA1N_PROOF.md`
@@ -12,6 +12,9 @@
 - `docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md`
 - `docs/status/DDYO_CHECKPOINT_a641031.md`
 - `docs/status/DDYO_COMPLETION_DECLARATION.md`
+- `docs/math/DDYO_GJ_EXPLICIT_DEFINITION.md`
+- `docs/math/DDYO_GJ_KERNEL_REPRESENTATION.md`
+- `docs/math/DDYO_GJ_GRADIENT_PROOF.md`
 
 ## Required markers
 
@@ -42,6 +45,9 @@ PASS
 - `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:22`: Open.
 - `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:24`: Open.
 - `docs/math/DDYO_RA1N_TARGET_THEOREM.md:22`: Open.
+- `docs/math/DDYO_GJ_EXPLICIT_DEFINITION.md:28`: Open.
+- `docs/math/DDYO_GJ_KERNEL_REPRESENTATION.md:22`: Open.
+- `docs/math/DDYO_GJ_GRADIENT_PROOF.md:23`: Open.
 
 ## Forbidden markers
 

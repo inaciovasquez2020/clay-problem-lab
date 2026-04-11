@@ -13,6 +13,9 @@ CANONICAL = [
     Path("docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md"),
     Path("docs/status/DDYO_CHECKPOINT_a641031.md"),
     Path("docs/status/DDYO_COMPLETION_DECLARATION.md"),
+    Path("docs/math/DDYO_GJ_EXPLICIT_DEFINITION.md"),
+    Path("docs/math/DDYO_GJ_KERNEL_REPRESENTATION.md"),
+    Path("docs/math/DDYO_GJ_GRADIENT_PROOF.md"),
 ]
 
 REQUIRED = [

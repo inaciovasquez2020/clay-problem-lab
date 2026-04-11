@@ -68,3 +68,7 @@ Project goal:
 
 Create a reproducible research infrastructure for experimentation,
 verification, and exploration related to the Clay Millennium Problems.
+
+## RA1n Exact Symbol Status
+
+See `docs/status/DDYO_RA1N_RK_DEFINITION_STATUS.md`.

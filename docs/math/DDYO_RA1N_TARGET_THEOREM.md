@@ -21,3 +21,26 @@ If proved together with the zeroth-moment identity, it yields the shell-product 
 
 Open.
 No theorem-level proof is currently present in this repository.
+
+
+## Weakest sufficient finalized test
+
+The weakest sufficient finalized test currently recorded for the remaining
+gradient obstruction is:
+
+\[
+\mathrm{FsT}:=\left\{\,G_j(x)=2^{2j}\Gamma(2^j x)\ \text{for some }\Gamma,\quad
+\nabla\!\bigl(x_\ell\Gamma\bigr)\in L^\infty(\mathbb R^3)\,\right\}.
+\]
+
+Under FsT one obtains
+\[
+\|\nabla(x_\ell G_j)\|_{L^\infty}\le C\,2^{-j},
+\]
+which removes the remaining RA1n gradient obstruction.
+
+Reference:
+`docs/math/DDYO_FST_FINALIZED_TEST.md`
+
+Status: Conditional.
+

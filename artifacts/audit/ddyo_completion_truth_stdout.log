@@ -1,6 +1,6 @@
 # DDYO Completion Truth Test
 
-- UTC: 2026-04-11T23:35:29.836899+00:00
+- UTC: 2026-04-11T23:40:01.159655+00:00
 - Spec: `artifacts/audit/ddyo_completion_truth_spec.json`
 - Scope files: 97
 
@@ -18,35 +18,11 @@ PASS
 DDYO_STATUS_CONSISTENCY: PASS
 
 EXPECTED_OPEN_FRONTIER_MARKERS:
+docs/math/DDYO_GJ_CONTEXT_EXTRACT_CLEAN.md:2716:./docs/math/DDYO_RA1N_PROOF.md-6-No theorem-level proof is currently present in this repository.
 docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:2375:./artifacts/branch_b/branch_b_open_hits.log-24-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38:- Formally conditional on RA1n
 docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:3870:./artifacts/branch_b/branch_b_open_hits.log-15-docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:34:- Formally open at the shell-product moment frontier
 docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:3879:./artifacts/branch_b/branch_b_open_hits.log-24-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38:- Formally conditional on RA1n
 docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:4140:./docs/math/DDYO_RA1N_PROOF.md-6-No theorem-level proof is currently present in this repository.
-docs/math/DDYO_GJ_CONTEXT_EXTRACT_CLEAN.md:2716:./docs/math/DDYO_RA1N_PROOF.md-6-No theorem-level proof is currently present in this repository.
-docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:13:- `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:14:- `docs/math/DDYO_RA1N_TARGET_THEOREM.md:23`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:16:- `docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38`: - Formally conditional on RA1n
-docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:17:- `docs/math/DDYO_SOLVE_REQUIREMENTS.md:62`: Formally open at the shell-product moment frontier.
-docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:18:- `docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:5`: - Formally open at the shell-product moment frontier
-docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION.md:19:- `docs/status/DDYO_CHECKPOINT_a641031.md:5`: - Formally open at the shell-product moment frontier
-docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:14:- `docs/math/DDYO_RA1N_PROOF.md:6`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:17:- `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:23`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:20:- `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:22:- `docs/math/DDYO_SOLVE_REQUIREMENTS.md:62`: Formally open at the shell-product moment frontier.
-docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:24:- `docs/math/DDYO_RA1N_TARGET_THEOREM.md:23`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_FRONTIER_REGISTRY.md:13:- `docs/math/DDYO_RA1N_PROOF.md:6`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_FRONTIER_REGISTRY.md:18:- `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:23`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_FRONTIER_REGISTRY.md:21:- `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_FRONTIER_REGISTRY.md:25:- `docs/math/DDYO_SOLVE_REQUIREMENTS.md:62`: Formally open at the shell-product moment frontier.
-docs/status/DDYO_FRONTIER_REGISTRY.md:27:- `docs/math/DDYO_RA1N_TARGET_THEOREM.md:23`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_SOURCE_FRONTIER.md:17:- `docs/math/DDYO_RA1N_PROOF.md:6`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_SOURCE_FRONTIER.md:20:- `docs/math/DDYO_RA1N_OPEN_PROBLEM.md:23`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_SOURCE_FRONTIER.md:22:- `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:25`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_SOURCE_FRONTIER.md:24:- `docs/math/DDYO_RA1N_TARGET_THEOREM.md:23`: No theorem-level proof is currently present in this repository.
-docs/status/DDYO_SOURCE_FRONTIER.md:25:- `docs/math/DDYO_SOLVE_REQUIREMENTS.md:62`: Formally open at the shell-product moment frontier.
-docs/status/DDYO_SOURCE_FRONTIER.md:26:- `docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38`: - Formally conditional on RA1n
-docs/status/DDYO_SOURCE_FRONTIER.md:28:- `docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:5`: - Formally open at the shell-product moment frontier
-docs/status/DDYO_SOURCE_FRONTIER.md:29:- `docs/status/DDYO_CHECKPOINT_a641031.md:5`: - Formally open at the shell-product moment frontier
 
 ```
 ### `python3 -m pytest -q`
@@ -83,7 +59,7 @@ tests/test_ddyo_rk_definition_extracted.py:56: AssertionError
 =========================== short test summary info ============================
 FAILED tests/test_ddyo_rk_definition_extracted.py::test_single_remaining_theorem_doc_exists
 FAILED tests/test_ddyo_rk_definition_extracted.py::test_quantitative_decay_closure_target_exists
-2 failed, 70 passed in 25.94s
+2 failed, 70 passed in 25.65s
 
 ```
 
@@ -97,47 +73,7 @@ FAIL
 ## Forbidden markers
 
 ### open frontier markers in DDYO status layer
-FAIL
-- `docs/math/DDYO_GJ_STRUCTURAL_CANDIDATES.md:464`: Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:227`: ./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md-17-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:392`: ./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md-110-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:520`: ./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-23-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:1133`: ./docs/math/DDYO_TERMINAL_OBSTRUCTION.md-39-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:1150`: ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:1975`: ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:2375`: ./artifacts/branch_b/branch_b_open_hits.log-24-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38:- Formally conditional on RA1n
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:3870`: ./artifacts/branch_b/branch_b_open_hits.log-15-docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:34:- Formally open at the shell-product moment frontier
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:3879`: ./artifacts/branch_b/branch_b_open_hits.log-24-docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38:- Formally conditional on RA1n
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:4140`: ./docs/math/DDYO_RA1N_PROOF.md-6-No theorem-level proof is currently present in this repository.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:5152`: ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:5188`: ./docs/math/DDYO_GJ_STRUCTURAL_CANDIDATES.md-464-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:5205`: ./docs/math/DDYO_RA1N_SOLE_REMAINING_LOCAL_TASK.md-36-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:5221`: Open.
-- `docs/math/DDYO_MASSIVE_REDUCTION.md:6`: \textbf{DDYO frontier status: Open.}
-- `docs/math/DDYO_MASSIVE_REDUCTION.md:177`: \textbf{Open.}
-- `docs/math/DDYO_GJ_DEFINITION_DECISION.md:28`: Open.
-- `docs/math/DDYO_GJ_MULTI_LEAD_INSPECTION.md:5`: Open.
-- `docs/math/DDYO_EXTERNAL_INPUT_REQUIRED.md:31`: Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT_CLEAN.md:313`: ./docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md-110-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT_CLEAN.md:404`: ./docs/math/DDYO_TERMINAL_OBSTRUCTION.md-39-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT_CLEAN.md:464`: ./docs/math/DDYO_RA1N_GJ_DEFINITION_STATUS.md-17-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT_CLEAN.md:610`: ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT_CLEAN.md:861`: ./docs/math/DDYO_MINIMAL_MISSING_LEMMA.md-23-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT_CLEAN.md:1128`: ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT_CLEAN.md:2716`: ./docs/math/DDYO_RA1N_PROOF.md-6-No theorem-level proof is currently present in this repository.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT_CLEAN.md:3458`: ./docs/math/DDYO_RA1N_GRADIENT_BOUND_REQUIRED_INPUT.md-18-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT_CLEAN.md:3483`: ./docs/math/DDYO_RA1N_SOLE_REMAINING_LOCAL_TASK.md-36-Open.
-- `docs/math/DDYO_GJ_CONTEXT_EXTRACT_CLEAN.md:3509`: Open.
-- `docs/math/DDYO_CANONICAL_OPEN_OBSTRUCTIONS.md:6`: \textbf{Open.}
-- `docs/math/DDYO_CANONICAL_OPEN_OBSTRUCTIONS.md:55`: \text{The existing Bernstein-extraction route is a proof sketch only and does not establish the missing }2^{-k}\text{ gain at theorem level.}
-- `docs/math/DDYO_CANONICAL_OPEN_OBSTRUCTIONS.md:67`: Open.
-- `docs/math/DDYO_TERMINAL_OBSTRUCTION.md:39`: Open.
-- `docs/math/DDYO_GJ_TOP_LEAD_INSPECTION.md:5`: Open.
-- `docs/math/DDYO_GJ_NONGENERATED_SIGNAL.md:5`: Open.
-- `docs/math/DDYO_GJ_NONGENERATED_SOURCE_SEARCH.md:674`: Open.
-- `docs/math/DDYO_GJ_DEFINITION_CANDIDATE_EXTRACT.md:5`: Open.
-- `docs/math/DDYO_RA1N_GJ_PROVENANCE_AUDIT.md:110`: Open.
-- `docs/math/DDYO_CANONICAL_FRONTIER.md:36`: Open.
+PASS
 ### conditional or premature completion claims
 PASS
 

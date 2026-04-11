@@ -2,7 +2,7 @@
 
 ## Status
 - Computationally closed
-- Formally open at the shell-product moment frontier
+- The shell-product moment frontier is closed at the annular first-moment remainder stage.
 
 
 ## Canonical combined gradient-test reference

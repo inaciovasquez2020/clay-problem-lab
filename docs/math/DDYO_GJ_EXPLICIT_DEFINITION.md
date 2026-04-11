@@ -8,6 +8,6 @@ G_j(x)=
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.
 
 User-supplied explicit theorem-level definition inserted here.

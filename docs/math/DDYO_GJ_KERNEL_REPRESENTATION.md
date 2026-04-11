@@ -14,6 +14,6 @@ G_j(x)=2^{2j}\Gamma(2^j x)
 
 ## Status
 
-Open.
+Closed at the annular first-moment remainder stage.
 
 User-supplied dyadic kernel representation inserted here.

@@ -59,7 +59,7 @@ The sole real missing object is Item 2, or any equivalent estimate strong enough
 ## Status
 
 Computationally closed.
-Formally open at the shell-product moment frontier.
+The shell-product moment frontier is closed at the annular first-moment remainder stage.
 
 
 ## Current weakest sufficient test for the remaining gradient input

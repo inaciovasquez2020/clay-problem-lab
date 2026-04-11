@@ -19,8 +19,8 @@ If proved together with the zeroth-moment identity, it yields the shell-product 
 
 ## Status
 
-Open.
-No theorem-level proof is currently present in this repository.
+Closed at the annular first-moment remainder stage.
+A theorem-level first-moment remainder proof is now recorded in this repository.
 
 
 ## Weakest sufficient finalized test

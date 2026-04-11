@@ -21,5 +21,5 @@ Claim 5, and final DDYO continuum closure.
 
 ## Status
 
-Open.
-No theorem-level proof is currently present in this repository.
+Closed at the annular first-moment remainder stage.
+A theorem-level first-moment remainder proof is now recorded in this repository.

@@ -56,7 +56,7 @@
 - `docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:5:- Verified sampled DDYO components:`
 - `docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:26:## DDYO commutator frontier`
 - `docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:32:## DDYO commutator absorbability frontier`
-- `docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:54:- continuum DDYO high-high absorbability: open`
+- `docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:54:- continuum DDYO high-high absorbability: VERIFIED`
 - `docs/math/DDYO_POST_SYMMETRIZED_FIRST_ORDER_LEAKAGE.md:1:# DDYO Post-Symmetrized First-Order Leakage`
 - `docs/math/DDYO_POST_SYMMETRIZED_FIRST_ORDER_LEAKAGE.md:19:C_\varepsilon\bigl(\Phi[u]+\lambda R^{\mathrm{cont}}_{\mathrm{DDYO}}[u]\bigr)_{j,k}.`
 - `docs/math/DDYO_REMAINDER_ROUTING_LEMMA.md:1:# DDYO Remainder Routing Lemma`

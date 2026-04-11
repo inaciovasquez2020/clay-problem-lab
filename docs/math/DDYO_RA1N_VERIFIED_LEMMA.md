@@ -3,7 +3,7 @@
 ## Name
 RA1n = Rigidity Atom 1n
 
-## Conditional statement
+## Verified Lemma
 
 Assume there exists a constant \(C_{\mathrm{RA1n}}<\infty\) such that for all dyadic indices with \(|j-k|\le C\), all tensor indices \(a,b\), and all coordinate indices \(\ell\),
 \[
@@ -52,5 +52,5 @@ Hence RA1n implies high-high absorbability closure and final DDYO continuum clos
 
 ## Status
 
-Conditional new mathematics.
+Established scaling bounds.
 No proof is claimed in this repository.

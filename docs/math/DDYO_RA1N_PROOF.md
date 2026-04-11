@@ -23,3 +23,13 @@ The existing Bernstein-extraction file is a proof sketch only and does not estab
 ## Completion criterion
 
 Replace this file with a theorem-level proof establishing the stated estimate.
+
+
+## Canonical combined gradient-test reference
+
+The combined canonical reference for the currently recorded gradient tests is:
+
+`docs/math/DDYO_COMBINED_GRADIENT_TESTS.md`
+
+Status: Conditional.
+

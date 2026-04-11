@@ -21,3 +21,13 @@ this yields the shell-product \(H^1\) gain, the deviatoric coercivity estimate, 
 
 Open.
 No theorem-level proof is currently present in this repository.
+
+
+## Canonical combined gradient-test reference
+
+The combined canonical reference for the currently recorded gradient tests is:
+
+`docs/math/DDYO_COMBINED_GRADIENT_TESTS.md`
+
+Status: Conditional.
+

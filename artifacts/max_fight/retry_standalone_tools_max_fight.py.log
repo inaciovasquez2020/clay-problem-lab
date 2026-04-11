@@ -1,0 +1,17 @@
+$ /opt/homebrew/opt/python@3.11/bin/python3.11 tools/max_fight.py
+[stdout]
+=== MAX_FIGHT_SUMMARY ===
+compileall: rc=0 log=artifacts/max_fight/compileall.log
+pytest: rc=0 log=artifacts/max_fight/pytest.log
+unittest_discover: rc=0 log=artifacts/max_fight/unittest_discover.log
+standalone::bsd/experiments/core/rank_sample.py: rc=0 log=artifacts/max_fight/standalone_bsd_experiments_core_rank_sample.py.log
+standalone::cli/clay.py: rc=0 log=artifacts/max_fight/standalone_cli_clay.py.log
+standalone::infra/ci/verify_certificate.py: rc=0 log=artifacts/max_fight/standalone_infra_ci_verify_certificate.py.log
+standalone::run_all_experiments.py: rc=0 log=artifacts/max_fight/standalone_run_all_experiments.py.log
+=== REMAINING_FAILURES ===
+NONE
+
+[stderr]
+
+[returncode]
+0

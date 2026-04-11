@@ -1,0 +1,9 @@
+$ /opt/homebrew/opt/python@3.11/bin/python3.11 -m pytest -q
+[stdout]
+............................................................             [100%]
+60 passed in 92.30s (0:01:32)
+
+[stderr]
+
+[returncode]
+0

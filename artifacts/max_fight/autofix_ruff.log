@@ -1,0 +1,8 @@
+$ ruff format .
+[stdout]
+36 files left unchanged
+
+[stderr]
+
+[returncode]
+0

@@ -1,0 +1,8 @@
+$ /opt/homebrew/opt/python@3.11/bin/python3.11 cli/clay.py
+[stdout]
+usage: clay list | clay run <module>
+
+[stderr]
+
+[returncode]
+0

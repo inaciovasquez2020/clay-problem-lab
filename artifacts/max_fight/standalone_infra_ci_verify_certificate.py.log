@@ -1,0 +1,8 @@
+$ /opt/homebrew/opt/python@3.11/bin/python3.11 infra/ci/verify_certificate.py
+[stdout]
+{'valid': True}
+
+[stderr]
+
+[returncode]
+0

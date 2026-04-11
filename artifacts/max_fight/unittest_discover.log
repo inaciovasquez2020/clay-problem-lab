@@ -1,0 +1,12 @@
+$ /opt/homebrew/opt/python@3.11/bin/python3.11 -m unittest discover -v
+[stdout]
+
+[stderr]
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+
+[returncode]
+0

@@ -2,25 +2,25 @@ $ /opt/homebrew/opt/python@3.11/bin/python3.11 run_all_experiments.py
 [stdout]
 
 Running: riemann/experiments/core/zero_spacing.py
-[0.00035087 0.00428036 0.02018731 0.01916177 0.01887484 0.00201621
- 0.02739683 0.00650842 0.00469371 0.00877821]
+[0.00720448 0.04191654 0.00273097 0.00220786 0.01560653 0.02148088
+ 0.001667   0.00331614 0.00691062 0.00039796]
 
 Running: navier_stokes/experiments/core/enstrophy_growth.py
-enstrophy: 13483.632978698479
+enstrophy: 13596.241471820193
 
 Running: yang_mills/experiments/core/transfer_gap.py
-gap: 25.56778221773169
+gap: 14.683573703340357
 
 Running: complexity/experiments/core/entropy_depth.py
 100
 
 Running: bsd/experiments/core/rank_sample.py
-[(1, -7), (3, 7), (7, -5), (-3, 1), (-7, 5), (-10, 3), (3, 5), (0, 4), (-10, -10), (9, -8)]
+[(7, 2), (-9, -3), (4, 7), (0, -8), (4, -5), (-5, -10), (10, 2), (3, 3), (-1, 7), (-10, -1)]
 
 Running: hodge/experiments/core/hodge_numbers.py
-[[4 4 2]
- [3 0 4]
- [1 2 0]]
+[[0 0 0]
+ [4 1 3]
+ [3 3 3]]
 
 [stderr]
 

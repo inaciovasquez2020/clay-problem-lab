@@ -37,3 +37,24 @@ Claim 5, high-high absorbability, and final DDYO continuum closure follow.
 - Computationally closed
 - Formally conditional on RA1n
 - RA1n open; proof sketch only in DDYO_RA1N_MOMENT_BOUND_PROOF.md
+
+
+## Current weakest sufficient finalized test
+
+\[
+\mathrm{FsT}:=\left\{\,G_j(x)=2^{2j}\Gamma(2^j x)\ \text{for some }\Gamma,\quad
+\nabla\!\bigl(x_\ell\Gamma\bigr)\in L^\infty(\mathbb R^3)\,\right\}.
+\]
+
+This implies
+\[
+\|\nabla(x_\ell G_j)\|_{L^\infty}\le C\,2^{-j}.
+\]
+
+Thus FsT removes the remaining RA1n gradient obstruction.
+
+Reference:
+`docs/math/DDYO_FST_FINALIZED_TEST.md`
+
+Status: Conditional.
+

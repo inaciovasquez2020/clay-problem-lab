@@ -63,6 +63,8 @@ If the exact repository formula for \(r_k\) is verified to have the above hybrid
 \Longrightarrow
 \text{RA1n}
 \Longrightarrow
+\text{unconditional DDYO closure}
+\Longrightarrow
 \text{unconditional DDYO closure.}
 \]
 

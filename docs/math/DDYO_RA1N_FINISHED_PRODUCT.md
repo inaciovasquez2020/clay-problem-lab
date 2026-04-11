@@ -119,4 +119,9 @@ is not used here.
 
 The unsupported annular “volume absorption” step is not used here.
 
+See also:
+\[
+\texttt{docs/math/DDYO_HYBRID_RK_RESCALING_LEMMA.md}
+\]
+
 Status: Conditional at the exact \(r_k\)-symbol stage.

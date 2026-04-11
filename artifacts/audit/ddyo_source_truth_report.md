@@ -1,2 +1,2 @@
 artifacts/audit/ddyo_canonical_source_truth_report.md
-CANONICAL_SOURCE_TRUTH_TEST: PASS
+CANONICAL_SOURCE_TRUTH_TEST: FAIL

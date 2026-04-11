@@ -16,7 +16,7 @@ Machine-generated from `artifacts/audit/ddyo_canonical_source_truth_report.md`.
 - `docs/math/DDYO_RA1N_PROOF.md:21`: The existing Bernstein-extraction file is a proof sketch only and does not establish the missing \(2^{-k}\) gain at theorem level.
 - `docs/status/DDYO_RA1N_STATUS_2026_04_10.md:39`: - RA1n open; proof sketch only in DDYO_RA1N_MOMENT_BOUND_PROOF.md
 - `docs/status/DDYO_RA1N_STATUS_2026_04_10.md:38`: - Formally conditional on RA1n
-- `docs/math/DDYO_SOLVE_REQUIREMENTS.md:62`: The shell-product moment frontier is closed at the annular first-moment remainder stage.
+- `docs/math/DDYO_SOLVE_REQUIREMENTS.md:62`: Formally open at the shell-product moment frontier.
 - `docs/status/DDYO_CLOSURE_STATUS_2026_04_10.md:5`: - Formally open at the shell-product moment frontier
 - `docs/status/DDYO_CHECKPOINT_a641031.md:5`: - Formally open at the shell-product moment frontier
 - `docs/math/DDYO_OPEN_PROBLEM_SHELL_PRODUCT_MOMENT.md:24`: Open.

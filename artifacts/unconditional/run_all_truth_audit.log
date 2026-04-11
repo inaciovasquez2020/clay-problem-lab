@@ -1,0 +1,21 @@
+[0.01865205 0.00076468 0.00885836 0.00203828 0.00654688 0.00322639
+ 0.01660849 0.04198124 0.00092593 0.02025784]
+enstrophy: 13719.805560967277
+gap: 23.022979430879587
+100
+[(-4, -8), (-9, -8), (5, -6), (2, -2), (8, 4), (-5, -4), (-10, -5), (2, 9), (-3, -6), (7, -2)]
+[[4 0 1]
+ [4 0 3]
+ [4 4 4]]
+
+Running: riemann/experiments/core/zero_spacing.py
+
+Running: navier_stokes/experiments/core/enstrophy_growth.py
+
+Running: yang_mills/experiments/core/transfer_gap.py
+
+Running: complexity/experiments/core/entropy_depth.py
+
+Running: bsd/experiments/core/rank_sample.py
+
+Running: hodge/experiments/core/hodge_numbers.py

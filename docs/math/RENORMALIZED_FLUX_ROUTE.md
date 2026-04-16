@@ -1,0 +1,77 @@
+# Conditional: renormalized flux route
+
+Assume
+\[
+\widetilde{\mathrm{Flux}}_\ell
+\lesssim
+E_\ell^{1+\theta}
+\Bigl(\sum_{m\le \ell}2^{m}E_m\Bigr)^{\frac{1-\theta}{2}},
+\qquad \theta\in(0,1).
+\]
+
+Define
+\[
+D_\ell:=2^\ell E_\ell,
+\qquad
+S_\ell:=\sum_{m\le \ell}2^mE_m=\sum_{m\le \ell}D_m.
+\]
+
+Set
+\[
+\widetilde{\mathcal F}_K(t):=
+\sum_{\ell\le K}2^{-2\ell}\int_{t-2^{-2K}}^{t}\widetilde{\mathrm{Flux}}_\ell(s)\,ds.
+\]
+
+Define
+\[
+\mathcal D_K(t):=
+\int_{t-2^{-2K}}^{t}\sum_{\ell\le K}2^\ell E_\ell(s)\,ds,
+\qquad
+\mathcal Q_K(t):=
+\int_{t-2^{-2K}}^{t}\sum_{\ell\le K}2^{-\ell}E_\ell(s)^2\,ds.
+\]
+
+Additional required lemma:
+\[
+\Bigl(\sum_{\ell\le K}2^{-2\ell}E_\ell^{1+\theta}\Bigr)^{\frac{2}{1+\theta}}
+\le C_\theta \sum_{\ell\le K}2^{-\ell}E_\ell^2
+\quad\text{uniformly in }K,t.
+\]
+
+Then
+\[
+\widetilde{\mathcal F}_K(t)
+\lesssim
+2^{K\frac{\theta-3}{2}}
+\mathcal D_K(t)^{\frac{1-\theta}{2}}
+\mathcal Q_K(t)^{\frac{1+\theta}{2}}.
+\]
+
+Hence, if
+\[
+\sup_{K,t}\mathcal D_K(t)\le D_0,
+\qquad
+\sup_{K,t}2^{-2K}\mathcal Q_K(t)\le \eta_0,
+\]
+then
+\[
+\sup_{K,t}\widetilde{\mathcal F}_K(t)
+\lesssim
+D_0^{\frac{1-\theta}{2}}\eta_0^{\frac{1+\theta}{2}}.
+\]
+
+Therefore, whenever
+\[
+D_0^{\frac{1-\theta}{2}}\eta_0^{\frac{1+\theta}{2}}
+\le c\,\varepsilon_0,
+\]
+the \(\widetilde{\mathcal F}\)-smallness criterion closes.
+
+Weakest remaining object:
+\[
+\widetilde{\mathrm{Flux}}_\ell
+\lesssim
+E_\ell^{1+\theta}
+\Bigl(\sum_{m\le \ell}2^mE_m\Bigr)^{\frac{1-\theta}{2}}
+\]
+together with the uniform summation lemma above.

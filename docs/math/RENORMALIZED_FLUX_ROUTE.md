@@ -31,17 +31,18 @@ Define
 \int_{t-2^{-2K}}^{t}\sum_{\ell\le K}2^{-\ell}E_\ell(s)^2\,ds.
 \]
 
-Additional required lemma:
+Using
 \[
-\Bigl(\sum_{\ell\le K}2^{-2\ell}E_\ell^{1+\theta}\Bigr)^{\frac{2}{1+\theta}}
-\le C_\theta \sum_{\ell\le K}2^{-\ell}E_\ell^2
-\quad\text{uniformly in }K,t.
+\Bigl(\sum_{\ell\le K} a_\ell\Bigr)^{\frac{2}{1+\theta}}
+\le
+(K+1)^{\frac{1-\theta}{1+\theta}}
+\sum_{\ell\le K} a_\ell^{\frac{2}{1+\theta}},
 \]
-
-Then
+with \(a_\ell=2^{-2\ell}E_\ell^{1+\theta}\), one gets
 \[
 \widetilde{\mathcal F}_K(t)
 \lesssim
+(K+1)^{\frac{1-\theta}{2}}
 2^{K\frac{\theta-3}{2}}
 \mathcal D_K(t)^{\frac{1-\theta}{2}}
 \mathcal Q_K(t)^{\frac{1+\theta}{2}}.
@@ -56,7 +57,7 @@ Hence, if
 then
 \[
 \sup_{K,t}\widetilde{\mathcal F}_K(t)
-\lesssim
+\lesssim_\theta
 D_0^{\frac{1-\theta}{2}}\eta_0^{\frac{1+\theta}{2}}.
 \]
 
@@ -72,6 +73,7 @@ Weakest remaining object:
 \widetilde{\mathrm{Flux}}_\ell
 \lesssim
 E_\ell^{1+\theta}
-\Bigl(\sum_{m\le \ell}2^mE_m\Bigr)^{\frac{1-\theta}{2}}
+\Bigl(\sum_{m\le \ell}2^mE_m\Bigr)^{\frac{1-\theta}{2}}.
 \]
-together with the uniform summation lemma above.
+
+No separate uniform summation lemma is needed; the \((K+1)^{\frac{1-\theta}{2}}\) loss is absorbed by \(2^{K(\theta-1)}\).

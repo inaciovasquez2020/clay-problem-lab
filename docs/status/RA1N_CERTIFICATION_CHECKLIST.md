@@ -3,10 +3,14 @@
 ## Required objects
 
 - terminal_symbol_registered
-- ghat_formula_explicit
-- local_bound_proved
-- tail_bound_proved
-- goodbounds_assembled
+- ghat_formula_explicit  
+  Source: `docs/math/RA1N_GHAT_FORMULA.md`
+- local_bound_proved  
+  Source: `docs/math/RA1N_GHAT_LOCAL_BOUND_PROOF.md`
+- tail_bound_proved  
+  Source: `docs/math/RA1N_GHAT_TAIL_BOUND_PROOF.md`
+- goodbounds_assembled  
+  Source: `docs/status/RA1N_GOODBOUNDS_GATE.md`
 
 ## Gate logic
 

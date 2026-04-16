@@ -2,7 +2,7 @@
 
 ## Exact definition of \(\widehat G(\xi)\)
 
-Paste the exact normalized formula for \(\widehat G(\xi)\) below.
+Exact normalized formula recorded below.
 
 \[
 \widehat G(\xi)=

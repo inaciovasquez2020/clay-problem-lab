@@ -12,6 +12,8 @@
 
 Set `allCertified = true` only if every required object above is present and verified.
 
+See also: `docs/status/RA1N_GOODBOUNDS_GATE.md`.
+
 ## Upgrade rule
 
 Do not claim CANONICAL before:

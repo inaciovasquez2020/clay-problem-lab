@@ -1,0 +1,8 @@
+{
+  "l_avg": 1.0,
+  "Lambda": 0.9738937226128359,
+  "eta": 0.125,
+  "R_formula": "3*l_avg",
+  "delta_sep_formula": "2*pi/Lambda",
+  "benchmark_family": "double_dime_obstruction_family"
+}

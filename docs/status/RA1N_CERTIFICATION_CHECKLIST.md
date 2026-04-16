@@ -11,6 +11,8 @@
   Source: `docs/math/RA1N_GHAT_TAIL_BOUND_PROOF.md`
 - goodbounds_assembled  
   Source: `docs/status/RA1N_GOODBOUNDS_GATE.md`
+- registry_gate_satisfied  
+  Source: `ClayProblemLab/RA1nL1Registry.lean`
 
 ## Gate logic
 

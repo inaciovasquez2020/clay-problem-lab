@@ -16,7 +16,9 @@
 
 Set `allCertified = true` only if every required object above is present and verified.
 
-See also: `docs/status/RA1N_GOODBOUNDS_GATE.md`.
+See also:
+- `docs/status/RA1N_GOODBOUNDS_GATE.md`
+- `docs/status/RA1N_ALLCERTIFIED_FRONTIER.md`
 
 ## Upgrade rule
 

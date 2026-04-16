@@ -53,3 +53,11 @@ The combined canonical reference for the currently recorded gradient tests is:
 
 Status: Conditional.
 
+## Blocked normalization note
+
+Do not use \(G_j(x)=2^{2j}\Gamma(2^j x)\) as the exact DDYO kernel formula unless promoted by a canonical source file.
+
+The dyadic scaling of \(
+abla(x_\ell G_j)\) is blocked until the exact DDYO kernel formula is canonical.
+
+Status: Conditional.

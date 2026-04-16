@@ -21,3 +21,10 @@ The definition stage is closed.
 
 Remaining frontier:
 Derive the exact theorem-level symbol derivative estimate for this canonical `r_k(ξ)` without any inadmissible volume-absorption step.
+
+Blocked normalization note:
+
+\[
+\text{BLOCKED PENDING EXACT DDYO SYMBOL FORMULA.}
+\]
+

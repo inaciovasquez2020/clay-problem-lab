@@ -8,13 +8,17 @@ Prove that there exist \(\alpha<3\) and \(C_0>0\) such that
 \qquad\text{for } |\xi|\le 1.
 \]
 
-## Role
+## Asymptotic extraction
 
-This is the local half of GoodBounds.
+Starting from the explicit normalized formula for \(\widehat G(\xi)\), derive the small-frequency asymptotic and record the chosen admissible exponent \(\alpha<3\).
 
-## Dependency
+## Frontier output
 
-This proof must use the exact formula stated in `docs/math/RA1N_GHAT_FORMULA.md`.
+Record the final bound in the form
+\[
+\exists \alpha<3,\ \exists C_0>0,\ \forall |\xi|\le 1,\quad
+|\widehat G(\xi)| \le C_0 |\xi|^{-\alpha}.
+\]
 
 ## Truthfulness rule
 

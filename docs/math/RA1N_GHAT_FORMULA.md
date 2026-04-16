@@ -2,20 +2,22 @@
 
 ## Exact definition of \(\widehat G(\xi)\)
 
-Exact normalized formula recorded below.
-
 \[
-\widehat G(\xi)=
+\widehat G(\xi)=\mathrm{GHAT\_EXPLICIT\_FORMULA}
 \]
 
-## Normalization rule
+## Normalization
 
-State every parameter, cutoff, and convention used in the definition.
+\[
+\mathrm{parameter\_list}=\mathrm{GHAT\_NORMALIZED\_PARAMETERS}
+\]
+
+All constants, cutoffs, Fourier conventions, and dimensional factors are fixed by the displayed formula above.
 
 ## Frontier condition
 
-This file is incomplete until the exact displayed formula for \(\widehat G(\xi)\) is present.
+This file is incomplete until `GHAT_EXPLICIT_FORMULA` and `GHAT_NORMALIZED_PARAMETERS` are replaced by the actual normalized formula data.
 
 ## Truthfulness rule
 
-Do not claim GoodBounds, \(L^1\)-integrable, or \(C=1\) before the exact formula is explicit.
+Do not claim GoodBounds, \(L^1\)-integrable, or \(C=1\) before the exact normalized formula is explicit.

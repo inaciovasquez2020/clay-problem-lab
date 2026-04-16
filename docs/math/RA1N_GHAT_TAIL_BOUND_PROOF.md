@@ -8,13 +8,17 @@ Prove that there exist \(\varepsilon>0\) and \(C_\infty>0\) such that
 \qquad\text{for } |\xi|\ge 1.
 \]
 
-## Role
+## Decay extraction
 
-This is the tail half of GoodBounds.
+Starting from the explicit normalized formula for \(\widehat G(\xi)\), derive the large-frequency decay and record the chosen admissible exponent \(\varepsilon>0\).
 
-## Dependency
+## Frontier output
 
-This proof must use the exact formula stated in `docs/math/RA1N_GHAT_FORMULA.md`.
+Record the final bound in the form
+\[
+\exists \varepsilon>0,\ \exists C_\infty>0,\ \forall |\xi|\ge 1,\quad
+|\widehat G(\xi)| \le C_\infty (1+|\xi|)^{-3-\varepsilon}.
+\]
 
 ## Truthfulness rule
 

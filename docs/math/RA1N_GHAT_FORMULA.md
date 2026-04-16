@@ -1,18 +1,21 @@
-# Conditional: RA1n concrete Ghat formula
+# Conditional: RA1n exact Ghat formula
 
-## Purpose
-Record the exact Fourier kernel formula for the RA1n terminal symbol.
+## Exact definition of \(\widehat G(\xi)\)
 
-## Required data
-1. Exact definition of Ghat(xi).
-2. Source equation or derivation path.
-3. Parameter normalization.
-4. Domain and symmetry properties.
-5. Singular set description.
-6. Expected decay mechanism as |xi| -> infinity.
+Paste the exact normalized formula for \(\widehat G(\xi)\) below.
+
+\[
+\widehat G(\xi)=
+\]
+
+## Normalization rule
+
+State every parameter, cutoff, and convention used in the definition.
 
 ## Frontier condition
-This file is incomplete until the actual formula for Ghat is pasted and normalized.
+
+This file is incomplete until the exact displayed formula for \(\widehat G(\xi)\) is present.
 
 ## Truthfulness rule
-Do not claim GoodBounds, L1_integrable, or C = 1 before this formula is explicit.
+
+Do not claim GoodBounds, \(L^1\)-integrable, or \(C=1\) before the exact formula is explicit.

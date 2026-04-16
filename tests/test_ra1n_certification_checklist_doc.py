@@ -1,0 +1,12 @@
+from pathlib import Path
+
+def test_ra1n_certification_checklist_doc():
+    s = Path("docs/status/RA1N_CERTIFICATION_CHECKLIST.md").read_text()
+    assert "# Conditional: RA1n certification checklist" in s
+    assert "terminal_symbol_registered" in s
+    assert "ghat_formula_explicit" in s
+    assert "local_bound_proved" in s
+    assert "tail_bound_proved" in s
+    assert "goodbounds_assembled" in s
+    assert "Do not claim CANONICAL" in s
+    assert "Conditional." in s

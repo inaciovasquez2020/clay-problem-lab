@@ -45,6 +45,10 @@ Canonical route:
 
 TERMINAL_HIGH_HIGH_RESONANCE_GAIN_ROUTE.md
 
+Canonical route status:
+
+Open.
+
 Canonical lower bound shape:
 
 2^{-\alpha k}|\xi\wedge\eta|^2

@@ -54,3 +54,9 @@ Canonical lower bound shape:
 \mathcal E_K(t)^{1+\theta}
 
 \mathcal E_K(t)^{1+\theta}
+
+\mathcal D_K(t)^{rac{1-	heta}{2}}
+
+\mathcal D_K(t)^{rac{1-	heta}{2}}
+
+\mathcal D_K(t)^{\frac{1-\theta}{2}}

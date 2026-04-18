@@ -1,9 +1,11 @@
 # Conditional: Terminal High-High Resonance Gain Route
 
 ## Status
-OPEN.
+Open.
 
 ## Frontier object
+This route isolates the terminal high-high resonance curvature gain.
+
 Construct a renormalized symbol \(r_k(\xi,\eta)\) for the transverse high-high interaction and prove a curvature-driven gain estimate sufficient to close the DDYO route.
 
 ## Dyadic interaction functional

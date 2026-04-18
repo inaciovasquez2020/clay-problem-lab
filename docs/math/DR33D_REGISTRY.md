@@ -2,7 +2,7 @@
 
 ## Core objective
 
-Reduce the DR33D closure to the surviving monotone-cutoff invariant domination problem
+Reduce the DR33D closure to the surviving size-controlled monotone-cutoff invariant domination problem
 \[
 \mathfrak I(E)
 =
@@ -43,7 +43,10 @@ C\sum_j E_j^{1+\theta}.
 - Step 24 — Failure on arbitrary \(\ell^{1+\theta}\) without lower-shell cutoff  
   Status: LOCKED IMPOSSIBILITY
 
-- Step 25 — Exact monotone-cutoff frontier lemma  
+- Step 25A — Monotone+cutoff only  
+  Status: FALSE
+
+- Step 25B — Monotone+cutoff+size control  
   Status: SURVIVING OPEN FRONTIER
 
 - Step 26 — Monotone geometric test family  
@@ -55,28 +58,23 @@ C\sum_j E_j^{1+\theta}.
 - Step 28 — Exact weighted Hölder reduction under monotone cutoff  
   Status: LOCKED REDUCTION
 
+- Step 29 — Exact power-gap obstruction lemma  
+  Status: LOCKED OBSTRUCTION
+
+- Step 30 — Block-monotone test family beyond the geometric case  
+  Status: LOCKED COUNTEREXAMPLE
+
+- Step 31 — Extra invariant candidate for linear upgrade  
+  Status: CANDIDATE EXTRA INVARIANT
+
 ## Frontier conclusion
 
-The unrestricted Step 23 domination is false on arbitrary nonnegative
-\(\ell^{1+\theta}\) sequences.
+The unrestricted Step 23 domination is false.
 
-The exact surviving frontier is Step 25.
+The monotone+cutoff-only Step 25A is also false.
 
-## Surviving frontier
-
-Let \(0<\theta<1\). Determine whether there exists \(C=C(\theta,j_0)<\infty\) such that for every nonnegative sequence \((E_j)_{j\in\mathbb Z}\) satisfying
-\[
-E_{j+1}\le E_j\qquad\text{for all }j,
-\qquad
-E_j=0\qquad\text{for all }j<j_0,
-\]
-one has
-\[
-\left(\sum_{j\in\mathbb Z}2^{-j}E_j^{1/2}\right)^2
-\le
-C\sum_{j\in\mathbb Z}E_j^{1+\theta}.
-\]
+The exact surviving frontier is Step 25B: monotone cutoff plus one extra size/control invariant.
 
 ## Status
 
-CANONICAL REGISTRY — unrestricted falsehood separated from surviving monotone-cutoff frontier.
+CANONICAL REGISTRY — size-controlled frontier isolated after Steps 29–31.

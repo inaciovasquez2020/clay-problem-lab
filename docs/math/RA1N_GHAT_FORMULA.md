@@ -1,4 +1,5 @@
 # Conditional: RA1n concrete Ghat formula
+# Conditional: RA1n exact Ghat formula
 
 ## Exact definition of \(\widehat G(\xi)\)
 
@@ -21,3 +22,5 @@ This file is incomplete until `GHAT_EXPLICIT_FORMULA` and `GHAT_NORMALIZED_PARAM
 ## Truthfulness rule
 
 Do not claim GoodBounds, \(L^1\)-integrable, or \(C=1\) before the exact normalized formula is explicit.
+
+Exact definition of Ghat(xi)

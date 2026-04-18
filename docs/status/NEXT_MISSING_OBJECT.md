@@ -4,6 +4,10 @@ Canonical name:
 
 `terminal_high_high_resonance_curvature_gain`
 
+Alias:
+
+`terminal_high_high_symbol_lower_bound`
+
 Canonical file:
 
 `docs/math/TERMINAL_HIGH_HIGH_CURVATURE_GAIN_REDUCTION.md`
@@ -28,3 +32,7 @@ r_k(\xi,\eta)=m_k(\xi,\eta)-m_k(\xi,\eta)\big|_{\xi\parallel\eta}.
 \]
 
 This is the single explicit missing object currently blocking terminal theorem closure on the SiMSVE / DDYO route.
+
+Canonical route:
+
+TERMINAL_HIGH_HIGH_RESONANCE_GAIN_ROUTE.md

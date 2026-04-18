@@ -46,4 +46,4 @@ C_\alpha\,2^{-k}.
 
 ## Status
 
-Closed at the annular first-moment remainder stage.
+Open.

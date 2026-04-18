@@ -28,4 +28,4 @@ r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi).
 
 ## Status
 
-Closed at the annular first-moment remainder stage.
+Open.

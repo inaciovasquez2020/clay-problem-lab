@@ -2,7 +2,7 @@
 
 Canonical name:
 
-`terminal_high_high_symbol_lower_bound`
+`terminal_high_high_resonance_curvature_gain`
 
 Canonical file:
 

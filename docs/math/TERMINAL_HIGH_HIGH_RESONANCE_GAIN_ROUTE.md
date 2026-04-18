@@ -73,3 +73,16 @@ Single irreducible OPEN obstruction.
 
 ## No-claim rule
 No unconditional proof is claimed here.
+
+
+## Canonical target inequality
+
+\[
+|r_k(\xi,\eta)| \ge c\,2^{-\alpha k}|\xi\wedge\eta|^2
+\]
+
+## Closure consequence
+
+\[
+\mathcal R_K(t) \lesssim \mathcal E_K(t)^{1+\theta}\mathcal D_K(t)^{\frac{1-\theta}{2}}
+\]

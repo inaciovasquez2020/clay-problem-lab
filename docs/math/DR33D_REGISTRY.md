@@ -67,14 +67,27 @@ C\sum_j E_j^{1+\theta}.
 - Step 31 — Extra invariant candidate for linear upgrade  
   Status: CANDIDATE EXTRA INVARIANT
 
+- Step 32 — Normalization and exact size-floor obstruction  
+  Status: LOCKED NORMALIZATION
+
+- Step 33 — Candidate invariant preventing single-shell concentration  
+  Status: CANDIDATE CONCENTRATION INVARIANT
+
 ## Frontier conclusion
 
 The unrestricted Step 23 domination is false.
 
-The monotone+cutoff-only Step 25A is also false.
+The monotone+cutoff-only Step 25A is false.
 
 The exact surviving frontier is Step 25B: monotone cutoff plus one extra size/control invariant.
 
+## Exact obstruction
+
+The obstruction isolated by Steps 28–32 is exactly the vanishing-size regime
+\[
+S=\sum_j E_j^{1+\theta}\to0.
+\]
+
 ## Status
 
-CANONICAL REGISTRY — size-controlled frontier isolated after Steps 29–31.
+CANONICAL REGISTRY — normalization and concentration diagnostic added after Steps 32–33.

@@ -2,6 +2,7 @@
 
 ## Status
 Open.
+OPEN.
 
 ## Frontier object
 This route isolates the terminal high-high resonance curvature gain.

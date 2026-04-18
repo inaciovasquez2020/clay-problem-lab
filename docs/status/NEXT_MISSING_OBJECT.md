@@ -44,3 +44,7 @@ This is the single explicit missing object currently blocking terminal theorem c
 Canonical route:
 
 TERMINAL_HIGH_HIGH_RESONANCE_GAIN_ROUTE.md
+
+Canonical lower bound shape:
+
+2^{-\alpha k}|\xi\wedge\eta|^2

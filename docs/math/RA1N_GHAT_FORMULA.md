@@ -26,3 +26,5 @@ This file is incomplete until `GHAT_EXPLICIT_FORMULA` and `GHAT_NORMALIZED_PARAM
 Do not claim GoodBounds, \(L^1\)-integrable, or \(C=1\) before the exact normalized formula is explicit.
 
 Exact definition of Ghat(xi)
+
+Do not claim GoodBounds, L1_integrable, or C = 1

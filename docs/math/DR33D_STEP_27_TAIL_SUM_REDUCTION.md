@@ -1,4 +1,4 @@
-# DR33D Step 27 — Tail-Sum Reduction Under Monotonicity
+# DR33D Step 27 — Tail-Sum Reduction Under Monotonicity (Corrected)
 
 ## Statement
 
@@ -15,48 +15,52 @@ S:=\sum_{j\in\mathbb Z}E_j^{1+\theta},\qquad
 A:=\sum_{j\in\mathbb Z}2^{-j}E_j^{1/2}.
 \]
 
-## Reduction
+## Exact tail identity
 
 For \(j\ge j_0\),
 \[
 \sum_{m\le j}2^{-m}E_m^{1/2}
 =
-\sum_{n=0}^{j-j_0}2^{-(j-n)}E_{j-n}^{1/2}
-\le
-2^{-j}\sum_{n\ge0}2^{n}E_j^{1/2}
-=
-C\,2^{-j}E_j^{1/2},
+2^{-j}\sum_{n=0}^{j-j_0}2^{n}E_{j-n}^{1/2}.
 \]
-where monotonicity \(E_{j-n}\ge E_j\) is used.
 
-Hence
+Under monotonicity \(E_{j-n}\ge E_j\),
+\[
+\sum_{m\le j}2^{-m}E_m^{1/2}
+\ge
+2^{-j}E_j^{1/2}\sum_{n=0}^{j-j_0}2^{n}
+\asymp
+E_j^{1/2}.
+\]
+
+## Consequence
+
+The previously claimed upper bound
+\[
+\sum_{m\le j}2^{-m}E_m^{1/2}\le C\,2^{-j}E_j^{1/2}
+\]
+does not follow from monotonicity.
+
+## Replacement reduction
+
+For
+\[
+q=2(1+\theta),\qquad p=\frac{q}{q-1},
+\]
+one has
 \[
 A
 =
 \sum_{j\ge j_0}2^{-j}E_j^{1/2}
 \le
-C\sup_{j\ge j_0}\left(2^{-j}E_j^{1/2}\right).
-\]
-
-## Consequence
-
-Thus Step 25 reduces to bounding
-\[
-\sup_{j\ge j_0}\left(2^{-j}E_j^{1/2}\right)^2
-\le
-C\sum_j E_j^{1+\theta}.
-\]
-
-Equivalently,
-\[
-E_j \le C\,2^{2j}\sum_k E_k^{1+\theta}
-\quad\text{uniformly in }j.
+\left(\sum_{j\ge j_0}2^{-pj}\right)^{1/p}
+\left(\sum_{j\ge j_0}E_j^{q/2}\right)^{1/q}.
 \]
 
 ## Logical role
 
-This converts the global invariant into a pointwise tail-growth condition under monotonicity.
+This corrects the Step 27 reduction and replaces the invalid pointwise reduction by a valid weighted Hölder bound.
 
 ## Status
 
-REDUCTION LOCK — Step 25 is equivalent to a uniform pointwise growth bound under monotone cutoff.
+CORRECTED REDUCTION — prior pointwise reduction invalid; replaced by Hölder-based bound.

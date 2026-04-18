@@ -52,3 +52,5 @@ Canonical lower bound shape:
 \mathcal R_K(t)
 
 \mathcal E_K(t)^{1+\theta}
+
+\mathcal E_K(t)^{1+\theta}

@@ -72,3 +72,10 @@ verification, and exploration related to the Clay Millennium Problems.
 ## RA1n Exact Symbol Status
 
 See `docs/status/DDYO_RA1N_RK_DEFINITION_STATUS.md`.
+
+## Current DDYO / RA1n frontier
+
+- RA1n remains Open.
+- Canonical residual: `r_k = \widehat G_k - P_k\widehat G_k`.
+- Next missing object: `terminal_high_high_resonance_curvature_gain`.
+- Canonical route: `docs/math/TERMINAL_HIGH_HIGH_RESONANCE_GAIN_ROUTE.md`.

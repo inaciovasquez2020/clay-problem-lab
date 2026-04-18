@@ -2,7 +2,7 @@
 
 ## Core objective
 
-Reduce the DR33D closure to the sharp invariant domination problem
+Reduce the DR33D closure to the surviving monotone-cutoff invariant domination problem
 \[
 \mathfrak I(E)
 =
@@ -38,29 +38,45 @@ C\sum_j E_j^{1+\theta}.
   Status: OPEN ROUTE
 
 - Step 23 — Minimal unifying invariant  
-  Status: FINAL WALL
+  Status: UNRESTRICTED-FALSE
 
 - Step 24 — Failure on arbitrary \(\ell^{1+\theta}\) without lower-shell cutoff  
   Status: LOCKED IMPOSSIBILITY
+
+- Step 25 — Exact monotone-cutoff frontier lemma  
+  Status: SURVIVING OPEN FRONTIER
+
+- Step 26 — Monotone geometric test family  
+  Status: NEGATIVE TEST
+
+- Step 27 — Tail-sum reduction under monotonicity (corrected)  
+  Status: CORRECTED REDUCTION
+
+- Step 28 — Exact weighted Hölder reduction under monotone cutoff  
+  Status: LOCKED REDUCTION
 
 ## Frontier conclusion
 
 The unrestricted Step 23 domination is false on arbitrary nonnegative
 \(\ell^{1+\theta}\) sequences.
 
-Therefore any valid closure route must impose additional structure.
+The exact surviving frontier is Step 25.
 
-## Minimal surviving frontier
+## Surviving frontier
 
-The remaining admissible frontier is:
-
+Let \(0<\theta<1\). Determine whether there exists \(C=C(\theta,j_0)<\infty\) such that for every nonnegative sequence \((E_j)_{j\in\mathbb Z}\) satisfying
 \[
-\left(\sum_j 2^{-j}E_j^{1/2}\right)^2
-\le
-C\sum_j E_j^{1+\theta}
+E_{j+1}\le E_j\qquad\text{for all }j,
+\qquad
+E_j=0\qquad\text{for all }j<j_0,
 \]
-under one explicit extra hypothesis.
+one has
+\[
+\left(\sum_{j\in\mathbb Z}2^{-j}E_j^{1/2}\right)^2
+\le
+C\sum_{j\in\mathbb Z}E_j^{1+\theta}.
+\]
 
 ## Status
 
-CANONICAL REGISTRY — normalized DR33D status surface after Step 24.
+CANONICAL REGISTRY — unrestricted falsehood separated from surviving monotone-cutoff frontier.

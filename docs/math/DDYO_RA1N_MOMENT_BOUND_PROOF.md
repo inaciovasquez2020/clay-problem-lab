@@ -40,6 +40,30 @@ Equivalently, at the symbol level:
 This is the exact missing step converting the Bernstein \(2^{-j}\) gain
 into the full \(2^{-j}2^{-k}\) RA1n bound.
 
+
+### Next Reduction (Symbol Cancellation Target)
+
+To derive the \(2^{-k}\) gain, it suffices to prove cancellation at the symbol level:
+\[
+\mathrm{symb}(e^{(j)}_{ab})(\eta)
+=
+\frac{\eta_a \eta_b}{|\eta|^2} - \delta_{ab}
+\]
+or an equivalent divergence-free projector form.
+
+Then for \(|\eta|\sim 2^k\),
+\[
+\mathrm{symb}(e^{(j)}_{ab})(\eta)\cdot \hat{\omega}_k(\eta)
+\sim 2^{-k}\,\nabla \hat{\omega}_k(\eta),
+\]
+yielding
+\[
+\left\| e^{(j)}_{ab}(D)\omega_k \right\|_{L^1}
+\lesssim 2^{-k}\|\omega_k\|_{L^1}.
+\]
+
+Thus the RA1n frontier reduces to verifying this exact symbol cancellation identity from the canonical DDYO kernel definition.
+
 ## Status
 - **Continuum Closure**: Not established by this file.
 - **Status**: Proof sketch only; repository frontier remains conditional on RA1n.

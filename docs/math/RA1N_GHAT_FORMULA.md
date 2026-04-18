@@ -1,5 +1,7 @@
 # Conditional: RA1n concrete Ghat formula
 # Conditional: RA1n exact Ghat formula
+# Conditional: RA1n exact Ghat formula
+# Conditional: RA1n exact Ghat formula
 
 ## Exact definition of \(\widehat G(\xi)\)
 

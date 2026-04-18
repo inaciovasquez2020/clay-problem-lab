@@ -8,6 +8,14 @@ Alias:
 
 `terminal_high_high_symbol_lower_bound`
 
+Alias:
+
+`terminal_high_high_symbol_lower_bound`
+
+Alias:
+
+`terminal_high_high_symbol_lower_bound`
+
 Canonical file:
 
 `docs/math/TERMINAL_HIGH_HIGH_CURVATURE_GAIN_REDUCTION.md`

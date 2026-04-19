@@ -26,6 +26,9 @@ def symbolic_placeholder(theta: float, k: int) -> float:
     wedge_sq = math.sin(theta) ** 2
     return (2.0 ** (-0.25 * k)) * wedge_sq
 
+def admissible_patch(theta: float) -> bool:
+    return abs(math.sin(theta)) > 1.0e-6
+
 def run_generation(g: int, seed: int) -> tuple[float, float, int]:
     rng = random.Random(seed + g)
     best = -1.0

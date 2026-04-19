@@ -43,6 +43,9 @@ def exact_curvature_lower_bound(xi: float, eta: float, k: int) -> float:
 def admissible_patch(xi: float, eta: float) -> bool:
     return abs(math.sin(eta - xi)) > 1.0e-6
 
+def structurally_admissible_score(score: float) -> bool:
+    return score > 1.0e-12
+
 def shell_vectors(theta_xi: float, theta_eta: float, k: int) -> tuple[tuple[float, float, float], tuple[float, float, float]]:
     r = 2.0 ** (k + 1)
     xi = (r * math.cos(theta_xi), r * math.sin(theta_xi), 0.0)
@@ -209,6 +212,10 @@ def run_generation(g: int, seed: int) -> tuple[float, float, float, int, dict]:
     best_eta = 0.0
     best_k = 0
     best_log: dict = {}
+    min_xi = 0.0
+    min_eta = 0.0
+    min_k = 0
+    min_log: dict = {}
     for _ in range(20000):
         k = rng.randint(1, 40)
         xi = rng.uniform(0.0, math.pi)
@@ -226,7 +233,36 @@ def run_generation(g: int, seed: int) -> tuple[float, float, float, int, dict]:
         chi_val = chi_k(zeta, k)
         kappa_val = kappa_rank_defect(xi_vec, eta_vec)
         score = abs(fk - fk_parallel)
+        if not structurally_admissible_score(score):
+            if "first_zero_witness" not in locals():
+                first_zero_witness = {
+                    "xi": xi,
+                    "eta": eta,
+                    "shell": k,
+                    "F_k_xi_eta": fk,
+                    "F_k_xi_parallel": fk_parallel,
+                    "D_kplus1_xi_eta": dj,
+                    "D_kplus1_xi_parallel": dj_parallel,
+                    "chi_k_xi_plus_eta": chi_val,
+                    "kappa_rank_defect_xi_eta": kappa_val,
+                    "parallel_eta": parallel_eta,
+                    "score": score,
+                }
+            continue
         lambda_search = score if lambda_search is None else min(lambda_search, score)
+        if lambda_search == score:
+            min_xi = xi
+            min_eta = eta
+            min_k = k
+            min_log = {
+                "F_k_xi_eta": fk,
+                "F_k_xi_parallel": fk_parallel,
+                "D_kplus1_xi_eta": dj,
+                "D_kplus1_xi_parallel": dj_parallel,
+                "chi_k_xi_plus_eta": chi_val,
+                "kappa_rank_defect_xi_eta": kappa_val,
+                "parallel_eta": parallel_eta,
+            }
         if score > best:
             best = score
             best_xi = xi
@@ -243,7 +279,14 @@ def run_generation(g: int, seed: int) -> tuple[float, float, float, int, dict]:
             }
     if lambda_search is None:
         lambda_search = -1.0
-    return lambda_search, best_xi, best_eta, best_k, best_log
+    return lambda_search, best_xi, best_eta, best_k, {
+        "maximizing_witness_log": best_log,
+        "minimizing_witness_xi": min_xi,
+        "minimizing_witness_eta": min_eta,
+        "minimizing_witness_shell": min_k,
+        "minimizing_witness_log": min_log,
+        "first_zero_witness": locals().get("first_zero_witness", {}),
+    }
 
 def write_json(name: str, payload: dict) -> None:
     (ART / name).write_text(json.dumps(payload, indent=2, sort_keys=True))
@@ -268,7 +311,8 @@ def main() -> int:
     max_generations = 12
     lambda_search = None
     for g in range(1, max_generations + 1):
-        lambda_search, xi, eta, k, best_log = run_generation(g, seed=1729)
+        lambda_search, xi, eta, k, witness_bundle = run_generation(g, seed=1729)
+        best_log = witness_bundle["maximizing_witness_log"]
         exact_symbol_available = False
         state.generation = g
         state.best_score = lambda_search
@@ -284,6 +328,11 @@ def main() -> int:
         state.timestamp = time.time()
         generation_payload = asdict(state)
         generation_payload["maximizing_witness_log"] = best_log
+        generation_payload["minimizing_witness_xi"] = witness_bundle["minimizing_witness_xi"]
+        generation_payload["minimizing_witness_eta"] = witness_bundle["minimizing_witness_eta"]
+        generation_payload["minimizing_witness_shell"] = witness_bundle["minimizing_witness_shell"]
+        generation_payload["minimizing_witness_log"] = witness_bundle["minimizing_witness_log"]
+        generation_payload["first_zero_witness"] = witness_bundle["first_zero_witness"]
         write_json(f"generation_{g:03d}.json", generation_payload)
         if state.status != "CLOSED":
             issue = {
@@ -297,6 +346,11 @@ def main() -> int:
                 }
             }
             issue["maximizing_witness_log"] = best_log
+            issue["minimizing_witness_xi"] = witness_bundle["minimizing_witness_xi"]
+            issue["minimizing_witness_eta"] = witness_bundle["minimizing_witness_eta"]
+            issue["minimizing_witness_shell"] = witness_bundle["minimizing_witness_shell"]
+            issue["minimizing_witness_log"] = witness_bundle["minimizing_witness_log"]
+            issue["first_zero_witness"] = witness_bundle["first_zero_witness"]
             write_json(f"issue_{g:03d}.json", issue)
             continue
         state.local_gain_found = True
@@ -306,6 +360,11 @@ def main() -> int:
     state.lambda_search = lambda_search
     summary_payload = asdict(state)
     summary_payload["maximizing_witness_log"] = best_log
+    summary_payload["minimizing_witness_xi"] = witness_bundle["minimizing_witness_xi"]
+    summary_payload["minimizing_witness_eta"] = witness_bundle["minimizing_witness_eta"]
+    summary_payload["minimizing_witness_shell"] = witness_bundle["minimizing_witness_shell"]
+    summary_payload["minimizing_witness_log"] = witness_bundle["minimizing_witness_log"]
+    summary_payload["first_zero_witness"] = witness_bundle["first_zero_witness"]
     write_json("frontier_summary.json", summary_payload)
     return 0
 

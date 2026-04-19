@@ -12,8 +12,8 @@ def test_terminal_high_high_resonance_witness_log_lock() -> None:
     assert w["chi_k_xi_plus_eta"] != 0.0
     assert w["kappa_rank_defect_xi_eta"] != 0.0
 
-def test_terminal_high_high_resonance_min_witness_log_lock() -> None:
+def test_terminal_high_high_resonance_zero_witness_log_lock() -> None:
     p = Path("artifacts/terminal_high_high_resonance_curvature_gain/frontier_summary.json")
     d = json.loads(p.read_text())
-    w = d.get("minimizing_witness_log", {})
-    assert isinstance(w, dict)
+    z = d.get("first_zero_witness", {})
+    assert isinstance(z, dict)

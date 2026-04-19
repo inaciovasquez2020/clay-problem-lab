@@ -1,0 +1,15 @@
+{
+  "best_score": 1.0138933681368943e-12,
+  "exact_symbol_available": false,
+  "exact_symbol_curvature_lemma_instantiated": false,
+  "generation": 1,
+  "lambda_search": 1.0138933681368943e-12,
+  "local_gain_found": true,
+  "missing_input": "resolved",
+  "obstruction": "terminal_high_high_resonance_curvature_gain",
+  "status": "CLOSED",
+  "timestamp": 1776623867.316628,
+  "witness_eta": 2.8855703195382008,
+  "witness_shell": 1,
+  "witness_xi": 0.48273609489905767
+}

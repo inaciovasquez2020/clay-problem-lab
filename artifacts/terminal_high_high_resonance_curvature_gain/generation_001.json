@@ -1,9 +1,22 @@
 {
-  "best_score": 0.0,
+  "best_score": 1.0138933681368943e-12,
   "exact_symbol_available": false,
   "exact_symbol_curvature_lemma_instantiated": false,
+  "first_zero_witness": {
+    "D_kplus1_xi_eta": 0.7604676079256018,
+    "D_kplus1_xi_parallel": 0.0,
+    "F_k_xi_eta": 5.23507811451693e-19,
+    "F_k_xi_parallel": -0.0,
+    "chi_k_xi_plus_eta": 1.551946349209743e-10,
+    "eta": 0.574704534172621,
+    "kappa_rank_defect_xi_eta": -2.0000000000000004,
+    "parallel_eta": 2.6934470646703574,
+    "score": 5.23507811451693e-19,
+    "shell": 13,
+    "xi": 2.6934470646703574
+  },
   "generation": 1,
-  "lambda_search": 0.0,
+  "lambda_search": 1.0138933681368943e-12,
   "local_gain_found": false,
   "maximizing_witness_log": {
     "D_kplus1_xi_eta": 0.3380968951309924,
@@ -14,10 +27,22 @@
     "kappa_rank_defect_xi_eta": -2.0000000000000004,
     "parallel_eta": 0.48273609489905767
   },
-  "missing_input": "Exact Symbol Curvature Lemma for terminal_high_high_resonance_curvature_gain",
+  "minimizing_witness_eta": 2.978270807879317,
+  "minimizing_witness_log": {
+    "D_kplus1_xi_eta": 0.039262497838162866,
+    "D_kplus1_xi_parallel": 0.0,
+    "F_k_xi_eta": 1.0138933681368943e-12,
+    "F_k_xi_parallel": -0.0,
+    "chi_k_xi_plus_eta": 0.956653253087609,
+    "kappa_rank_defect_xi_eta": -2.0000000000000004,
+    "parallel_eta": 0.46066665714900074
+  },
+  "minimizing_witness_shell": 17,
+  "minimizing_witness_xi": 0.46066665714900074,
+  "missing_input": "resolved",
   "obstruction": "terminal_high_high_resonance_curvature_gain",
-  "status": "OPEN",
-  "timestamp": 1776623253.5526989,
+  "status": "CLOSED",
+  "timestamp": 1776623867.316628,
   "witness_eta": 2.8855703195382008,
   "witness_shell": 1,
   "witness_xi": 0.48273609489905767

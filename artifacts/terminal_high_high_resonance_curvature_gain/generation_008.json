@@ -1,0 +1,11 @@
+{
+  "best_score": 0.8408842114492722,
+  "generation": 8,
+  "local_gain_found": false,
+  "missing_input": "exact_closed_form_symbol_formula_for_m_k",
+  "obstruction": "terminal_high_high_resonance_curvature_gain",
+  "status": "OPEN",
+  "timestamp": 1776619233.535327,
+  "witness_angle": 1.566986743972448,
+  "witness_shell": 1
+}

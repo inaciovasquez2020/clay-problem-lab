@@ -1,0 +1,9 @@
+{
+  "generation": 12,
+  "issue": "simulation_cannot_upgrade_placeholder_to_theorem_without_exact_symbol_formula",
+  "needed_information": {
+    "name": "exact_closed_form_symbol_formula_for_m_k",
+    "required_output": "transverse renormalized lower bound |r_k(xi,eta)| >= c 2^{-alpha k} |xi wedge eta|^2",
+    "target": "DDYO high-high interaction symbol for canonical residual r_k = Ghat_k - P_k Ghat_k"
+  }
+}

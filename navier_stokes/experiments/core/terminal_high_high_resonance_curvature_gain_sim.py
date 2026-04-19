@@ -46,7 +46,7 @@ def write_json(name: str, payload: dict) -> None:
 
 def main() -> int:
     obstruction = "terminal_high_high_resonance_curvature_gain"
-    missing_input = "exact_closed_form_symbol_formula_for_m_k"
+    missing_input = "Exact Symbol Curvature Lemma for terminal_high_high_resonance_curvature_gain"
     state = State(
         generation=0,
         status="OPEN",

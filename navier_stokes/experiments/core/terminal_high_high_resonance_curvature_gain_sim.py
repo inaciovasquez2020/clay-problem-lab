@@ -178,14 +178,11 @@ def D_j(
     j: int,
 ) -> float:
     zeta = add3(xi, eta)
-    denom = dot3(xi, eta)
-    if abs(denom) <= 1.0e-12:
-        return 0.0
     zeta_n2 = dot3(zeta, zeta)
     if zeta_n2 <= 1.0e-12:
         return 0.0
-    numer = denom - (dot3(xi, zeta) * dot3(eta, zeta)) / zeta_n2
-    return (numer / denom) * chi_k(zeta, j)
+    wedge = xi[0] * eta[1] - xi[1] * eta[0]
+    return ((wedge * wedge) / (norm3(xi) * norm3(eta) * zeta_n2)) * chi_k(zeta, j)
 
 def F_k(
     xi: tuple[float, float, float],
@@ -201,9 +198,7 @@ def F_k(
     sig = sigma_eff(k)
     prefactor = chi_k(zeta, k) * align * (kappa_rank_defect(xi, eta) / (3.0 + sig))
     gaussian = math.exp(-dot3(zeta, zeta) / ((2.0 ** (2 * k)) * (sig ** 2)))
-    tail = 0.0
-    for j in range(k + 1, k + 33):
-        tail += (2.0 ** (3 * (k - j))) * D_j(xi, eta, j)
+    tail = (1.0 / 7.0) * D_j(xi, eta, k + 1)
     return prefactor * gaussian * tail
 
 def run_generation(g: int, seed: int) -> tuple[float, float, float, int]:

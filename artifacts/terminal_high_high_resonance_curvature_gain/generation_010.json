@@ -1,12 +1,15 @@
 {
-  "best_score": 0.8408920952531885,
+  "best_score": 0.0,
+  "exact_symbol_available": false,
+  "exact_symbol_curvature_lemma_instantiated": false,
   "generation": 10,
-  "lambda_search": 0.8408491106051125,
+  "lambda_search": 0.0,
   "local_gain_found": false,
   "missing_input": "Exact Symbol Curvature Lemma for terminal_high_high_resonance_curvature_gain",
   "obstruction": "terminal_high_high_resonance_curvature_gain",
   "status": "OPEN",
-  "timestamp": 1776620656.705345,
-  "witness_angle": 1.5730629066324322,
-  "witness_shell": 1
+  "timestamp": 1776622880.7876961,
+  "witness_eta": 0.28426196726649516,
+  "witness_shell": 1,
+  "witness_xi": 2.679975332467714
 }

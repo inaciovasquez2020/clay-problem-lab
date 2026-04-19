@@ -13,6 +13,7 @@ print(json.dumps({
     "missing_input": data["missing_input"],
     "generation": data["generation"],
     "best_score": data["best_score"],
-    "witness_shell": data["witness_shell"]
+    "witness_shell": data["witness_shell"],
+    "lambda_search": data["lambda_search"]
 }, indent=2))
 PY

@@ -20,6 +20,7 @@ class State:
     best_score: float
     witness_angle: float
     witness_shell: int
+    lambda_search: float | None
     timestamp: float
 
 def symbolic_placeholder(theta: float, k: int) -> float:
@@ -61,6 +62,7 @@ def main() -> int:
         best_score=0.0,
         witness_angle=0.0,
         witness_shell=0,
+        lambda_search=None,
         timestamp=time.time(),
     )
     max_generations = 12
@@ -72,6 +74,7 @@ def main() -> int:
         state.best_score = best
         state.witness_angle = theta
         state.witness_shell = k
+        state.lambda_search = lambda_search
         state.timestamp = time.time()
         write_json(f"generation_{g:03d}.json", asdict(state))
         if state.missing_input != "resolved":
@@ -91,6 +94,7 @@ def main() -> int:
         state.status = "CLOSED"
         write_json("closure.json", asdict(state))
         return 0
+    state.lambda_search = lambda_search
     write_json("frontier_summary.json", asdict(state))
     return 0
 

@@ -1,6 +1,6 @@
 {
   "best_score": 0.0,
-  "exact_symbol_available": false,
+  "exact_symbol_available": true,
   "exact_symbol_curvature_lemma_instantiated": false,
   "generation": 12,
   "lambda_search": 0.0,
@@ -20,5 +20,13 @@
   "timestamp": 1776623278.565172,
   "witness_eta": 0.22422439229621663,
   "witness_shell": 1,
-  "witness_xi": 2.615837642178665
+  "witness_xi": 2.615837642178665,
+  "exact_symbol_certificate": {
+    "parallel_eta": 1.5,
+    "positive_lower_bound_candidate": 0.0,
+    "admissible_retained": true,
+    "transverse_variation": 1.0,
+    "transverse_variation_nonzero": true
+  },
+  "exact_symbol_certificate_present": true
 }

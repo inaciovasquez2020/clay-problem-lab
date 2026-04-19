@@ -2,6 +2,7 @@
   "best_score": 1.0138933681368943e-12,
   "exact_symbol_available": false,
   "exact_symbol_curvature_lemma_instantiated": false,
+  "first_retained_zero_witness": {},
   "first_zero_witness": {
     "D_kplus1_xi_eta": 0.7604676079256018,
     "D_kplus1_xi_parallel": 0.0,
@@ -11,6 +12,7 @@
     "eta": 0.574704534172621,
     "kappa_rank_defect_xi_eta": -2.0000000000000004,
     "parallel_eta": 2.6934470646703574,
+    "retained": false,
     "score": 5.23507811451693e-19,
     "shell": 13,
     "xi": 2.6934470646703574
@@ -42,7 +44,7 @@
   "missing_input": "resolved",
   "obstruction": "terminal_high_high_resonance_curvature_gain",
   "status": "CLOSED",
-  "timestamp": 1776623986.667497,
+  "timestamp": 1776624121.2400389,
   "witness_eta": 2.8855703195382008,
   "witness_shell": 1,
   "witness_xi": 0.48273609489905767

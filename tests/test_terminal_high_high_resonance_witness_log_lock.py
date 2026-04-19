@@ -16,4 +16,6 @@ def test_terminal_high_high_resonance_zero_witness_log_lock() -> None:
     p = Path("artifacts/terminal_high_high_resonance_curvature_gain/frontier_summary.json")
     d = json.loads(p.read_text())
     z = d.get("first_zero_witness", {})
+    rz = d.get("first_retained_zero_witness", {})
     assert isinstance(z, dict)
+    assert isinstance(rz, dict)

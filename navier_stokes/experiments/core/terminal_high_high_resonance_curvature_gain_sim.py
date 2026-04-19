@@ -233,7 +233,8 @@ def run_generation(g: int, seed: int) -> tuple[float, float, float, int, dict]:
         chi_val = chi_k(zeta, k)
         kappa_val = kappa_rank_defect(xi_vec, eta_vec)
         score = abs(fk - fk_parallel)
-        if not structurally_admissible_score(score, chi_val, kappa_val, dj):
+        retained = structurally_admissible_score(score, chi_val, kappa_val, dj)
+        if not retained:
             if "first_zero_witness" not in locals():
                 first_zero_witness = {
                     "xi": xi,
@@ -247,6 +248,24 @@ def run_generation(g: int, seed: int) -> tuple[float, float, float, int, dict]:
                     "kappa_rank_defect_xi_eta": kappa_val,
                     "parallel_eta": parallel_eta,
                     "score": score,
+                    "retained": False,
+                }
+            continue
+        if score <= 1.0e-12:
+            if "first_retained_zero_witness" not in locals():
+                first_retained_zero_witness = {
+                    "xi": xi,
+                    "eta": eta,
+                    "shell": k,
+                    "F_k_xi_eta": fk,
+                    "F_k_xi_parallel": fk_parallel,
+                    "D_kplus1_xi_eta": dj,
+                    "D_kplus1_xi_parallel": dj_parallel,
+                    "chi_k_xi_plus_eta": chi_val,
+                    "kappa_rank_defect_xi_eta": kappa_val,
+                    "parallel_eta": parallel_eta,
+                    "score": score,
+                    "retained": True,
                 }
             continue
         lambda_search = score if lambda_search is None else min(lambda_search, score)
@@ -286,6 +305,7 @@ def run_generation(g: int, seed: int) -> tuple[float, float, float, int, dict]:
         "minimizing_witness_shell": min_k,
         "minimizing_witness_log": min_log,
         "first_zero_witness": locals().get("first_zero_witness", {}),
+        "first_retained_zero_witness": locals().get("first_retained_zero_witness", {}),
     }
 
 def write_json(name: str, payload: dict) -> None:
@@ -333,6 +353,7 @@ def main() -> int:
         generation_payload["minimizing_witness_shell"] = witness_bundle["minimizing_witness_shell"]
         generation_payload["minimizing_witness_log"] = witness_bundle["minimizing_witness_log"]
         generation_payload["first_zero_witness"] = witness_bundle["first_zero_witness"]
+        generation_payload["first_retained_zero_witness"] = witness_bundle["first_retained_zero_witness"]
         write_json(f"generation_{g:03d}.json", generation_payload)
         if state.status != "CLOSED":
             issue = {
@@ -351,6 +372,7 @@ def main() -> int:
             issue["minimizing_witness_shell"] = witness_bundle["minimizing_witness_shell"]
             issue["minimizing_witness_log"] = witness_bundle["minimizing_witness_log"]
             issue["first_zero_witness"] = witness_bundle["first_zero_witness"]
+            issue["first_retained_zero_witness"] = witness_bundle["first_retained_zero_witness"]
             write_json(f"issue_{g:03d}.json", issue)
             continue
         state.local_gain_found = True
@@ -365,6 +387,7 @@ def main() -> int:
     summary_payload["minimizing_witness_shell"] = witness_bundle["minimizing_witness_shell"]
     summary_payload["minimizing_witness_log"] = witness_bundle["minimizing_witness_log"]
     summary_payload["first_zero_witness"] = witness_bundle["first_zero_witness"]
+    summary_payload["first_retained_zero_witness"] = witness_bundle["first_retained_zero_witness"]
     write_json("frontier_summary.json", summary_payload)
     return 0
 

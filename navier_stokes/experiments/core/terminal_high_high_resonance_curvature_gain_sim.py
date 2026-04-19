@@ -43,8 +43,8 @@ def exact_curvature_lower_bound(xi: float, eta: float, k: int) -> float:
 def admissible_patch(xi: float, eta: float) -> bool:
     return abs(math.sin(eta - xi)) > 1.0e-6
 
-def structurally_admissible_score(score: float) -> bool:
-    return score > 1.0e-12
+def structurally_admissible_score(score: float, chi_val: float, kappa_val: float, dj_val: float) -> bool:
+    return score > 1.0e-12 and abs(chi_val) > 1.0e-12 and abs(kappa_val) > 1.0e-12 and abs(dj_val) > 1.0e-12
 
 def shell_vectors(theta_xi: float, theta_eta: float, k: int) -> tuple[tuple[float, float, float], tuple[float, float, float]]:
     r = 2.0 ** (k + 1)
@@ -233,7 +233,7 @@ def run_generation(g: int, seed: int) -> tuple[float, float, float, int, dict]:
         chi_val = chi_k(zeta, k)
         kappa_val = kappa_rank_defect(xi_vec, eta_vec)
         score = abs(fk - fk_parallel)
-        if not structurally_admissible_score(score):
+        if not structurally_admissible_score(score, chi_val, kappa_val, dj):
             if "first_zero_witness" not in locals():
                 first_zero_witness = {
                     "xi": xi,

@@ -172,6 +172,40 @@ def kappa_rank_defect(
         return 0.0
     return l2 / l1
 
+def D_j(
+    xi: tuple[float, float, float],
+    eta: tuple[float, float, float],
+    j: int,
+) -> float:
+    zeta = add3(xi, eta)
+    denom = dot3(xi, eta)
+    if abs(denom) <= 1.0e-12:
+        return 0.0
+    zeta_n2 = dot3(zeta, zeta)
+    if zeta_n2 <= 1.0e-12:
+        return 0.0
+    numer = denom - (dot3(xi, zeta) * dot3(eta, zeta)) / zeta_n2
+    return (numer / denom) * chi_k(zeta, j)
+
+def F_k(
+    xi: tuple[float, float, float],
+    eta: tuple[float, float, float],
+    k: int,
+) -> float:
+    zeta = add3(xi, eta)
+    nxi = norm3(xi)
+    neta = norm3(eta)
+    if nxi <= 1.0e-12 or neta <= 1.0e-12:
+        return 0.0
+    align = dot3(xi, eta) / (nxi * neta)
+    sig = sigma_eff(k)
+    prefactor = chi_k(zeta, k) * align * (kappa_rank_defect(xi, eta) / (3.0 + sig))
+    gaussian = math.exp(-dot3(zeta, zeta) / ((2.0 ** (2 * k)) * (sig ** 2)))
+    tail = 0.0
+    for j in range(k + 1, k + 33):
+        tail += (2.0 ** (3 * (k - j))) * D_j(xi, eta, j)
+    return prefactor * gaussian * tail
+
 def run_generation(g: int, seed: int) -> tuple[float, float, float, int]:
     rng = random.Random(seed + g)
     lambda_search = None

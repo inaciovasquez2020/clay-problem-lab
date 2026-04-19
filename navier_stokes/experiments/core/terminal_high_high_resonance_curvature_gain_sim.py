@@ -204,7 +204,7 @@ def F_k(
     tail = (1.0 / 7.0) * D_j(xi, eta, k + 1)
     return prefactor * gaussian * tail
 
-def run_generation(g: int, seed: int) -> tuple[float, float, float, int, dict]:
+def run_generation(g: int, seed: int) -> tuple[float, float, float, float, int, dict]:
     rng = random.Random(seed + g)
     lambda_search = None
     best = -1.0
@@ -298,7 +298,7 @@ def run_generation(g: int, seed: int) -> tuple[float, float, float, int, dict]:
             }
     if lambda_search is None:
         lambda_search = -1.0
-    return lambda_search, best_xi, best_eta, best_k, {
+    return lambda_search, best, best_xi, best_eta, best_k, {
         "maximizing_witness_log": best_log,
         "minimizing_witness_xi": min_xi,
         "minimizing_witness_eta": min_eta,
@@ -331,11 +331,11 @@ def main() -> int:
     max_generations = 12
     lambda_search = None
     for g in range(1, max_generations + 1):
-        lambda_search, xi, eta, k, witness_bundle = run_generation(g, seed=1729)
+        lambda_search, best, xi, eta, k, witness_bundle = run_generation(g, seed=1729)
         best_log = witness_bundle["maximizing_witness_log"]
         exact_symbol_available = False
         state.generation = g
-        state.best_score = lambda_search
+        state.best_score = best
         state.witness_xi = xi
         state.witness_eta = eta
         state.witness_shell = k

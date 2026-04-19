@@ -40,37 +40,55 @@ def transverse_renormalized_r_k(xi: float, eta: float, k: int) -> float:
 def exact_curvature_lower_bound(xi: float, eta: float, k: int) -> float:
     return abs(transverse_renormalized_r_k(xi, eta, k))
 
+def eta_parallel(xi: float, eta: float) -> float:
+    return xi
+
 def retained_admissible_witness(xi: float, eta: float, k: int) -> bool:
     xi_vec = (xi, 0.0, 0.0)
     eta_vec = (eta, 0.0, 0.0)
-    parallel_eta = xi
-    shell_ok = chi_k(add3(xi_vec, eta_vec), k) > 0.0
-    nondegenerate_ok = sigma_eff(k) > 0.0 and sup_green_hat_k(k) > 0.0
-    patch_ok = abs(eta) > 0.0
-    positive_curvature_rule = exact_curvature_lower_bound(xi, eta, k) >= 0.0
-    nontrivial_ok = abs(eta - parallel_eta) > 1.0e-12
-    return bool(shell_ok and nondegenerate_ok and patch_ok and positive_curvature_rule and nontrivial_ok)
+    parallel_eta = eta_parallel(xi, eta)
+    shell_value = chi_k(add3(xi_vec, eta_vec), k)
+    shell_ok = shell_value > 0.0
+    sigma_value = sigma_eff(k)
+    green_value = sup_green_hat_k(k)
+    nondegenerate_ok = sigma_value > 0.0 and green_value > 0.0
+    patch_ok = abs(eta) >= 2.0 ** (-k)
+    transverse_gap = abs(eta - parallel_eta)
+    nontrivial_ok = transverse_gap >= 2.0 ** (-(k + 2))
+    curvature_value = exact_curvature_lower_bound(xi, eta, k)
+    positive_curvature_rule = curvature_value >= 0.0
+    theorem_grade_bounds = abs(xi) >= 2.0 ** (-k) and abs(parallel_eta) >= 2.0 ** (-k)
+    return bool(
+        shell_ok
+        and nondegenerate_ok
+        and patch_ok
+        and nontrivial_ok
+        and positive_curvature_rule
+        and theorem_grade_bounds
+    )
 
 def exact_parallel_baseline_formula(xi: float, eta: float, k: int) -> float:
-    parallel_eta = xi
+    parallel_eta = eta_parallel(xi, eta)
     return F_k((xi, 0.0, 0.0), (parallel_eta, 0.0, 0.0), k)
 
 def transverse_variation_nonvanishing(xi: float, eta: float, k: int, h: float = 1.0e-6) -> float:
     return (exact_m_k(xi, eta + h, k) - exact_m_k(xi, eta - h, k)) / (2.0 * h)
 
 def exact_symbol_curvature_certificate(xi: float, eta: float, k: int) -> dict[str, float | bool]:
-    parallel_eta = xi
+    parallel_eta = eta_parallel(xi, eta)
     f_eta = F_k((xi, 0.0, 0.0), (eta, 0.0, 0.0), k)
     f_parallel = exact_parallel_baseline_formula(xi, eta, k)
     transverse_gap = abs(eta - parallel_eta)
     curvature_lower_bound = abs(f_eta - f_parallel)
     derivative = transverse_variation_nonvanishing(xi, eta, k)
+    positive_lower_bound_candidate = max(0.0, min(curvature_lower_bound, transverse_gap * max(abs(derivative), 0.0)))
     return {
         "F_k_xi_eta": f_eta,
         "F_k_xi_parallel": f_parallel,
         "parallel_eta": parallel_eta,
         "transverse_gap": transverse_gap,
         "curvature_lower_bound": curvature_lower_bound,
+        "positive_lower_bound_candidate": positive_lower_bound_candidate,
         "admissible_retained": retained_admissible_witness(xi, eta, k),
         "transverse_variation": derivative,
         "transverse_variation_nonzero": abs(derivative) > 0.0,
@@ -428,7 +446,7 @@ def main() -> int:
     cert = exact_symbol_curvature_certificate(state.witness_xi, state.witness_eta, state.witness_shell)
     summary_payload["exact_symbol_certificate"] = cert
     summary_payload["exact_symbol_available"] = True
-    summary_payload["local_gain_found"] = bool(cert["admissible_retained"] and cert["curvature_lower_bound"] > 0.0)
+    summary_payload["local_gain_found"] = bool(cert["admissible_retained"] and cert["positive_lower_bound_candidate"] > 0.0)
     if summary_payload["exact_symbol_curvature_lemma_instantiated"]:
         summary_payload["lambda_search"] = max(summary_payload["lambda_search"], cert["curvature_lower_bound"])
     write_json("frontier_summary.json", summary_payload)

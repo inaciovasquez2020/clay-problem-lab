@@ -30,13 +30,11 @@ def F_k(xi: float, eta: float, k: int) -> float:
     raise NotImplementedError("Provide the explicit closed-form DDYO symbol formula m_k(xi,eta)=F_k(xi,eta).")
 
 def exact_m_k(xi: float, eta: float, k: int) -> float:
-    return F_k(xi, eta, k)
+    xi_vec, eta_vec = shell_vectors(xi, eta, k)
+    return F_k(xi_vec, eta_vec, k)
 
 def transverse_renormalized_r_k(xi: float, eta: float, k: int) -> float:
-    if abs(math.sin(eta - xi)) <= 1.0e-12:
-        parallel_value = exact_m_k(xi, xi, k)
-    else:
-        parallel_value = exact_m_k(xi, xi, k)
+    parallel_value = exact_m_k(xi, xi, k)
     return exact_m_k(xi, eta, k) - parallel_value
 
 def exact_curvature_lower_bound(xi: float, eta: float, k: int) -> float:
@@ -44,6 +42,12 @@ def exact_curvature_lower_bound(xi: float, eta: float, k: int) -> float:
 
 def admissible_patch(xi: float, eta: float) -> bool:
     return abs(math.sin(eta - xi)) > 1.0e-6
+
+def shell_vectors(theta_xi: float, theta_eta: float, k: int) -> tuple[tuple[float, float, float], tuple[float, float, float]]:
+    r = 2.0 ** (k + 1)
+    xi = (r * math.cos(theta_xi), r * math.sin(theta_xi), 0.0)
+    eta = (r * math.cos(theta_eta), r * math.sin(theta_eta), 0.0)
+    return xi, eta
 
 def run_generation(g: int, seed: int) -> tuple[float, float, float, int]:
     rng = random.Random(seed + g)

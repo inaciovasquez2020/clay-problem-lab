@@ -49,6 +49,25 @@ def shell_vectors(theta_xi: float, theta_eta: float, k: int) -> tuple[tuple[floa
     eta = (r * math.cos(theta_eta), r * math.sin(theta_eta), 0.0)
     return xi, eta
 
+def h_transition(x: float) -> float:
+    if x <= 0.0:
+        return 0.0
+    if x >= 1.0:
+        return 1.0
+    a = math.exp(-1.0 / x)
+    b = math.exp(-1.0 / (1.0 - x))
+    return a / (a + b)
+
+def phi_bump(r: float) -> float:
+    return 1.0 - h_transition(r - 1.0)
+
+def norm3(v: tuple[float, float, float]) -> float:
+    return math.sqrt(v[0] * v[0] + v[1] * v[1] + v[2] * v[2])
+
+def chi_k(vec: tuple[float, float, float], k: int) -> float:
+    r = norm3(vec)
+    return phi_bump((2.0 ** (-k)) * r) - phi_bump((2.0 ** (-(k - 1))) * r)
+
 def run_generation(g: int, seed: int) -> tuple[float, float, float, int]:
     rng = random.Random(seed + g)
     lambda_search = None

@@ -64,6 +64,7 @@ def main() -> int:
         timestamp=time.time(),
     )
     max_generations = 12
+    lambda_search = None
     for g in range(1, max_generations + 1):
         best, theta, k = run_generation(g, seed=1729)
         state.generation = g

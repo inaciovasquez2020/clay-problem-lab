@@ -201,34 +201,49 @@ def F_k(
     tail = (1.0 / 7.0) * D_j(xi, eta, k + 1)
     return prefactor * gaussian * tail
 
-def run_generation(g: int, seed: int) -> tuple[float, float, float, int]:
+def run_generation(g: int, seed: int) -> tuple[float, float, float, int, dict]:
     rng = random.Random(seed + g)
     lambda_search = None
     best = -1.0
     best_xi = 0.0
     best_eta = 0.0
     best_k = 0
+    best_log: dict = {}
     for _ in range(20000):
         k = rng.randint(1, 40)
         xi = rng.uniform(0.0, math.pi)
         eta = rng.uniform(0.0, math.pi)
         if not admissible_patch(xi, eta):
             continue
-        try:
-            score = exact_curvature_lower_bound(xi, eta, k)
-            exact_symbol_available = True
-        except NotImplementedError:
-            score = 0.0
-            exact_symbol_available = False
+        xi_vec, eta_vec = shell_vectors(xi, eta, k)
+        parallel_eta = xi
+        parallel_eta_vec = shell_vectors(xi, parallel_eta, k)[1]
+        zeta = add3(xi_vec, eta_vec)
+        fk = F_k(xi_vec, eta_vec, k)
+        fk_parallel = F_k(xi_vec, parallel_eta_vec, k)
+        dj = D_j(xi_vec, eta_vec, k + 1)
+        dj_parallel = D_j(xi_vec, parallel_eta_vec, k + 1)
+        chi_val = chi_k(zeta, k)
+        kappa_val = kappa_rank_defect(xi_vec, eta_vec)
+        score = abs(fk - fk_parallel)
         lambda_search = score if lambda_search is None else min(lambda_search, score)
         if score > best:
             best = score
             best_xi = xi
             best_eta = eta
             best_k = k
+            best_log = {
+                "F_k_xi_eta": fk,
+                "F_k_xi_parallel": fk_parallel,
+                "D_kplus1_xi_eta": dj,
+                "D_kplus1_xi_parallel": dj_parallel,
+                "chi_k_xi_plus_eta": chi_val,
+                "kappa_rank_defect_xi_eta": kappa_val,
+                "parallel_eta": parallel_eta,
+            }
     if lambda_search is None:
         lambda_search = -1.0
-    return lambda_search, best_xi, best_eta, best_k
+    return lambda_search, best_xi, best_eta, best_k, best_log
 
 def write_json(name: str, payload: dict) -> None:
     (ART / name).write_text(json.dumps(payload, indent=2, sort_keys=True))
@@ -253,7 +268,7 @@ def main() -> int:
     max_generations = 12
     lambda_search = None
     for g in range(1, max_generations + 1):
-        lambda_search, xi, eta, k = run_generation(g, seed=1729)
+        lambda_search, xi, eta, k, best_log = run_generation(g, seed=1729)
         exact_symbol_available = False
         state.generation = g
         state.best_score = lambda_search
@@ -267,7 +282,9 @@ def main() -> int:
         state.status = "CLOSED" if lambda_search > 0.0 else "OPEN"
         state.missing_input = "resolved" if lambda_search > 0.0 else "Exact Symbol Curvature Lemma for terminal_high_high_resonance_curvature_gain"
         state.timestamp = time.time()
-        write_json(f"generation_{g:03d}.json", asdict(state))
+        generation_payload = asdict(state)
+        generation_payload["maximizing_witness_log"] = best_log
+        write_json(f"generation_{g:03d}.json", generation_payload)
         if state.status != "CLOSED":
             issue = {
                 "generation": g,
@@ -279,6 +296,7 @@ def main() -> int:
                     "reduction_doc": "docs/math/RA1N_TERMINAL_REDUCTION_TO_EXACT_SYMBOL_CURVATURE_LEMMA.md"
                 }
             }
+            issue["maximizing_witness_log"] = best_log
             write_json(f"issue_{g:03d}.json", issue)
             continue
         state.local_gain_found = True
@@ -286,7 +304,9 @@ def main() -> int:
         write_json("closure.json", asdict(state))
         return 0
     state.lambda_search = lambda_search
-    write_json("frontier_summary.json", asdict(state))
+    summary_payload = asdict(state)
+    summary_payload["maximizing_witness_log"] = best_log
+    write_json("frontier_summary.json", summary_payload)
     return 0
 
 if __name__ == "__main__":

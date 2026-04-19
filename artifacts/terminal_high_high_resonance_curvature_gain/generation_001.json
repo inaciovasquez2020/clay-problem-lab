@@ -5,10 +5,19 @@
   "generation": 1,
   "lambda_search": 0.0,
   "local_gain_found": false,
+  "maximizing_witness_log": {
+    "D_kplus1_xi_eta": 0.3380968951309924,
+    "D_kplus1_xi_parallel": 0.0,
+    "F_k_xi_eta": 0.005183143071156608,
+    "F_k_xi_parallel": 0.0,
+    "chi_k_xi_plus_eta": 0.6112276306650507,
+    "kappa_rank_defect_xi_eta": -2.0000000000000004,
+    "parallel_eta": 0.48273609489905767
+  },
   "missing_input": "Exact Symbol Curvature Lemma for terminal_high_high_resonance_curvature_gain",
   "obstruction": "terminal_high_high_resonance_curvature_gain",
   "status": "OPEN",
-  "timestamp": 1776622866.877034,
+  "timestamp": 1776623253.5526989,
   "witness_eta": 2.8855703195382008,
   "witness_shell": 1,
   "witness_xi": 0.48273609489905767

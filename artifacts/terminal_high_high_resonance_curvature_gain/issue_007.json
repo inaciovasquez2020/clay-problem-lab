@@ -1,6 +1,15 @@
 {
   "generation": 7,
   "issue": "simulation_cannot_upgrade_placeholder_to_theorem_without_exact_symbol_curvature_lemma",
+  "maximizing_witness_log": {
+    "D_kplus1_xi_eta": 0.31723011492177217,
+    "D_kplus1_xi_parallel": 0.0,
+    "F_k_xi_eta": 0.005139619104162813,
+    "F_k_xi_parallel": 0.0,
+    "chi_k_xi_plus_eta": 0.6361757442525663,
+    "kappa_rank_defect_xi_eta": -2.0000000000000004,
+    "parallel_eta": 2.5180771257033987
+  },
   "needed_information": {
     "name": "Exact Symbol Curvature Lemma for terminal_high_high_resonance_curvature_gain",
     "reduction_doc": "docs/math/RA1N_TERMINAL_REDUCTION_TO_EXACT_SYMBOL_CURVATURE_LEMMA.md",

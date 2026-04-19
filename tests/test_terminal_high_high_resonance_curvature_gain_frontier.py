@@ -11,5 +11,5 @@ def test_frontier_simulator_writes_summary() -> None:
     assert p.exists()
     data = json.loads(p.read_text())
     assert data["obstruction"] == "terminal_high_high_resonance_curvature_gain"
-    assert data["missing_input"] == "exact_closed_form_symbol_formula_for_m_k"
+    assert data["missing_input"] == "Exact Symbol Curvature Lemma for terminal_high_high_resonance_curvature_gain"
     assert data["status"] == "OPEN"

@@ -67,6 +67,7 @@ def main() -> int:
     lambda_search = None
     for g in range(1, max_generations + 1):
         best, theta, k = run_generation(g, seed=1729)
+        lambda_search = best if lambda_search is None else min(lambda_search, best)
         state.generation = g
         state.best_score = best
         state.witness_angle = theta

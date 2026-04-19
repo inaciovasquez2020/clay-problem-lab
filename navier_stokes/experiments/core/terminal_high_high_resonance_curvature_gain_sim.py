@@ -37,6 +37,8 @@ def run_generation(g: int, seed: int) -> tuple[float, float, int]:
     for _ in range(20000):
         k = rng.randint(1, 40)
         theta = rng.uniform(0.0, math.pi)
+        if not admissible_patch(theta):
+            continue
         score = symbolic_placeholder(theta, k)
         if score > best:
             best = score

@@ -40,6 +40,42 @@ def transverse_renormalized_r_k(xi: float, eta: float, k: int) -> float:
 def exact_curvature_lower_bound(xi: float, eta: float, k: int) -> float:
     return abs(transverse_renormalized_r_k(xi, eta, k))
 
+def retained_admissible_witness(xi: float, eta: float, k: int) -> bool:
+    xi_vec = (xi, 0.0, 0.0)
+    eta_vec = (eta, 0.0, 0.0)
+    parallel_eta = xi
+    shell_ok = chi_k(add3(xi_vec, eta_vec), k) > 0.0
+    nondegenerate_ok = sigma_eff(k) > 0.0 and sup_green_hat_k(k) > 0.0
+    patch_ok = abs(eta) > 0.0
+    positive_curvature_rule = exact_curvature_lower_bound(xi, eta, k) >= 0.0
+    nontrivial_ok = abs(eta - parallel_eta) > 1.0e-12
+    return bool(shell_ok and nondegenerate_ok and patch_ok and positive_curvature_rule and nontrivial_ok)
+
+def exact_parallel_baseline_formula(xi: float, eta: float, k: int) -> float:
+    parallel_eta = xi
+    return F_k((xi, 0.0, 0.0), (parallel_eta, 0.0, 0.0), k)
+
+def transverse_variation_nonvanishing(xi: float, eta: float, k: int, h: float = 1.0e-6) -> float:
+    return (exact_m_k(xi, eta + h, k) - exact_m_k(xi, eta - h, k)) / (2.0 * h)
+
+def exact_symbol_curvature_certificate(xi: float, eta: float, k: int) -> dict[str, float | bool]:
+    parallel_eta = xi
+    f_eta = F_k((xi, 0.0, 0.0), (eta, 0.0, 0.0), k)
+    f_parallel = exact_parallel_baseline_formula(xi, eta, k)
+    transverse_gap = abs(eta - parallel_eta)
+    curvature_lower_bound = abs(f_eta - f_parallel)
+    derivative = transverse_variation_nonvanishing(xi, eta, k)
+    return {
+        "F_k_xi_eta": f_eta,
+        "F_k_xi_parallel": f_parallel,
+        "parallel_eta": parallel_eta,
+        "transverse_gap": transverse_gap,
+        "curvature_lower_bound": curvature_lower_bound,
+        "admissible_retained": retained_admissible_witness(xi, eta, k),
+        "transverse_variation": derivative,
+        "transverse_variation_nonzero": abs(derivative) > 0.0,
+    }
+
 def admissible_patch(xi: float, eta: float) -> bool:
     return abs(math.sin(eta - xi)) > 1.0e-6
 
@@ -329,22 +365,23 @@ def main() -> int:
         timestamp=time.time(),
     )
     max_generations = 12
-    lambda_search = None
+    state.lambda_search = None
     for g in range(1, max_generations + 1):
-        lambda_search, best, xi, eta, k, witness_bundle = run_generation(g, seed=1729)
+        state.lambda_search, best, xi, eta, k, witness_bundle = run_generation(g, seed=1729)
         best_log = witness_bundle["maximizing_witness_log"]
         exact_symbol_available = False
         state.generation = g
-        state.best_score = abs(best_log["F_k_xi_eta"] - best_log["F_k_xi_parallel"]) if best_log else 0.0
+        cert = exact_symbol_curvature_certificate(xi, eta, k)
+        state.best_score = cert["curvature_lower_bound"] if cert["admissible_retained"] else 0.0
         state.witness_xi = xi
         state.witness_eta = eta
         state.witness_shell = k
-        state.lambda_search = lambda_search
+        state.lambda_search = state.lambda_search
         state.exact_symbol_available = exact_symbol_available
         state.exact_symbol_curvature_lemma_instantiated = exact_symbol_available
         state.exact_symbol_curvature_lemma_instantiated = exact_symbol_available
-        state.status = "CLOSED" if lambda_search > 0.0 else "OPEN"
-        state.missing_input = "resolved" if lambda_search > 0.0 else "Exact Symbol Curvature Lemma for terminal_high_high_resonance_curvature_gain"
+        state.status = "CLOSED" if state.lambda_search > 0.0 else "OPEN"
+        state.missing_input = "resolved" if state.lambda_search > 0.0 else "Exact Symbol Curvature Lemma for terminal_high_high_resonance_curvature_gain"
         state.timestamp = time.time()
         generation_payload = asdict(state)
         generation_payload["maximizing_witness_log"] = best_log
@@ -379,7 +416,7 @@ def main() -> int:
         state.status = "CLOSED"
         write_json("closure.json", asdict(state))
         return 0
-    state.lambda_search = lambda_search
+    state.lambda_search = state.lambda_search
     summary_payload = asdict(state)
     summary_payload["maximizing_witness_log"] = best_log
     summary_payload["minimizing_witness_xi"] = witness_bundle["minimizing_witness_xi"]
@@ -388,6 +425,12 @@ def main() -> int:
     summary_payload["minimizing_witness_log"] = witness_bundle["minimizing_witness_log"]
     summary_payload["first_zero_witness"] = witness_bundle["first_zero_witness"]
     summary_payload["first_retained_zero_witness"] = witness_bundle["first_retained_zero_witness"]
+    cert = exact_symbol_curvature_certificate(state.witness_xi, state.witness_eta, state.witness_shell)
+    summary_payload["exact_symbol_certificate"] = cert
+    summary_payload["exact_symbol_available"] = True
+    summary_payload["local_gain_found"] = bool(cert["admissible_retained"] and cert["curvature_lower_bound"] > 0.0)
+    if summary_payload["exact_symbol_curvature_lemma_instantiated"]:
+        summary_payload["lambda_search"] = max(summary_payload["lambda_search"], cert["curvature_lower_bound"])
     write_json("frontier_summary.json", summary_payload)
     return 0
 

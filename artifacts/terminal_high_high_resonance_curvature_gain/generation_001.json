@@ -1,5 +1,5 @@
 {
-  "best_score": 0.005183143071156608,
+  "best_score": 0.0,
   "exact_symbol_available": false,
   "exact_symbol_curvature_lemma_instantiated": false,
   "first_retained_zero_witness": {},
@@ -44,7 +44,7 @@
   "missing_input": "resolved",
   "obstruction": "terminal_high_high_resonance_curvature_gain",
   "status": "CLOSED",
-  "timestamp": 1776625174.879833,
+  "timestamp": 1776626263.7159302,
   "witness_eta": 2.8855703195382008,
   "witness_shell": 1,
   "witness_xi": 0.48273609489905767

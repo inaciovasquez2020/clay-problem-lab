@@ -22,8 +22,9 @@ class State:
     witness_eta: float
     witness_shell: int
     lambda_search: float | None
-    exact_symbol_curvature_lemma_instantiated: bool
     timestamp: float
+    exact_symbol_curvature_lemma_instantiated: bool = False
+    exact_symbol_available: bool = False
 
 def F_k(xi: float, eta: float, k: int) -> float:
     raise NotImplementedError("Provide the explicit closed-form DDYO symbol formula m_k(xi,eta)=F_k(xi,eta).")
@@ -57,7 +58,12 @@ def run_generation(g: int, seed: int) -> tuple[float, float, float, int]:
         eta = rng.uniform(0.0, math.pi)
         if not admissible_patch(xi, eta):
             continue
-        score = exact_curvature_lower_bound(xi, eta, k)
+        try:
+            score = exact_curvature_lower_bound(xi, eta, k)
+            exact_symbol_available = True
+        except NotImplementedError:
+            score = 0.0
+            exact_symbol_available = False
         lambda_search = score if lambda_search is None else min(lambda_search, score)
         if score > best:
             best = score
@@ -92,13 +98,16 @@ def main() -> int:
     lambda_search = None
     for g in range(1, max_generations + 1):
         lambda_search, xi, eta, k = run_generation(g, seed=1729)
+        exact_symbol_available = False
         state.generation = g
         state.best_score = lambda_search
         state.witness_xi = xi
         state.witness_eta = eta
         state.witness_shell = k
         state.lambda_search = lambda_search
-        state.exact_symbol_curvature_lemma_instantiated = True
+        state.exact_symbol_available = exact_symbol_available
+        state.exact_symbol_curvature_lemma_instantiated = exact_symbol_available
+        state.exact_symbol_curvature_lemma_instantiated = exact_symbol_available
         state.status = "CLOSED" if lambda_search > 0.0 else "OPEN"
         state.missing_input = "resolved" if lambda_search > 0.0 else "Exact Symbol Curvature Lemma for terminal_high_high_resonance_curvature_gain"
         state.timestamp = time.time()

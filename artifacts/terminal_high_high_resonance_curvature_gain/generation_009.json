@@ -2,10 +2,10 @@
   "best_score": 0.8408771597339628,
   "generation": 9,
   "local_gain_found": false,
-  "missing_input": "exact_closed_form_symbol_formula_for_m_k",
+  "missing_input": "Exact Symbol Curvature Lemma for terminal_high_high_resonance_curvature_gain",
   "obstruction": "terminal_high_high_resonance_curvature_gain",
   "status": "OPEN",
-  "timestamp": 1776619233.541287,
+  "timestamp": 1776620007.21875,
   "witness_angle": 1.566011039355371,
   "witness_shell": 1
 }

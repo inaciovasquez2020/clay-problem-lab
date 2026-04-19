@@ -70,11 +70,12 @@ def main() -> int:
         if state.missing_input != "resolved":
             issue = {
                 "generation": g,
-                "issue": "simulation_cannot_upgrade_placeholder_to_theorem_without_exact_symbol_formula",
+                "issue": "simulation_cannot_upgrade_placeholder_to_theorem_without_exact_symbol_curvature_lemma",
                 "needed_information": {
-                    "name": "exact_closed_form_symbol_formula_for_m_k",
+                    "name": "Exact Symbol Curvature Lemma for terminal_high_high_resonance_curvature_gain",
                     "target": "DDYO high-high interaction symbol for canonical residual r_k = Ghat_k - P_k Ghat_k",
-                    "required_output": "transverse renormalized lower bound |r_k(xi,eta)| >= c 2^{-alpha k} |xi wedge eta|^2"
+                    "required_output": "transverse renormalized lower bound |r_k(xi,eta)| >= c 2^{-alpha k} |xi wedge eta|^2",
+                    "reduction_doc": "docs/math/RA1N_TERMINAL_REDUCTION_TO_EXACT_SYMBOL_CURVATURE_LEMMA.md"
                 }
             }
             write_json(f"issue_{g:03d}.json", issue)

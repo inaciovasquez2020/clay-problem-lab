@@ -68,6 +68,67 @@ def chi_k(vec: tuple[float, float, float], k: int) -> float:
     r = norm3(vec)
     return phi_bump((2.0 ** (-k)) * r) - phi_bump((2.0 ** (-(k - 1))) * r)
 
+def dot3(a: tuple[float, float, float], b: tuple[float, float, float]) -> float:
+    return a[0] * b[0] + a[1] * b[1] + a[2] * b[2]
+
+def add3(a: tuple[float, float, float], b: tuple[float, float, float]) -> tuple[float, float, float]:
+    return (a[0] + b[0], a[1] + b[1], a[2] + b[2])
+
+def green_hat(vec: tuple[float, float, float]) -> float:
+    n2 = dot3(vec, vec)
+    if n2 <= 0.0:
+        raise ValueError("green_hat undefined at zero vector")
+    return 1.0 / n2
+
+def sup_green_hat_k(k: int) -> float:
+    return 2.0 ** (2 - 2 * k)
+
+def sigma_eff(k: int, nu: float = 1.0) -> float:
+    return math.sqrt(nu * (2.0 ** (2 * k)) / sup_green_hat_k(k))
+
+def sym_advection_tensor(
+    xi: tuple[float, float, float],
+    eta: tuple[float, float, float],
+) -> tuple[tuple[float, float, float], tuple[float, float, float], tuple[float, float, float]]:
+    return (
+        (0.5 * (xi[0] * eta[0] + eta[0] * xi[0]), 0.5 * (xi[0] * eta[1] + eta[0] * xi[1]), 0.5 * (xi[0] * eta[2] + eta[0] * xi[2])),
+        (0.5 * (xi[1] * eta[0] + eta[1] * xi[0]), 0.5 * (xi[1] * eta[1] + eta[1] * xi[1]), 0.5 * (xi[1] * eta[2] + eta[1] * xi[2])),
+        (0.5 * (xi[2] * eta[0] + eta[2] * xi[0]), 0.5 * (xi[2] * eta[1] + eta[2] * xi[1]), 0.5 * (xi[2] * eta[2] + eta[2] * xi[2])),
+    )
+
+def leray_projector(vec: tuple[float, float, float]) -> tuple[tuple[float, float, float], tuple[float, float, float], tuple[float, float, float]]:
+    n2 = dot3(vec, vec)
+    if n2 <= 0.0:
+        raise ValueError("leray_projector undefined at zero vector")
+    return (
+        (1.0 - vec[0] * vec[0] / n2,      - vec[0] * vec[1] / n2,      - vec[0] * vec[2] / n2),
+        (     - vec[1] * vec[0] / n2, 1.0 - vec[1] * vec[1] / n2,      - vec[1] * vec[2] / n2),
+        (     - vec[2] * vec[0] / n2,      - vec[2] * vec[1] / n2, 1.0 - vec[2] * vec[2] / n2),
+    )
+
+def matmul3(
+    a: tuple[tuple[float, float, float], tuple[float, float, float], tuple[float, float, float]],
+    b: tuple[tuple[float, float, float], tuple[float, float, float], tuple[float, float, float]],
+) -> tuple[tuple[float, float, float], tuple[float, float, float], tuple[float, float, float]]:
+    return tuple(
+        tuple(sum(a[i][m] * b[m][j] for m in range(3)) for j in range(3))
+        for i in range(3)
+    )
+
+def transpose3(
+    a: tuple[tuple[float, float, float], tuple[float, float, float], tuple[float, float, float]]
+) -> tuple[tuple[float, float, float], tuple[float, float, float], tuple[float, float, float]]:
+    return tuple(tuple(a[j][i] for j in range(3)) for i in range(3))
+
+def interaction_matrix(
+    xi: tuple[float, float, float],
+    eta: tuple[float, float, float],
+) -> tuple[tuple[float, float, float], tuple[float, float, float], tuple[float, float, float]]:
+    zeta = add3(xi, eta)
+    P = leray_projector(zeta)
+    S = sym_advection_tensor(xi, eta)
+    return matmul3(matmul3(P, S), transpose3(P))
+
 def run_generation(g: int, seed: int) -> tuple[float, float, float, int]:
     rng = random.Random(seed + g)
     lambda_search = None

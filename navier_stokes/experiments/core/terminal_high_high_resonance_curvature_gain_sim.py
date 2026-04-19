@@ -129,6 +129,49 @@ def interaction_matrix(
     S = sym_advection_tensor(xi, eta)
     return matmul3(matmul3(P, S), transpose3(P))
 
+def trace3(
+    a: tuple[tuple[float, float, float], tuple[float, float, float], tuple[float, float, float]]
+) -> float:
+    return a[0][0] + a[1][1] + a[2][2]
+
+def det3(
+    a: tuple[tuple[float, float, float], tuple[float, float, float], tuple[float, float, float]]
+) -> float:
+    return (
+        a[0][0] * (a[1][1] * a[2][2] - a[1][2] * a[2][1])
+        - a[0][1] * (a[1][0] * a[2][2] - a[1][2] * a[2][0])
+        + a[0][2] * (a[1][0] * a[2][1] - a[1][1] * a[2][0])
+    )
+
+def eigenvalue_pair_vieta(
+    M: tuple[tuple[float, float, float], tuple[float, float, float], tuple[float, float, float]]
+) -> tuple[float, float]:
+    p1 = trace3(M)
+    M2 = matmul3(M, M)
+    p2 = 0.5 * (p1 * p1 - trace3(M2))
+    p3 = det3(M)
+    Q = (p1 * p1 - 3.0 * p2) / 9.0
+    if Q <= 0.0:
+        return (0.0, 0.0)
+    R = (2.0 * p1 * p1 * p1 - 9.0 * p1 * p2 + 27.0 * p3) / 54.0
+    ratio = max(-1.0, min(1.0, R / math.sqrt(Q * Q * Q)))
+    theta = math.acos(ratio)
+    vals = [
+        -2.0 * math.sqrt(Q) * math.cos((theta + 2.0 * math.pi * m) / 3.0) + p1 / 3.0
+        for m in range(3)
+    ]
+    vals.sort(reverse=True)
+    return vals[0], vals[1]
+
+def kappa_rank_defect(
+    xi: tuple[float, float, float],
+    eta: tuple[float, float, float],
+) -> float:
+    l1, l2 = eigenvalue_pair_vieta(interaction_matrix(xi, eta))
+    if abs(l1) <= 1.0e-12:
+        return 0.0
+    return l2 / l1
+
 def run_generation(g: int, seed: int) -> tuple[float, float, float, int]:
     rng = random.Random(seed + g)
     lambda_search = None

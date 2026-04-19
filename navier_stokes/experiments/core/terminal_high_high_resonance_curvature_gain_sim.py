@@ -335,7 +335,7 @@ def main() -> int:
         best_log = witness_bundle["maximizing_witness_log"]
         exact_symbol_available = False
         state.generation = g
-        state.best_score = best
+        state.best_score = abs(best_log["F_k_xi_eta"] - best_log["F_k_xi_parallel"]) if best_log else 0.0
         state.witness_xi = xi
         state.witness_eta = eta
         state.witness_shell = k

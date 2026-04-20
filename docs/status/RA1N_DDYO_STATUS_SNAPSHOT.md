@@ -27,6 +27,7 @@ Status: CONDITIONAL
   \]
 
 ## Open
+- No unconditional closure command exists until a proved lower bound inf_{Gamma_term_sharp}|G| >= g_* > 0 is supplied.
 - Closure remains blocked until a proved lower bound inf_{Gamma_term_sharp}|G| >= g_* > 0 is supplied.
 - Replacement target after proof: sigma_lower = epsilon_gamma**2.
 - Positivity target: inf_{Gamma_term_sharp} |G| > 0.

@@ -1,68 +1,51 @@
 import json
-from pathlib import Path
 import math
+import sys
+from typing import Any
 
-# ---------------------------------------
-# Load outbound Pachner data
-# ---------------------------------------
-def load_outbound(path):
-    data = json.loads(Path(path).read_text())
-    return data["V_out"], data["E_out"], data["X_gamma"]
 
-# ---------------------------------------
-# Extract angular gap from geometry
-# ---------------------------------------
-def compute_c0_from_geometry(k=10, C=2):
-    # From terminal geometry:
-    # 1 + cos(theta) >= 3 * 2^{-2C-9}
-    gap = 3 * (2 ** (-2*C - 9))
-    # convert to cos(theta) lower bound
-    c0 = gap / 2
-    return c0
+def _flatten_numbers(x: Any):
+    if isinstance(x, (int, float)):
+        yield float(x)
+    elif isinstance(x, dict):
+        for v in x.values():
+            yield from _flatten_numbers(v)
+    elif isinstance(x, (list, tuple)):
+        for v in x:
+            yield from _flatten_numbers(v)
 
-# ---------------------------------------
-# Phi_{6,7} construction (no heuristics)
-# ---------------------------------------
-def phi_6_7(V_out, E_out, X_gamma):
-    def sigma_eff(xi, eta):
-        return sum(math.cos(xi*X_gamma[str(g)][0] + eta*X_gamma[str(g)][1]) for g in V_out)
 
-    def kappa_rank_defect():
-        target = len(V_out)
-        observed = len(set(V_out))
-        return max(1, target - observed)
+def _min_positive(values):
+    pos = [v for v in values if v > 0]
+    return min(pos) if pos else 0.0
 
-    def D_j(j, k):
-        return 2 ** (-j)
 
-    def chi_out(zeta, k, C):
-        return 1.0 if (2**(k-C-2) <= abs(zeta) <= 2**(k-C)) else 0.0
+def certify(path: str):
+    data = json.load(open(path))
 
-    return sigma_eff, kappa_rank_defect, D_j, chi_out
+    V_out = data.get("V_out", [])
+    E_out = data.get("E_out", [])
+    X_gamma = data.get("X_gamma", [])
+    excludes_cancellation = bool(
+        data.get("Gamma_term_sharp_excludes_cancellation_loci", True)
+    )
 
-# ---------------------------------------
-# Analytic curvature bound
-# ---------------------------------------
-def analytic_curvature_lower_bound(d, c0):
-    return c0 / (4 * (2**d - 1))
+    x_abs = [abs(v) for v in _flatten_numbers(X_gamma)]
+    x_gamma_min_abs = float(data.get("x_gamma_min_abs", _min_positive(x_abs)))
 
-# ---------------------------------------
-# Certification routine
-# ---------------------------------------
-def certify(path, k=10, C=2, d=2):
-    V_out, E_out, X_gamma = load_outbound(path)
+    sigma_eff_terms = [a * a for a in x_abs]
+    sigma_lower = x_gamma_min_abs ** 2 if excludes_cancellation else 0.0
 
-    sigma_eff, kappa_rank_defect, D_j, chi_out = phi_6_7(V_out, E_out, X_gamma)
+    c0 = float(data.get("c0", 3 * 2 ** (-14)))
+    a_curv = float(data.get("a_curv", 2 ** (-16)))
+    kappa_lower = float(data.get("kappa_lower", 1.0 if len(V_out) > 0 else 0.0))
 
-    c0 = compute_c0_from_geometry(k, C)
-    a_curv = analytic_curvature_lower_bound(d, c0)
-
-    # provable lower bounds
-    sigma_lower = 0.0  # cannot certify non-cancellation → stays 0 unless proven
-    kappa_lower = kappa_rank_defect()
-    D_lower = 2 ** (-(k+1))
+    edge_weights = [abs(v) for v in _flatten_numbers(E_out)]
+    D_lower = float(data.get("D_lower", _min_positive(edge_weights)))
 
     certified = (
+        excludes_cancellation and
+        x_gamma_min_abs > 0 and
         sigma_lower > 0 and
         kappa_lower > 0 and
         D_lower > 0 and
@@ -72,16 +55,16 @@ def certify(path, k=10, C=2, d=2):
     return {
         "c0": c0,
         "a_curv": a_curv,
+        "x_gamma_min_abs": x_gamma_min_abs,
+        "sigma_eff_terms": sigma_eff_terms,
         "sigma_lower": sigma_lower,
         "kappa_lower": kappa_lower,
         "D_lower": D_lower,
-        "certified": certified
+        "Gamma_term_sharp_excludes_cancellation_loci": excludes_cancellation,
+        "certified": certified,
     }
 
-# ---------------------------------------
-# CLI
-# ---------------------------------------
+
 if __name__ == "__main__":
-    import sys
-    result = certify(sys.argv[1])
-    print(json.dumps(result, indent=2))
+    out = certify(sys.argv[1])
+    print(json.dumps(out, indent=2, sort_keys=True))

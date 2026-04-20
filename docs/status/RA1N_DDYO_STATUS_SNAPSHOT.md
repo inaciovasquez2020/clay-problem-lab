@@ -27,6 +27,9 @@ Status: CONDITIONAL
   \]
 
 ## Open
+- Replacement target after proof: sigma_lower = epsilon_gamma**2.
+- Positivity target: inf_{Gamma_term_sharp} |G| > 0.
+- Wedge factorization lock: CONDITIONAL on proving kappa_rank_defect(xi,eta) = wedge(xi,eta) * G(xi,eta).
 - RA1n/DDYO bridge remains CONDITIONAL pending proof of a uniform lower bound inf_{Gamma_term_sharp}|X_gamma| >= eps_gamma > 0.
 - Explicit formulas for
   \[

@@ -27,6 +27,7 @@ Status: CONDITIONAL
   \]
 
 ## Open
+- RA1n/DDYO bridge remains CONDITIONAL pending proof of a uniform lower bound inf_{Gamma_term_sharp}|X_gamma| >= eps_gamma > 0.
 - Explicit formulas for
   \[
   \sigma_{\mathrm{eff}},\;

@@ -31,10 +31,10 @@ def certify(path: str):
     )
 
     x_abs = [abs(v) for v in _flatten_numbers(X_gamma)]
-    x_gamma_min_abs = float(data.get("x_gamma_min_abs", _min_positive(x_abs)))
+    epsilon_gamma = float(data.get("epsilon_gamma", _min_positive(x_abs)))
 
     sigma_eff_terms = [a * a for a in x_abs]
-    sigma_lower = x_gamma_min_abs ** 2 if excludes_cancellation else 0.0
+    sigma_lower = epsilon_gamma ** 2 if excludes_cancellation else 0.0
 
     c0 = float(data.get("c0", 3 * 2 ** (-14)))
     a_curv = float(data.get("a_curv", 2 ** (-16)))
@@ -45,7 +45,7 @@ def certify(path: str):
 
     certified = (
         excludes_cancellation and
-        x_gamma_min_abs > 0 and
+        epsilon_gamma > 0 and
         sigma_lower > 0 and
         kappa_lower > 0 and
         D_lower > 0 and
@@ -55,7 +55,7 @@ def certify(path: str):
     return {
         "c0": c0,
         "a_curv": a_curv,
-        "x_gamma_min_abs": x_gamma_min_abs,
+        "epsilon_gamma": epsilon_gamma,
         "sigma_eff_terms": sigma_eff_terms,
         "sigma_lower": sigma_lower,
         "kappa_lower": kappa_lower,

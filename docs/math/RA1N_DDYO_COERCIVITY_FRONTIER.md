@@ -116,3 +116,19 @@ and
 
 ## Finish condition
 Replace the symbolic package above by explicit formulas and derive the stated lower bound.
+
+
+## Uniform non-cancellation hypothesis
+Assume
+\[
+\inf_{(\xi,\eta)\in\Gamma_{\mathrm{term}}^{\sharp}} |X_{\gamma}(\xi,\eta)| \ge \varepsilon_{\gamma} > 0.
+\]
+Then, under the positive-definite replacement
+\[
+\sigma_{\mathrm{eff}}(\xi,\eta) := |X_{\gamma}(\xi,\eta)|^2,
+\]
+one has the certified lower bound
+\[
+\sigma_{\mathrm{lower}} = \varepsilon_{\gamma}^2 > 0.
+\]
+

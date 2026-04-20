@@ -63,6 +63,7 @@ def certify(path, k=10, C=2, d=2):
     D_lower = 2 ** (-(k+1))
 
     certified = (
+        sigma_lower > 0 and
         kappa_lower > 0 and
         D_lower > 0 and
         a_curv > 0

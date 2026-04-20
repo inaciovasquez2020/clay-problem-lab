@@ -11,4 +11,4 @@ def test_certify_analytic():
     assert data["a_curv"] > 0
     assert data["kappa_lower"] > 0
     assert data["D_lower"] > 0
-    assert data["certified"] is True
+    assert data["certified"] is False

@@ -27,6 +27,7 @@ Status: CONDITIONAL
   \]
 
 ## Open
+- Closure remains blocked until a proved lower bound inf_{Gamma_term_sharp}|G| >= g_* > 0 is supplied.
 - Replacement target after proof: sigma_lower = epsilon_gamma**2.
 - Positivity target: inf_{Gamma_term_sharp} |G| > 0.
 - Wedge factorization lock: CONDITIONAL on proving kappa_rank_defect(xi,eta) = wedge(xi,eta) * G(xi,eta).

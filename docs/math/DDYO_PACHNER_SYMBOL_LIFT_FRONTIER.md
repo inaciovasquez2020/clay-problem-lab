@@ -90,3 +90,19 @@ To define \(\Phi_{6,7}\) explicitly, the repository must contain the outbound en
 
 ## Finish condition
 Add explicit outbound sets and coordinate assignments, define \(\Phi_{6,7}\) as code and math, and prove that the induced original DDYO symbols satisfy the transverse non-degeneracy inequality above.
+
+
+## Non-cancellation lock
+Assume
+\[
+\inf_{(\xi,\eta)\in\Gamma_{\mathrm{term}}^{\sharp}} |X_{\gamma}(\xi,\eta)| \ge \varepsilon_{\gamma} > 0.
+\]
+Then the positive-definite replacement
+\[
+\sigma_{\mathrm{eff}}(\xi,\eta) := |X_{\gamma}(\xi,\eta)|^2
+\]
+obeys
+\[
+\sigma_{\mathrm{lower}} = \varepsilon_{\gamma}^2 > 0.
+\]
+

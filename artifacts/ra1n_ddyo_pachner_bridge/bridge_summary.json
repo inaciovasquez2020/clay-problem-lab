@@ -1,9 +1,6 @@
 {
-  "status": "CONDITIONAL",
-  "verified_discrete_input": {
-    "rank_F2_F6": 5,
-    "rank_F2_F7": 25
-  },
+  "certification_formula": "sigma_lower = eps_gamma^2",
+  "finish_condition": "Add explicit outbound sets and coordinate assignments, define Phi_6,7, and prove transverse non-degeneracy for the induced original DDYO symbols.",
   "missing_data": [
     "V_out",
     "E_out",
@@ -17,5 +14,10 @@
     "kappa_DDYO(xi)",
     "chi_out(zeta)"
   ],
-  "finish_condition": "Add explicit outbound sets and coordinate assignments, define Phi_6,7, and prove transverse non-degeneracy for the induced original DDYO symbols."
+  "new_required_input": "uniform_non_cancellation_on_X_gamma",
+  "status": "CONDITIONAL",
+  "verified_discrete_input": {
+    "rank_F2_F6": 5,
+    "rank_F2_F7": 25
+  }
 }

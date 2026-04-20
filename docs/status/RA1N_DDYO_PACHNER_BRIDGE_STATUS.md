@@ -19,3 +19,6 @@ Phi_6,7(F6,F7,V_out,E_out) -> S_DDYO_orig
 
 ## Closure rule
 Do not upgrade any RA1n/DDYO theorem status past CONDITIONAL until the bridge is explicit and the analytic non-degeneracy inequality is proved.
+
+## Open
+- Uniform non-cancellation input locked: inf_{Gamma_term_sharp} |X_gamma| >= eps_gamma > 0, hence sigma_lower = eps_gamma^2.

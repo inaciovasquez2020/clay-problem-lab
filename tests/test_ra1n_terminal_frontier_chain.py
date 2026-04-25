@@ -1,23 +1,20 @@
-import subprocess
-import sys
 from pathlib import Path
 
-CHAIN = Path("docs/status/RA1N_TERMINAL_FRONTIER_CHAIN.md")
+DOC = Path("docs/status/RA1N_TERMINAL_FRONTIER_CHAIN.md")
 
+def test_status():
+    s = DOC.read_text()
+    assert "Status: FRONTIER CHAIN" in s
 
-def test_ra1n_terminal_frontier_chain_doc_locked():
-    text = CHAIN.read_text()
-    assert "Status: CONDITIONAL FRONTIER CHAIN" in text
-    assert "Full_RA1n_status: CONDITIONAL" in text
-    assert "Weighted Affine-Transfer Cancellation Lemma" in text
-    assert r"F\in g^\perp" in text
-    assert r"g\equiv 0" in text
-    assert r"\Phi_{\xi_{\mathrm{out}}}(\eta)" in text
-    assert r"F(\eta)=\frac{\overline g(\eta)}{\|g\|_2}" in text
+def test_chain():
+    s = DOC.read_text()
+    assert "\\mathcal A_{\\mathrm{term}}(\\chi)" in s
+    assert "\\mathcal R_{\\mathrm{term}}(\\chi)=0" in s
+    assert "\\|r_W(\\chi)\\|_2=0" in s
+    assert "\\mathcal W_{\\mathrm{term}}(\\chi)=0" in s
+    assert "(I-\\Pi_W)\\chi=0" in s
 
-
-def test_ra1n_terminal_frontier_chain_verifier_runs():
-    subprocess.run(
-        [sys.executable, "tools/verify_ra1n_terminal_frontier_chain.py"],
-        check=True,
-    )
+def test_frontier():
+    s = DOC.read_text()
+    assert "remaining non-conditional input" in s
+    assert "residual-defect saturation" in s

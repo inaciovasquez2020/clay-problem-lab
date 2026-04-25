@@ -1,0 +1,12 @@
+{
+  "counterexample_guard_inner": 436.4414820482755,
+  "g_norm": 436.44148204827536,
+  "guard_active": true,
+  "k": 8,
+  "n": 257,
+  "projected_inner_abs": 7.105427357601002e-15,
+  "projection_success": true,
+  "relative_antisym_defect": 0.0,
+  "sigma": "even",
+  "status": "NUMERICAL_NON_PROOF"
+}

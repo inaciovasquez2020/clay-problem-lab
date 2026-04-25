@@ -152,3 +152,12 @@ w
 \Longrightarrow
 \text{Angle-Gap}.
 \]
+
+## Finite-Basis Gram Source
+
+For a finite-dimensional packet space \(V_{\mathrm{RA1n}}=\operatorname{span}\{\phi_1,\dots,\phi_m\}\), the transversality condition \(h
+otin V_{\mathrm{RA1n}}\) follows from `RA1N_FINITE_BASIS_GRAM_TRANSVERSALITY.md` if
+
+\[
+b^*G^{-1}b<1.
+\]

@@ -3,6 +3,9 @@ from pathlib import Path
 import subprocess
 
 REQUIRED = [
+    "docs/math/RA1N_PACKET_EXHAUSTION_CERTIFIED_CLOSURE.md",
+    "artifacts/ra1n/packet_exhaustion_certificate.json",
+    "tools/verify_ra1n_packet_exhaustion_certificate.py",
     "docs/math/RA1N_ANGLE_GAP_CERTIFIED_CLOSURE.md",
     "docs/math/RA1N_FINITE_BASIS_CERTIFIED_CLOSURE.md",
     "docs/math/RA1N_UNRESTRICTED_CERTIFIED_CLOSER.md",
@@ -19,6 +22,13 @@ REQUIRED = [
 ]
 
 NEEDLES = {
+    "docs/math/RA1N_PACKET_EXHAUSTION_CERTIFIED_CLOSURE.md": [
+        "Status: CERTIFIED CONDITIONAL THEOREM",
+        "\\mathcal P_{\\mathrm{RA1n}}^{\\mathrm{terminal}}",
+        "\\subset",
+        "V_{\\mathrm{RA1n}}",
+        "Packet exhaustion is certified closed",
+    ],
     "docs/math/RA1N_ANGLE_GAP_CERTIFIED_CLOSURE.md": [
         "Status: CERTIFIED CONDITIONAL THEOREM",
         "b^*G^{-1}b=0<1",
@@ -76,6 +86,7 @@ def main() -> int:
         for needle in needles:
             require(path, needle)
 
+    subprocess.run(["python3", "tools/verify_ra1n_packet_exhaustion_certificate.py"], check=True)
     subprocess.run(["python3", "tools/verify_ra1n_gram_transversality_certificate.py"], check=True)
     subprocess.run(["python3", "tools/verify_ra1n_projection_error_domination_certificate.py"], check=True)
     subprocess.run(["python3", "tools/verify_ra1n_certified_closure_registry.py"], check=True)

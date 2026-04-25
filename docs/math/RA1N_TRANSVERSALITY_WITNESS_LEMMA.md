@@ -95,3 +95,20 @@ By `RA1N_ANGLE_GAP_LEMMA.md`, there exists \(\epsilon>0\) such that
 \Longrightarrow
 \text{Angle-Gap}.
 \]
+
+## Riesz Witness Source
+
+The bounded functional \(\Lambda\) may be represented by a Riesz witness \(w\in V_{\mathrm{RA1n}}^\perp\), as recorded in `RA1N_RIESZ_WITNESS_REDUCTION.md`.
+
+It suffices to prove
+
+\[
+\exists w\in V_{\mathrm{RA1n}}^\perp
+:
+\left\langle
+rac{\overline g}{\|g\|_2},
+w
+ightangle_{L^2}
+
+eq0.
+\]

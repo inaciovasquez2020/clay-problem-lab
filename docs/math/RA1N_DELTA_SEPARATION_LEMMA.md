@@ -95,3 +95,6 @@ The RA1n structural counterexample exclusion reduces to proving the positive sep
 >0.
 \]
 
+## Compactness Source
+
+The positive separation \(\delta>0\) follows from `RA1N_COMPACTNESS_TO_DELTA_SEPARATION.md` once the normalized terminal packet set is compact in \(L^2\) and disjoint from the obstruction orbit.

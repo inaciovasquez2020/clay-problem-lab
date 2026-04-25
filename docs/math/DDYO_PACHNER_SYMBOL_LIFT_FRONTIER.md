@@ -106,3 +106,16 @@ obeys
 \sigma_{\mathrm{lower}} = \varepsilon_{\gamma}^2 > 0.
 \]
 
+
+
+## Piecewise sigma_lower rule
+
+The terminal bridge rule is locked by the condition
+\[
+\inf_{(\xi,\eta)\in\Gamma_{\mathrm{term}}^{\sharp}} |X_{\gamma}(\xi,\eta)| \ge \varepsilon_{\gamma}>0.
+\]
+
+On the terminal patch,
+\[
+\sigma_{\mathrm{lower}}=\varepsilon_{\gamma}^{2}.
+\]

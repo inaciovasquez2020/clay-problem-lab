@@ -21,6 +21,6 @@ def test_piecewise_rule_and_finish_condition_locked() -> None:
 def test_no_x_gamma_min_abs_repo_wide() -> None:
     import subprocess
 
-    proc = subprocess.run(["git", "grep", "-n", "x_gamma_min_abs"], capture_output=True, text=True)
+    proc = subprocess.run(["git", "grep", "-n", "x_gamma_min_abs", "--", ":!tests/test_ddyo_bridge_literal_locks.py"], capture_output=True, text=True)
     assert proc.returncode == 1
     assert proc.stdout.strip() == ""

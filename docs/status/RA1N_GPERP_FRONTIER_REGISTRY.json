@@ -1,0 +1,12 @@
+{
+  "object": "RA1n g-perp terminal frontier registry",
+  "full_ra1n_status": "CONDITIONAL",
+  "terminal_missing_assumption": "F in g^perp",
+  "weighted_transfer_frontier": "Weighted Affine-Transfer Cancellation Lemma",
+  "f_in_g_perp_proved_from_packets": false,
+  "g_identically_zero_proved": false,
+  "admissible_packet_restriction": "F in g^perp",
+  "counterexample_guard": "F=\\frac{\\overline g}{\\|g\\|_2}",
+  "exact_parametrization": "\\Phi_{\\xi_{\\mathrm{out}}}(\\eta)=(\\xi_{\\mathrm{out}}-\\eta,\\eta)",
+  "unconditional_full_ra1n_closure": false
+}

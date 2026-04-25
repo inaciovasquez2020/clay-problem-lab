@@ -1,0 +1,12 @@
+{
+  "object": "RA1N exact finite-basis Gram transversality certificate",
+  "status": "conditional-angle-gap-certificate",
+  "basis_dimension": 1,
+  "gram_matrix": [
+    ["1"]
+  ],
+  "b_vector": [
+    "0"
+  ],
+  "certifies": "b^*G^{-1}b < 1"
+}

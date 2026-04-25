@@ -1,0 +1,9 @@
+{
+  "object": "RA1N projection-error domination certificate",
+  "status": "conditional-positive-transfer-certificate",
+  "curvature": "2",
+  "gap": "1",
+  "derivative_abs": "1",
+  "projection_error": "0",
+  "certifies": "Curv_k Gap_k |partial_xi Ghat_k| > ||P_k Ghat_k||_err"
+}

@@ -133,3 +133,16 @@ The remaining concrete certificate is a bounded self-adjoint \(Q\) satisfying
 <
 \Phi_Q(h).
 \]
+
+## Rank-One Obstruction Projector Instantiation
+
+A concrete quadratic certificate is supplied by `RA1N_OBSTRUCTION_PROJECTOR_CERTIFICATE.md`.
+
+If
+
+\[
+h=rac{\overline g}{\|g\|_2}
+otin V_{\mathrm{RA1n}},
+\]
+
+then \(Q_hu=\langle u,hangle h\) separates the normalized terminal packet set from the obstruction orbit.

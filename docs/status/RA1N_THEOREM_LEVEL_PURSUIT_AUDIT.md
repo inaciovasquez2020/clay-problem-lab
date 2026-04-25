@@ -65,3 +65,20 @@ R(F):=(I-\Pi_V)F=0.
 ## Pursuit Verdict
 
 Worth pursuing only if the next commit introduces a genuine structural normal-form mechanism, not another certificate wrapper.
+
+## Updated Terminal Frontier
+
+The current terminal frontier is
+
+\[
+\mathcal A_{\mathrm{term}}(\chi)
+\iff
+\mathcal R_{\mathrm{term}}(\chi)=0.
+\]
+
+This is the only admissible theorem-level input after the terminal frontier chain.
+
+See:
+
+- `docs/status/RA1N_TERMINAL_FRONTIER_CHAIN.md`
+- `docs/status/RA1N_THEOREM_LEVEL_STOP_RULE.md`

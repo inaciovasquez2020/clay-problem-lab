@@ -1,0 +1,14 @@
+{
+  "object": "RA1N packet exhaustion certificate",
+  "status": "conditional-packet-exhaustion-certificate",
+  "terminal_packet_class": "P_RA1n_terminal",
+  "finite_basis_space": "V_RA1n",
+  "exhaustion_claim": "P_RA1n_terminal subset V_RA1n",
+  "terminal_generators": [
+    {
+      "name": "certified_finite_basis_packet_surface",
+      "basis_space": "V_RA1n"
+    }
+  ],
+  "certifies": "P_RA1n_terminal subset V_RA1n"
+}

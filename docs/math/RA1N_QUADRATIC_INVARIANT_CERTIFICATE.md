@@ -145,4 +145,4 @@ h=rac{\overline g}{\|g\|_2}
 otin V_{\mathrm{RA1n}},
 \]
 
-then \(Q_hu=\langle u,hangle h\) separates the normalized terminal packet set from the obstruction orbit.
+then \(Q_hu=\langle u,h\rangle h\) separates the normalized terminal packet set from the obstruction orbit.

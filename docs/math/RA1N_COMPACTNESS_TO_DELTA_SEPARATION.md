@@ -98,3 +98,6 @@ Hence
 \epsilon=\frac{\delta^2}{2}.
 \]
 
+## Finite-Rank Compactness Source
+
+The compactness hypothesis for \(K\) follows from `RA1N_FINITE_RANK_PACKET_COMPACTNESS.md` if the normalized terminal packet set is contained in a finite-dimensional RA1n packet subspace and is closed there.

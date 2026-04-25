@@ -18,6 +18,7 @@ c_{\mathrm{RA1n}}=2.
 
 ## Certified Documents
 
+1. `docs/math/RA1N_PACKET_EXHAUSTION_CERTIFIED_CLOSURE.md`
 1. `docs/math/RA1N_ANGLE_GAP_CERTIFIED_CLOSURE.md`
 2. `docs/math/RA1N_FINITE_BASIS_CERTIFIED_CLOSURE.md`
 3. `docs/math/RA1N_UNRESTRICTED_CERTIFIED_CLOSER.md`
@@ -27,11 +28,13 @@ c_{\mathrm{RA1n}}=2.
 
 ## Executable Certificates
 
+1. `artifacts/ra1n/packet_exhaustion_certificate.json`
 1. `artifacts/ra1n/gram_transversality_certificate.json`
 2. `artifacts/ra1n/projection_error_domination_certificate.json`
 
 ## Verifiers
 
+1. `tools/verify_ra1n_packet_exhaustion_certificate.py`
 1. `tools/verify_ra1n_gram_transversality_certificate.py`
 2. `tools/verify_ra1n_projection_error_domination_certificate.py`
 

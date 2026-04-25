@@ -1,0 +1,14 @@
+{
+  "object": "RA1n angle-gap terminal registry",
+  "status": "OPEN_CONDITIONAL",
+  "full_ra1n_status": "CONDITIONAL",
+  "projected_packet_ra1n_status": "CLOSED",
+  "terminal_object": "Angle-Gap / Structural Counterexample Exclusion",
+  "angle_gap_condition": "|<F,g>| <= (1-epsilon)||F||_2||g||_2",
+  "excluded_counterexample": "F=\\frac{\\overline g}{\\|g\\|_2}",
+  "projection_error_domination_doc": "docs/math/RA1N_PROJECTION_ERROR_DOMINATION.md",
+  "structural_counterexample_doc": "docs/math/RA1N_STRUCTURAL_COUNTEREXAMPLE_EXCLUSION.md",
+  "symbolic_transfer_doc": "docs/math/RA1N_SYMBOLIC_TRANSFER_LEMMA.md",
+  "conditional_chain": "Angle-Gap Lemma + Projection-Error Domination implies T_RA1n(k) >= c_RA1n > 0",
+  "unrestricted_ra1n_unconditional_promotion": false
+}

@@ -1,0 +1,12 @@
+{
+  "object": "RA1n terminal frontier registry",
+  "full_ra1n_status": "CONDITIONAL",
+  "closed_status_forbidden": true,
+  "terminal_frontier": "Weighted Affine-Transfer Cancellation Lemma",
+  "frontier_doc": "docs/math/RA1N_CONSERVATION_TRANSFER_FRONTIER.md",
+  "status_doc": "docs/status/RA1N_FULL_PROMOTION_STATUS.md",
+  "exact_parametrization": "\\Phi_{\\xi_{\\mathrm{out}}}(\\eta)=(\\xi_{\\mathrm{out}}-\\eta,\\eta)",
+  "counterexample_guard": "F=\\frac{\\overline g}{\\|g\\|_2}",
+  "promotion_rule": "unary closure lane plus weighted affine-transfer cancellation implies full RA1n promotion",
+  "unconditional_closure": false
+}

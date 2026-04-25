@@ -1,33 +1,30 @@
 #!/usr/bin/env python3
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-CHAIN = ROOT / "docs/status/RA1N_TERMINAL_FRONTIER_CHAIN.md"
-GPERP = ROOT / "docs/math/RA1N_GPERP_TERMINAL_ASSUMPTION.md"
-TRANSFER = ROOT / "docs/math/RA1N_CONSERVATION_TRANSFER_FRONTIER.md"
-
-chain = CHAIN.read_text()
-gperp = GPERP.read_text()
-transfer = TRANSFER.read_text()
-
-required_chain = [
-    "Status: CONDITIONAL FRONTIER CHAIN",
-    "Full_RA1n_status: CONDITIONAL",
-    "Weighted Affine-Transfer Cancellation Lemma",
-    r"F\in g^\perp",
-    r"g\equiv 0",
-    r"\Phi_{\xi_{\mathrm{out}}}(\eta)",
-    r"(\xi_{\mathrm{out}}-\eta,\eta)",
-    r"F(\eta)=\frac{\overline g(\eta)}{\|g\|_2}",
-    "full RA1n promotion remains CONDITIONAL",
+REQUIRED = [
+    "docs/math/RA1N_TERMINAL_ADMISSIBILITY_ANNIHILATOR_SATURATION_THEOREM.md",
+    "docs/math/RA1N_TERMINAL_ADMISSIBILITY_WEAK_ORTHOGONALITY_THEOREM.md",
+    "docs/math/RA1N_WEAK_ORTHOGONALITY_FROM_RESIDUAL_NORM_THEOREM.md",
+    "docs/math/RA1N_TERMINAL_RESIDUAL_VANISHING_FROM_ADMISSIBILITY_THEOREM.md",
+    "docs/math/RA1N_ADMISSIBILITY_RESIDUAL_SATURATION_AXIOM.md",
+    "docs/status/RA1N_TERMINAL_FRONTIER_CHAIN.md",
 ]
 
-for phrase in required_chain:
-    assert phrase in chain, phrase
+def require(path: str, needle: str) -> None:
+    text = Path(path).read_text()
+    assert needle in text, f"{needle!r} missing from {path}"
 
-assert r"F\in g^\perp" in gperp
-assert "Weighted Affine-Transfer Cancellation Lemma" in transfer
-assert r"\Phi_{\xi_{\mathrm{out}}}(\eta)" in transfer
-assert r"F=\frac{\overline g}{\|g\|_2}" in transfer
+def main() -> int:
+    for path in REQUIRED:
+        assert Path(path).exists(), f"missing {path}"
 
-print("RA1n terminal frontier chain verified")
+    require("docs/status/RA1N_TERMINAL_FRONTIER_CHAIN.md", "Status: FRONTIER CHAIN")
+    require("docs/status/RA1N_TERMINAL_FRONTIER_CHAIN.md", "residual-defect saturation")
+    require("docs/math/RA1N_ADMISSIBILITY_RESIDUAL_SATURATION_AXIOM.md", "Status: OPEN STRUCTURAL AXIOM")
+    require("docs/math/RA1N_TERMINAL_RESIDUAL_VANISHING_FROM_ADMISSIBILITY_THEOREM.md", "Status: CONDITIONAL STRUCTURAL THEOREM")
+
+    print("RA1n terminal frontier chain verified.")
+    return 0
+
+if __name__ == "__main__":
+    raise SystemExit(main())

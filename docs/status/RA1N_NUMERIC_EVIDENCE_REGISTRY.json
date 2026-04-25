@@ -1,0 +1,16 @@
+{
+  "object": "RA1n numerical evidence registry",
+  "status": "NUMERICAL_NON_PROOF_FRONTIER_AID",
+  "full_ra1n_status": "CONDITIONAL",
+  "numeric_probe_doc": "docs/status/RA1N_NUMERIC_TRANSFER_PROBE.md",
+  "numeric_sweep_doc": "docs/status/RA1N_NUMERIC_TRANSFER_SWEEP.md",
+  "numeric_sweep_artifact": "artifacts/ra1n_numeric/transfer_sweep.json",
+  "terminal_frontier": "Weighted Affine-Transfer Cancellation Lemma",
+  "active_terminal_dependency": "F in g^perp or g == 0",
+  "projection_route": "numerically stable on tested dyadic scales",
+  "generic_counterexample_guard": "active on tested dyadic scales",
+  "even_symbol_antisymmetry": "detected on tested dyadic scales",
+  "proof_status": "not a proof",
+  "unrestricted_full_ra1n_closed": false,
+  "projected_packet_route_closed": true
+}

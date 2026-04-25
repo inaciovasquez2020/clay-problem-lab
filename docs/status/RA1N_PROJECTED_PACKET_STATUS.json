@@ -1,0 +1,11 @@
+{
+  "object": "RA1n projected packet transfer status",
+  "full_ra1n_status": "CONDITIONAL",
+  "projected_ra1n_packet_status": "CLOSED",
+  "projection": "F -> F - <F,g>/||g||_2^2 g",
+  "terminal_obstruction_removed_for_projected_packets": true,
+  "unrestricted_full_ra1n_closed": false,
+  "active_unrestricted_frontier": "prove g == 0 from signed-pair antisymmetry or prove F in g^perp from the original packet construction",
+  "cap_summed_estimate": "||T_k^perp|| <= 2^{k(sigma d - 4)}",
+  "sigma_condition": "0 < sigma < 4/d"
+}

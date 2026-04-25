@@ -130,3 +130,14 @@ h=\frac{\overline g}{\|g\|_2}\notin V_{\mathrm{RA1n}}
 \le
 (1-\epsilon)\|F\|_2\|g\|_2.
 \]
+
+## Transversality Witness Source
+
+The hypothesis
+
+\[
+h
+otin V_{\mathrm{RA1n}}
+\]
+
+follows from `RA1N_TRANSVERSALITY_WITNESS_LEMMA.md` once there exists a bounded linear functional annihilating \(V_{\mathrm{RA1n}}\) but not annihilating \(h=\overline g/\|g\|_2\).

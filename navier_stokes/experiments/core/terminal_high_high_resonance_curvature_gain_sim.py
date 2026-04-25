@@ -52,12 +52,12 @@ def retained_admissible_witness(xi: float, eta: float, k: int) -> bool:
     sigma_value = sigma_eff(k)
     green_value = sup_green_hat_k(k)
     nondegenerate_ok = sigma_value > 0.0 and green_value > 0.0
-    patch_ok = abs(eta) >= 2.0 ** (-(k + 2))
+    patch_ok = abs(eta) >= 2.0 ** (-k)
     transverse_gap = abs(eta - parallel_eta)
-    nontrivial_ok = transverse_gap >= 2.0 ** (-(k + 3))
+    nontrivial_ok = transverse_gap >= 2.0 ** (-(k + 2))
     curvature_value = exact_curvature_lower_bound(xi, eta, k)
     positive_curvature_rule = curvature_value >= 0.0
-    theorem_grade_bounds = abs(xi) >= 2.0 ** (-(k + 2)) and abs(parallel_eta) >= 2.0 ** (-(k + 2))
+    theorem_grade_bounds = abs(xi) >= 2.0 ** (-k) and abs(parallel_eta) >= 2.0 ** (-k)
     return bool(
         shell_ok
         and nondegenerate_ok
@@ -94,10 +94,7 @@ def exact_symbol_curvature_certificate(xi: float, eta: float, k: int) -> dict[st
     transverse_gap = abs(eta - parallel_eta)
     curvature_lower_bound = abs(f_eta - f_parallel)
     derivative = transverse_variation_nonvanishing(xi, eta, k)
-    positive_lower_bound_candidate = max(
-        0.0,
-        min(curvature_lower_bound, transverse_gap * max(abs(derivative), 0.0)),
-    )
+    positive_lower_bound_candidate = max(0.0, min(curvature_lower_bound, transverse_gap * max(abs(derivative), 0.0)))
     admissible = retained_admissible_witness(xi, eta, k)
     return {
         "F_k_xi_eta": f_eta,

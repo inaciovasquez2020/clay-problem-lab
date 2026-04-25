@@ -1,0 +1,348 @@
+docs/math/RA1N_QK_DINI_REDUCTION.md:114:r_k(\eta,\zeta)
+docs/math/DDYO_RA1N_SINGLE_REMAINING_THEOREM.md:10:\partial_\xi^\alpha\!\bigl(\widehat G_k(\xi)-P_k\widehat G_k(\xi)\bigr)
+docs/math/DDYO_RA1N_SINGLE_REMAINING_THEOREM.md:18:r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi).
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:46:r_k:U_k\to\mathbb R
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:50:Z_k:=\{\omega\in K_k:r_k(\omega)=0\}.
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:68:r_k(\omega)=g_k(\omega)\,b_k(\omega)\qquad(\omega\in U_k),
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:82:r_k|_{C_k}=0.
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:92:r_k(\omega)=0
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:105:\nabla r_k(\zeta)=b_k(\zeta)\nabla g_k(\zeta),
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:113:\partial_{\nu_k}r_k(\zeta)=b_k(\zeta)\,|\nabla g_k(\zeta)|.
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:118:\inf_{\zeta\in C_k}|\partial_{\nu_k}r_k(\zeta)|
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:126:r_k\in C^2(U_k).
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:132:\sup_{\omega\in N_{\varepsilon_k}(Z_k)\cap K_k}|D^2r_k(\omega)|<\infty
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:156:\inf_{\omega\in K_k\setminus N_{\varepsilon_k}(Z_k)}|r_k(\omega)|
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:173:a_k(\omega):=\frac{r_k(\omega)}{g_k(\omega)}.
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:222:\frac{|r_k(\omega)|^2}{\operatorname{dist}(\omega,Z_k)^2}
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:245:\inf_{\omega\in\Gamma_{\mathrm{cert}}(k,\rho)}|r_k(\omega)|^2
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:260:r_k=g_k\,b_k,\quad b_k\in C^2(U_k),\quad \inf_{K_k}|b_k|>0
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:280:r_k=g_k\,b_k,\quad
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:282:\inf_{\zeta\in C_k}|\partial_{\nu_k}r_k(\zeta)|>0
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:288:Replace `CONDITIONAL` by `PROVED` only after the actual DDYO / RA1n residual symbol is shown repository-natively to admit the factorization
+docs/math/DDYO_CANCELLATION_SURFACE_FACTORIZATION_REDUCTION.md:290:r_k=g_k\,b_k
+docs/math/DDYO_RA1N_RK_FIRST_MOMENT_VERIFIED.md:1:# DDYO RA1n: verified first-moment decay for r_k
+docs/math/DDYO_RA1N_RK_FIRST_MOMENT_VERIFIED.md:7:\widehat G_k(\xi)=\varphi(2^{-k}\xi)|\xi|^{-4},
+docs/math/DDYO_RA1N_RK_FIRST_MOMENT_VERIFIED.md:16:P_k f(\xi)=f(\xi_k)+\nabla f(\xi_k)\cdot(\xi-\xi_k),
+docs/math/DDYO_RA1N_RK_FIRST_MOMENT_VERIFIED.md:18:r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi).
+docs/math/DDYO_RA1N_RK_FIRST_MOMENT_VERIFIED.md:25:|\partial_\xi^\alpha r_k(\xi)|
+docs/math/DDYO_RA1N_RK_FIRST_MOMENT_VERIFIED.md:37:\partial_\xi^\beta \widehat G_k(\xi)
+docs/math/DDYO_RA1N_RK_FIRST_MOMENT_VERIFIED.md:46:|\partial_\xi^\beta \widehat G_k(\xi)|
+docs/math/DDYO_RA1N_RK_FIRST_MOMENT_VERIFIED.md:53:\partial^\alpha r_k(\xi)
+docs/math/DDYO_RA1N_RK_FIRST_MOMENT_VERIFIED.md:58:\partial^{\alpha+\beta}\widehat G_k(\xi_k+t(\xi-\xi_k))\,dt.
+docs/math/DDYO_RA1N_RK_FIRST_MOMENT_VERIFIED.md:62:|\partial^\alpha r_k(\xi)|
+docs/math/DDYO_RA1N_RK_FIRST_MOMENT_VERIFIED.md:64:C\,2^{2k}\sup_{y\sim 2^k}|\partial^{\alpha+2}\widehat G_k(y)|
+docs/math/DDYO_RA1N_RK_FIRST_MOMENT_VERIFIED.md:71:The required \(2^{-k}\) gain is available a fortiori. Any remaining RA1n obstruction is no longer at the \(r_k\) first-moment stage.
+docs/math/EXACT_DDYO_SYMBOL_CURVATURE_LEMMA.md:32:r_k^{\mathrm{trans}}(\xi,\eta)
+docs/math/EXACT_DDYO_SYMBOL_CURVATURE_LEMMA.md:38:\big|r_k^{\mathrm{trans}}(\xi,\eta)\big|>0.
+docs/math/DDYO_GJ_CONTEXT_EXTRACT.md:2615:./docs/math/DDYO_CRITICAL_ENVELOPE.md-42-The current test file `tests/test_ddyo_residual.py` implements the periodic sampled analogue
+docs/math/DDYO_CRITICAL_ENVELOPE.md:42:The current test file `tests/test_ddyo_residual.py` implements the periodic sampled analogue
+docs/math/RA1N_PROJECTOR_CONSISTENT_KERNEL.md:66:r_k(\eta,\zeta).
+docs/math/RA1N_PROJECTOR_CONSISTENT_KERNEL.md:77:r_k^{\mathrm{proj}}(\eta,\zeta)
+docs/math/RA1N_PROJECTOR_CONSISTENT_KERNEL.md:79:\psi_j(|\eta+\zeta|)\,r_k(\eta,\zeta),
+docs/math/RA1N_PROJECTOR_CONSISTENT_KERNEL.md:85:\psi_j(|\eta|)\psi_j(|\zeta|)\,r_k(\eta,\zeta),
+docs/math/RA1N_PROJECTOR_CONSISTENT_KERNEL.md:93:|r_k(\eta,\zeta)|.
+docs/math/J2B_CRITICAL_RESIDUAL.md:1:# J2B critical residual
+docs/math/J2B_CRITICAL_RESIDUAL.md:41:This is the fixed-domain torus law used in `tests/test_j2b_residual.py`,
+docs/math/J2B_CRITICAL_RESIDUAL.md:46:The remaining step is to derive a continuum residual identity for
+docs/math/DDYO_GJ_MULTI_LEAD_INSPECTION.md:590:258-L55: - continuum J2B exact residual closure: open
+docs/math/RA1N_CONDITIONAL_CLOSURE.md:22:r_k(\eta,\zeta)\,
+docs/math/RA1N_CONDITIONAL_CLOSURE.md:34:r_k(\eta,\zeta)\,
+docs/math/RA1N_CONDITIONAL_CLOSURE.md:48:r_k(\eta,\zeta)\,
+docs/math/RA1N_CONDITIONAL_CLOSURE.md:94:r_k(\eta,\zeta)\,
+docs/math/RA1N_TERMINAL_REDUCTION_TO_EXACT_SYMBOL_CURVATURE_LEMMA.md:10:r_k = \widehat G_k - P_k \widehat G_k
+docs/math/RA1N_TERMINAL_REDUCTION_TO_EXACT_SYMBOL_CURVATURE_LEMMA.md:12:\widetilde r_k(xi,eta) := m_k(xi,eta) - m_k(xi,eta)|_{xi || eta},
+docs/math/RA1N_TERMINAL_REDUCTION_TO_EXACT_SYMBOL_CURVATURE_LEMMA.md:14:|\widetilde r_k(xi,eta)| >= c 2^{-alpha k} |xi \wedge eta|^2
+docs/math/DDYO_RA1N_QUANTITATIVE_DECAY_CLOSURE_TARGET.md:6:r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi).
+docs/math/DDYO_RA1N_QUANTITATIVE_DECAY_CLOSURE_TARGET.md:15:\partial_\xi^\alpha\!\bigl(\widehat G_k(\xi)-P_k\widehat G_k(\xi)\bigr)
+docs/math/DDYO_RA1N_QUANTITATIVE_DECAY_CLOSURE_TARGET.md:27:\partial_\xi^\alpha\!\bigl(\widehat G_k(\xi)-P_k\widehat G_k(\xi)\bigr)
+docs/math/DDYO_RA1N_QUANTITATIVE_DECAY_CLOSURE_TARGET.md:40:\partial_\xi^\alpha\!\bigl(\widehat G_k(\xi)-P_k\widehat G_k(\xi)\bigr)
+docs/math/VARIANT_FRAMEWORK_STATUS.md:25:- continuum critical residual identified
+docs/math/VARIANT_FRAMEWORK_STATUS.md:52:- alignment-defect residual defined
+docs/math/VARIANT_FRAMEWORK_STATUS.md:53:- discrete residual bounded by DREM tested
+docs/math/VARIANT_FRAMEWORK_STATUS.md:67:Current sampled residual:
+docs/math/VARIANT_FRAMEWORK_STATUS.md:78:- current test residual is not a verified continuum critical residual
+docs/math/VARIANT_FRAMEWORK_STATUS.md:81:replace sampled surrogate by a continuum-consistent critical residual and derive its exact residual identity.
+docs/math/DDYO_RA1N_EXACT_MISSING_LEMMA.md:10:\partial_\xi^\alpha r_k(\xi)
+docs/math/DDYO_RA1N_EXACT_MISSING_LEMMA.md:14:where \(r_k\) is the exact DDYO/RA1n remainder symbol defined in the repository.
+docs/math/DDYO_RA1N_EXACT_MISSING_LEMMA.md:17:\text{This estimate must be derived directly from the exact repository formula for }r_k,
+docs/math/DDYO_RA1N_EXACT_MISSING_LEMMA.md:21:r_k=\widehat G_k-P_k\widehat G_k
+docs/math/BRANCH_B_FINAL_FRONTIER.md:258:L55: - continuum J2B exact residual closure: open
+docs/math/RA1N_PROJECTOR_PAIRED_SYMMETRY.md:23:r_k(\eta,\zeta)\,
+docs/math/RA1N_PROJECTOR_PAIRED_SYMMETRY.md:34:r_k(\eta,\zeta)\,
+docs/math/RA1N_PROJECTOR_PAIRED_SYMMETRY.md:70:r_k(\eta,\zeta)=r_k(\zeta,\eta).
+docs/math/RA1N_PROJECTOR_PAIRED_SYMMETRY.md:79:and by symmetry of \(r_k\),
+docs/math/RA1N_PROJECTOR_PAIRED_SYMMETRY.md:81:r_k(\eta,\zeta)\widehat u_m(\eta)\widehat u_n(\zeta)
+docs/math/RA1N_PROJECTOR_PAIRED_SYMMETRY.md:83:r_k(\zeta,\eta)\widehat u_m(\zeta)\widehat u_n(\eta).
+docs/math/RA1N_TERMINAL_REGION_FACTORIZATION_ROUTE.md:5:Canonical residual:
+docs/math/RA1N_TERMINAL_REGION_FACTORIZATION_ROUTE.md:7:r_k(\xi,\eta)=\widehat G_k(\xi,\eta)-P_k\widehat G_k(\xi,\eta).
+docs/math/RA1N_TERMINAL_REGION_FACTORIZATION_ROUTE.md:32:Z_k:=\{(\xi,\eta):r_k(\xi,\eta)=0\}\subseteq \{(\xi,\eta):g_k(\xi,\eta)=0\}.
+docs/math/RA1N_TERMINAL_REGION_FACTORIZATION_ROUTE.md:37:a_k(\xi,\eta):=\frac{r_k(\xi,\eta)}{g_k(\xi,\eta)}
+docs/math/RA1N_TERMINAL_REGION_FACTORIZATION_ROUTE.md:56:|r_k(\xi,\eta)|
+docs/math/RA1N_TERMINAL_REGION_FACTORIZATION_ROUTE.md:71:5. a repository-native derivation of the target lower bound for the canonical \(r_k\).
+docs/math/DDYO_GJ_CONTEXT_EXTRACT_CLEAN.md:1580:./docs/math/DDYO_CRITICAL_ENVELOPE.md-42-The current test file `tests/test_ddyo_residual.py` implements the periodic sampled analogue
+docs/math/DDYO_RA1N_SHELL_PRODUCT_KERNEL_ESTIMATE_CONDITIONAL.md:15:|\partial_\xi^\alpha r_k(\xi)|
+docs/math/DDYO_RA1N_SHELL_PRODUCT_KERNEL_ESTIMATE_CONDITIONAL.md:25:m_{j,k}(\xi):=\varphi(2^{-j}\xi)\varphi(2^{-k}\xi)r_k(\xi),
+docs/math/DDYO_RA1N_SHELL_PRODUCT_KERNEL_ESTIMATE_CONDITIONAL.md:40:=\varphi(2^{k-j}\eta)\varphi(\eta)\,r_k(2^k\eta).
+docs/math/DDYO_RA1N_SHELL_PRODUCT_KERNEL_ESTIMATE_CONDITIONAL.md:51:2^{k|\delta|}\bigl(\partial^\delta r_k\bigr)(2^k\eta).
+docs/math/DDYO_RA1N_SHELL_PRODUCT_KERNEL_ESTIMATE_CONDITIONAL.md:61:2^{k|\delta|}\left|(\partial^\delta r_k)(2^k\eta)\right|
+docs/math/DDYO_RA1N_SHELL_PRODUCT_KERNEL_ESTIMATE_CONDITIONAL.md:115:This proves the shell-product kernel estimate only under the stated symbol-derivative hypothesis on \(r_k\).
+docs/math/DDYO_RA1N_CANONICAL_DERIVATIVE_THEOREM_BLOCKED.md:7:2. one canonical exact DDYO remainder symbol \(r_k(\xi)\).
+docs/math/DDYO_RA1N_CANONICAL_DERIVATIVE_THEOREM_BLOCKED.md:13:\partial_{\xi_\ell}\!\bigl(e_{ab}^{(j)}(\xi)\,r_k(\xi)\bigr)
+docs/math/DDYO_HYBRID_RK_RESCALING_LEMMA.md:1:# DDYO Hybrid \(r_k\) Rescaling Lemma
+docs/math/DDYO_HYBRID_RK_RESCALING_LEMMA.md:7:r_k(\xi)=2^{-k}\rho(2^{-k}\xi)
+docs/math/DDYO_HYBRID_RK_RESCALING_LEMMA.md:20:\left|\partial_\xi^\alpha r_k(\xi)\right|
+docs/math/DDYO_HYBRID_RK_RESCALING_LEMMA.md:28:\partial_\xi^\alpha r_k(\xi)
+docs/math/DDYO_HYBRID_RK_RESCALING_LEMMA.md:36:\left|\partial_\xi^\alpha r_k(\xi)\right|
+docs/math/DDYO_HYBRID_RK_RESCALING_LEMMA.md:48:\left|\partial_\xi^\alpha r_k(\xi)\right|
+docs/math/DDYO_HYBRID_RK_RESCALING_LEMMA.md:58:If the exact repository formula for \(r_k\) is verified to have the above hybrid fixed-annulus form, then:
+docs/math/DDYO_HYBRID_RK_RESCALING_LEMMA.md:73:Verify from the exact repository formula for \(r_k\) that there exists a \(k\)-independent
+docs/math/DDYO_HYBRID_RK_RESCALING_LEMMA.md:79:r_k(\xi)=2^{-k}\rho(2^{-k}\xi)
+docs/math/RA1N_DOWNSTREAM_SCALE_COMPATIBILITY.md:9:Therefore the admissible derivative target is not an unscaled estimate for ∇_ξ r_k, but a scale-invariant estimate for D_k r_k.
+docs/math/RA1N_DOWNSTREAM_SCALE_COMPATIBILITY.md:13:sup_{|ξ| ~ 2^k} |(2^k∇_ξ)^α r_k(ξ)| ≤ C_α.
+docs/math/RA1N_DOWNSTREAM_SCALE_COMPATIBILITY.md:17:2^{k|α|}(∂^α r_k)(2^kη).
+docs/math/RA1N_DOWNSTREAM_SCALE_COMPATIBILITY.md:19:The downstream shell-product kernel route is compatible with the corrected RA1n scaling exactly when all symbol-derivative hypotheses on r_k occur in this normalized form.
+docs/math/RA1N_DOWNSTREAM_SCALE_COMPATIBILITY.md:23:∫_{A_k} |∇_ξ r_k|² w_k dξ ≥ c ∫_{A_k} |r_k|² w_k dξ
+docs/math/RA1N_DOWNSTREAM_SCALE_COMPATIBILITY.md:31:sup_{|ξ| ~ 2^k} |(2^k∇_ξ)^α r_k(ξ)| ≤ C_α
+docs/math/RA1N_DOWNSTREAM_SCALE_COMPATIBILITY.md:35:r_k(ξ) = \widehat G_k(ξ) − P_k \widehat G_k(ξ).
+docs/math/TERMINAL_HIGH_HIGH_RESONANCE_CURVATURE_GAIN_LEMMA.md:8:r_k = \widehat G_k - P_k \widehat G_k
+docs/math/TERMINAL_HIGH_HIGH_RESONANCE_CURVATURE_GAIN_LEMMA.md:10:\widetilde r_k(xi,eta) := m_k(xi,eta) - m_k(xi,eta)|_{xi || eta},
+docs/math/TERMINAL_HIGH_HIGH_RESONANCE_CURVATURE_GAIN_LEMMA.md:12:|\widetilde r_k(xi,eta)| >= c 2^{-alpha k} |xi \wedge eta|^2
+docs/math/DDYO_RA1N_DIRECT_SYMBOL_DERIVATIVE_FRONTIER.md:6:r_k(\xi):=\widehat G_k(\xi)-P_k\widehat G_k(\xi).
+docs/math/DDYO_RA1N_DIRECT_SYMBOL_DERIVATIVE_FRONTIER.md:16:\partial_\xi^\alpha\!\bigl(\widehat G_k(\xi)-P_k\widehat G_k(\xi)\bigr)
+docs/math/DDYO_RA1N_DIRECT_SYMBOL_DERIVATIVE_FRONTIER.md:25:r_k=\widehat G_k-P_k\widehat G_k,
+docs/math/DDYO_RA1N_DIRECT_SYMBOL_DERIVATIVE_FRONTIER.md:32:definition of \(r_k\) and unconditional RA1n closure.
+docs/math/DDYO_RA1N_FINISHED_PRODUCT.md:74:Let \(r_k(\xi)\) denote the exact DDYO / RA1n remainder symbol appearing in the repository source of truth.
+docs/math/DDYO_RA1N_FINISHED_PRODUCT.md:81:\bigl|\partial_\xi^\alpha r_k(\xi)\bigr|
+docs/math/DDYO_RA1N_FINISHED_PRODUCT.md:87:This is exactly the missing hypothesis previously isolated for closure. Once it is derived from the exact repository formula for \(r_k\), the shell-product moment frontier closes. \(\blacksquare\)
+docs/math/DDYO_RA1N_FINISHED_PRODUCT.md:109:\bigl|\partial_\xi^\alpha r_k(\xi)\bigr|
+docs/math/DDYO_RA1N_FINISHED_PRODUCT.md:112:for the actual repository remainder \(r_k\).
+docs/math/DDYO_RA1N_FINISHED_PRODUCT.md:116:r_k=\widehat G_k-P_k\widehat G_k
+docs/math/DDYO_RA1N_FINISHED_PRODUCT.md:127:Status: Conditional at the exact \(r_k\)-symbol stage.
+docs/math/EXACT_DDYO_SYMBOL_FORMULA_FK.md:17:r_k=\widehat G_k-P_k\widehat G_k.
+docs/math/DDYO_RA1N_CONDITIONAL_CLOSURE.md:9:r_k(\xi) = (1-P_k(\xi))\,\widehat G(\xi)\,\psi_k(\xi),
+docs/math/DDYO_RA1N_CONDITIONAL_CLOSURE.md:25:\left|\int_{\mathbb R^3} F_k(\xi)\,r_k(\xi)\,d\xi\right|
+docs/math/RA1N_DDYO_COERCIVITY_FRONTIER.md:95:|d_\perp^2 r_k(\xi,\eta)|
+docs/math/RA1N_DDYO_COERCIVITY_FRONTIER.md:157:Canonical residual factor:
+docs/math/TERMINAL_HIGH_HIGH_RESONANCE_GAIN_ROUTE.md:10:Construct a renormalized symbol \(r_k(\xi,\eta)\) for the transverse high-high interaction and prove a curvature-driven gain estimate sufficient to close the DDYO route.
+docs/math/TERMINAL_HIGH_HIGH_RESONANCE_GAIN_ROUTE.md:39:r_k(\xi,\eta)
+docs/math/TERMINAL_HIGH_HIGH_RESONANCE_GAIN_ROUTE.md:49:\partial_{\perp}^2 r_k(\xi,\eta)\big|_{\xi\parallel\eta}\neq 0.
+docs/math/TERMINAL_HIGH_HIGH_RESONANCE_GAIN_ROUTE.md:55:|r_k(\xi,\eta)|
+docs/math/TERMINAL_HIGH_HIGH_RESONANCE_GAIN_ROUTE.md:84:|r_k(\xi,\eta)| \ge c\,2^{-\alpha k}|\xi\wedge\eta|^2
+docs/math/DDYO_RA1N_SHELL_PRODUCT_MOMENT_TARGET.md:10:\mathcal F^{-1}\!\left[\varphi(2^{-j}\xi)\varphi(2^{-k}\xi)r_k(\xi)\right](x)
+docs/math/TERMINAL_HIGH_HIGH_CURVATURE_GAIN_REDUCTION.md:12:r_k(\xi,\eta)
+docs/math/TERMINAL_HIGH_HIGH_CURVATURE_GAIN_REDUCTION.md:34:|r_k(\xi,\eta)|
+docs/math/TERMINAL_HIGH_HIGH_CURVATURE_GAIN_REDUCTION.md:42:\partial_\perp^2 r_k(\xi,\eta)\big|_{\xi\parallel\eta}
+docs/math/DDYO_GJ_NONGENERATED_SOURCE_SEARCH.md:666:./docs/math/BRANCH_B_FINAL_FRONTIER.md-258-L55: - continuum J2B exact residual closure: open
+docs/math/DDYO_GJ_DEFINITION_CANDIDATE_EXTRACT.md:216:258-L55: - continuum J2B exact residual closure: open
+docs/math/NAK_REGULARIZED_ALIGNMENT.md:42:## Regularized NAK residual
+docs/math/NAK_REGULARIZED_ALIGNMENT.md:59:The fixed-\(\tau\) regularized residual is not scale-invariant on \(\mathbb R^3\).
+docs/math/DDYO_H_PRIME_ROUTE_CRITERION.md:60:The DDYO critical residual is based on an \(L^1\)-type gradient/vorticity structure.
+docs/math/TERMINAL_HIGH_HIGH_RESONANCE_SYMBOL_ASSUMPTION.md:11:for the canonical residual
+docs/math/TERMINAL_HIGH_HIGH_RESONANCE_SYMBOL_ASSUMPTION.md:13:r_k=\widehat G_k-P_k\widehat G_k,
+docs/math/TERMINAL_HIGH_HIGH_RESONANCE_SYMBOL_ASSUMPTION.md:17:r_k(\xi,\eta):=m_k(\xi,\eta)-m_k(\xi,\eta)\big|_{\xi\parallel\eta}.
+docs/math/TERMINAL_HIGH_HIGH_RESONANCE_SYMBOL_ASSUMPTION.md:23:|r_k(\xi,\eta)|\ge c\,2^{-\alpha k}|\xi\wedge\eta|^2
+docs/math/DREM_RESIDUAL_STATUS.md:1:# DREM residual status
+docs/math/DREM_RESIDUAL_STATUS.md:3:## Canonical residual
+docs/math/DREM_RESIDUAL_STATUS.md:23:under the discrete quadrature used in `tests/test_drem_residual.py`.
+docs/math/DREM_RESIDUAL_STATUS.md:56:- residual chosen
+docs/math/DDYO_GJ_NONGENERATED_CANDIDATE_WITNESSES.md:319:./docs/math/BRANCH_B_FINAL_FRONTIER.md-258-L55: - continuum J2B exact residual closure: open
+docs/math/DDYO_RA1N_CANONICAL_RK_DEFINITION.md:1:# DDYO RA1n Canonical \(r_k\) Definition
+docs/math/DDYO_RA1N_CANONICAL_RK_DEFINITION.md:8:r_k=\widehat G_k-P_k\widehat G_k.
+docs/math/DDYO_RA1N_CANONICAL_RK_DEFINITION.md:27:This promotes a single exact repository occurrence into the canonical exact definition of \(r_k(\xi)\).
+docs/math/DDYO_RA1N_CANONICAL_RK_DEFINITION.md:34:\left|\partial_\xi^\alpha r_k(\xi)\right|<\infty,
+docs/math/RA1N_CORRECTED_RESIDUAL_AND_CLOSURE.md:1:# RA1n corrected residual and closure surface
+docs/math/RA1N_CORRECTED_RESIDUAL_AND_CLOSURE.md:3:## Corrected residual symbol
+docs/math/RA1N_CORRECTED_RESIDUAL_AND_CLOSURE.md:7:r_k(\xi,\eta,\zeta)
+docs/math/RA1N_CORRECTED_RESIDUAL_AND_CLOSURE.md:22:Hence the canonical residual is
+docs/math/RA1N_CORRECTED_RESIDUAL_AND_CLOSURE.md:24:r_k=\widehat G_k-P_k\widehat G_k.
+docs/math/RA1N_CORRECTED_RESIDUAL_AND_CLOSURE.md:33:r_k(\xi,\eta,\zeta)\,
+docs/math/RA1N_CORRECTED_RESIDUAL_AND_CLOSURE.md:42:r_k(\xi,\eta,\zeta)\,
+docs/math/RA1N_CORRECTED_RESIDUAL_AND_CLOSURE.md:50:|r_k(\xi,\eta,\zeta)|
+docs/math/RA1N_CORRECTED_RESIDUAL_AND_CLOSURE.md:94:The remaining frontier is the exponent-drop shell-sum theorem together with the corrected residual-symbol gain for
+docs/math/RA1N_CORRECTED_RESIDUAL_AND_CLOSURE.md:96:r_k=\widehat G_k-P_k\widehat G_k.
+docs/math/RA1N_CORRECTED_SCALE_NORMALIZED_COERCIVITY.md:5:Canonical residual:
+docs/math/RA1N_CORRECTED_SCALE_NORMALIZED_COERCIVITY.md:7:r_k(ξ) = \widehat G_k(ξ) − P_k \widehat G_k(ξ).
+docs/math/RA1N_CORRECTED_SCALE_NORMALIZED_COERCIVITY.md:11:∫_{A_k} |∇_ξ r_k(ξ)|² w_k(ξ) dξ ≥ c ∫_{A_k} |r_k(ξ)|² w_k(ξ) dξ
+docs/math/RA1N_CORRECTED_SCALE_NORMALIZED_COERCIVITY.md:17:∫_{A_k} |2^k ∇_ξ r_k(ξ)|² w_k(ξ) dξ ≥ c ∫_{A_k} |r_k(ξ)|² w_k(ξ) dξ.
+docs/math/RA1N_CORRECTED_SCALE_NORMALIZED_COERCIVITY.md:21:∫_{A_k} |∇_ξ r_k(ξ)|² w_k(ξ) dξ ≥ c 2^{-2k} ∫_{A_k} |r_k(ξ)|² w_k(ξ) dξ.
+docs/math/RA1N_CORRECTED_SCALE_NORMALIZED_COERCIVITY.md:25:1. r_k ∈ H¹(A_k,w_k).
+docs/math/RA1N_CORRECTED_SCALE_NORMALIZED_COERCIVITY.md:26:2. r_k ⟂_{L²(w_k)} N_k, where N_k is the shell null-mode space killed by I − P_k.
+docs/status/DDYO_RA1N_SYMBOL_CONSISTENCY_BLOCKER.md:7:2. Exact DDYO remainder-symbol formula for \(r_k(\xi)\).
+docs/status/DDYO_RA1N_SYMBOL_CONSISTENCY_BLOCKER.md:12:  r_k=\widehat G_k-P_k\widehat G_k
+docs/status/DDYO_RA1N_SYMBOL_CONSISTENCY_BLOCKER.md:18:  r_k=\widehat G_k-P_k\widehat G_k.
+docs/status/DDYO_RA1N_SYMBOL_CONSISTENCY_BLOCKER.md:24:- do not lock any canonical RA1n derivative theorem until the exact DDYO \(r_k(\xi)\)
+docs/status/TERMINAL_CLOSURE_PROGRESS_01.md:8:- Refined missing object: `terminal_high_high_symbol_lower_bound` = quantitative lower bound for \(r_k(\xi,\eta)\) on the localized transverse adjacent-shell region
+docs/status/TERMINAL_CLOSURE_PROGRESS_01.md:14:|r_k(\xi,\eta)|
+docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION_2026_04_11.md:7:r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi).
+docs/status/DDYO_CANONICAL_TERMINAL_OBSTRUCTION_2026_04_11.md:16:\partial_\xi^\alpha\!\bigl(\widehat G_k(\xi)-P_k\widehat G_k(\xi)\bigr)
+docs/status/RA1N_TERMINAL_OBSTRUCTION_LOCK_2026_04_24.md:12:r_k(ξ) = \widehat G_k(ξ) - P_k \widehat G_k(ξ)
+docs/status/RA1N_TERMINAL_OBSTRUCTION_LOCK_2026_04_24.md:16:P_k \widehat G_k(ξ) = \widehat G_k(0) is not automatically compatible with a dyadic annular symbol supported on |ξ| ~ 2^k.
+docs/status/RA1N_TERMINAL_OBSTRUCTION_LOCK_2026_04_24.md:17:∫ r_k(ξ) dξ = 0 does not follow merely from subtracting the value at the origin.
+docs/status/RA1N_TERMINAL_OBSTRUCTION_LOCK_2026_04_24.md:18:r_k(0)=0 is not enough to obtain the stated dyadic first-moment bound without an explicit support, normalization, and derivative estimate.
+docs/status/RA1N_TERMINAL_OBSTRUCTION_LOCK_2026_04_24.md:20:|∂_{ξ_ℓ} r_k^{a,b}(ξ)| ≤ C · 2^{-k} · W_k(ξ)
+docs/status/RA1N_TERMINAL_OBSTRUCTION_LOCK_2026_04_24.md:26:|shell_product_first_moment_{j,k}^{a,b,ℓ}(r_k, ω_k)|
+docs/status/DDYO_RA1N_STATUS_2026_04_11.md:7:r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi).
+docs/status/DDYO_RA1N_STATUS_2026_04_11.md:11:1. canonical extraction of \(r_k\);
+docs/status/DDYO_RA1N_STATUS_2026_04_11.md:21:\partial_\xi^\alpha\!\bigl(\widehat G_k(\xi)-P_k\widehat G_k(\xi)\bigr)
+docs/status/RA1N_UNCONDITIONAL_CLOSURE_2026_04_11.md:7:r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi)
+docs/status/RA1N_UNCONDITIONAL_CLOSURE_2026_04_11.md:11:|\partial_\xi^\alpha r_k(\xi)|
+docs/status/RA1N_UNCONDITIONAL_CLOSURE_2026_04_11.md:24:The \(r_k\) summability frontier is closed, provided the repository's \(r_k\) object is exactly the annular first-order remainder attached to
+docs/status/RA1N_UNCONDITIONAL_CLOSURE_2026_04_11.md:26:\widehat G_k(\xi)=\varphi(2^{-k}\xi)|\xi|^{-4}.
+docs/status/TERMINAL_HIGH_HIGH_RESONANCE_CURVATURE_GAIN_OPEN_PROBLEM.md:5:Canonical residual:
+docs/status/TERMINAL_HIGH_HIGH_RESONANCE_CURVATURE_GAIN_OPEN_PROBLEM.md:7:r_k=\widehat G_k-P_k\widehat G_k.
+docs/status/TERMINAL_HIGH_HIGH_RESONANCE_CURVATURE_GAIN_OPEN_PROBLEM.md:18:|r_k(\xi,\eta)| \ge c\,2^{-\alpha k}|\xi\wedge\eta|^2
+docs/status/TERMINAL_HIGH_HIGH_RESONANCE_CURVATURE_GAIN_OPEN_PROBLEM.md:28:Replace OPEN only after the target inequality is derived repository-natively for the canonical \(r_k\) without any inadmissible volume-absorption step.
+docs/status/COMPLETION_SNAPSHOT_2026_04_17.md:10:- Canonical residual corrected to r_k = \widehat G_k - P_k\widehat G_k.
+docs/status/NEXT_MISSING_OBJECT.md:35:|r_k(\xi,\eta)|
+docs/status/NEXT_MISSING_OBJECT.md:39:r_k(\xi,\eta)=m_k(\xi,\eta)-m_k(\xi,\eta)\big|_{\xi\parallel\eta}.
+docs/status/RA1N_STATUS.md:9:r_k(\xi) = (1-P_k(\xi))\,\widehat G(\xi)\,\psi_k(\xi),
+docs/status/RA1N_STATUS.md:22:\left|\int_{\mathbb R^3} F_k(\xi)\,r_k(\xi)\,d\xi\right| \le a_k,
+docs/status/DDYO_RA1N_FINAL_NORMAL_FORM_2026_04_11.md:7:r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi).
+docs/status/DDYO_RA1N_FINAL_NORMAL_FORM_2026_04_11.md:16:\partial_\xi^\alpha\!\bigl(\widehat G_k(\xi)-P_k\widehat G_k(\xi)\bigr)
+docs/status/DDYO_RA1N_FINAL_NORMAL_FORM_2026_04_11.md:26:\partial_\xi^\alpha\!\bigl(\widehat G_k(\xi)-P_k\widehat G_k(\xi)\bigr)
+docs/status/TERMINAL_HIGH_HIGH_RESONANCE_GAIN_ROUTE_STATUS.md:22:r_k(\xi,\eta)
+docs/status/TERMINAL_HIGH_HIGH_RESONANCE_GAIN_ROUTE_STATUS.md:29:\partial_{\perp}^2 r_k(\xi,\eta)\big|_{\xi\parallel\eta}\neq 0
+docs/status/DDYO_RA1N_RK_DEFINITION_STATUS.md:1:# DDYO RA1n r_k Definition Status
+docs/status/DDYO_RA1N_RK_DEFINITION_STATUS.md:6:A single exact repository occurrence has been promoted into the canonical exact definition of `r_k(ξ)`.
+docs/status/DDYO_RA1N_RK_DEFINITION_STATUS.md:10:r_k=\widehat G_k-P_k\widehat G_k.
+docs/status/DDYO_RA1N_RK_DEFINITION_STATUS.md:23:Derive the exact theorem-level symbol derivative estimate for this canonical `r_k(ξ)` without any inadmissible volume-absorption step.
+docs/status/DDYO_TERMINAL_FRONTIER_CORE.md:40:- residual_markers: 6
+docs/status/NAVIER_STOKES_FRONTIER_SNAPSHOT_2026_04_10.md:55:- continuum J2B exact residual closure: open
+tests/test_ddyo_hybrid_rk_rescaling_lemma.py:7:    assert "r_k(\\xi)=2^{-k}\\rho(2^{-k}\\xi)" in s
+tests/test_ddyo_hybrid_rk_rescaling_lemma.py:8:    assert "\\partial_\\xi^\\alpha r_k(\\xi)" in s
+tests/test_next_missing_object_terminal_symbol_lower_bound.py:7:    assert "r_k(\\xi,\\eta)" in s
+tests/test_terminal_high_high_resonance_curvature_gain_frontier.py:7:    assert "|r_k(\\xi,\\eta)|\\ge c\\,2^{-\\alpha k}|\\xi\\wedge\\eta|^2" in s
+tests/test_ddyo_rk_definition_extracted.py:7:    assert "r_k=\\widehat G_k-P_k\\widehat G_k" in s
+tests/test_ddyo_rk_definition_extracted.py:16:    assert "r_k=\\widehat G_k-P_k\\widehat G_k" in s
+tests/test_ddyo_rk_definition_extracted.py:25:    assert r"r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi)" in s
+tests/test_ddyo_rk_definition_extracted.py:34:    assert r"r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi)" in s
+tests/test_ddyo_rk_definition_extracted.py:44:    assert r"r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi)" in s
+tests/test_ddyo_rk_definition_extracted.py:53:    assert r"r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi)" in s
+tests/test_ddyo_rk_definition_extracted.py:63:    assert r"r_k(\xi)=\widehat G_k(\xi)-P_k\widehat G_k(\xi)" in s
+tests/test_terminal_high_high_curvature_gain_reduction_doc.py:7:    assert "r_k(\\xi,\\eta)" in s
+tests/test_terminal_high_high_curvature_gain_reduction_doc.py:10:    assert "\\partial_\\perp^2 r_k(\\xi,\\eta)\\big|_{\\xi\\parallel\\eta}" in s
+tests/test_terminal_high_high_resonance_gain_route_doc.py:8:    assert "r_k(\\xi,\\eta)" in s
+tests/test_terminal_high_high_resonance_gain_route_doc.py:9:    assert "\\partial_{\\perp}^2 r_k(\\xi,\\eta)\\big|_{\\xi\\parallel\\eta}\\neq 0" in s
+tests/test_j2b_residual.py:61:def drem_residual(w, h):
+tests/test_j2b_residual.py:66:def j2b_residual(grad_w, h):
+tests/test_j2b_residual.py:77:def test_j2b_residual_nonnegative():
+tests/test_j2b_residual.py:82:    r = j2b_residual(grad_w, h)
+tests/test_j2b_residual.py:91:    r1 = j2b_residual(grad_w, h)
+tests/test_j2b_residual.py:98:    r2 = j2b_residual(grad_w2, h2)
+tests/test_j2b_residual.py:113:    rhs = np.max(magS) * j2b_residual(grad_w, h) * (1.0 + 1e-9)
+tests/test_j2b_residual.py:118:def test_j2b_residual_dominates_no_more_than_sampled_higher_norm():
+tests/test_terminal_high_high_resonance_gain_route.py:6:    assert r"|r_k(\xi,\eta)| \ge c\,2^{-\alpha k}|\xi\wedge\eta|^2" in s
+tests/test_ra1n_projector_consistent_kernel_lock.py:8:    assert "r_k^{\\mathrm{proj}}(\\eta,\\zeta)" in s
+tests/test_ra1n_corrected_residual_and_closure.py:3:def test_ra1n_corrected_residual_and_closure_surface():
+tests/test_ra1n_corrected_residual_and_closure.py:6:    assert "r_k=\\widehat G_k-P_k\\widehat G_k" in text
+Binary file tests/__pycache__/test_drem_residual.cpython-311.pyc matches
+Binary file tests/__pycache__/test_j2b_residual.cpython-311.pyc matches
+Binary file tests/__pycache__/test_terminal_high_high_resonance_curvature_gain_frontier.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_ddyo_commutator_frontier.cpython-311.pyc matches
+Binary file tests/__pycache__/test_terminal_high_high_curvature_gain_reduction_doc.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_ddyo_commutator_frontier.cpython-311-pytest-9.0.2.pyc matches
+Binary file tests/__pycache__/test_ra1n_terminal_obstruction_lock.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_ddyo_commutator_frontier.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_terminal_high_high_resonance_curvature_gain_lemma_lock.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_ddyo_wall.cpython-311.pyc matches
+Binary file tests/__pycache__/test_drem_residual.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_ddyo_rk_definition_extracted.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_ddyo_cancellation_surface_factorization_reduction.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_terminal_high_high_resonance_curvature_open_problem_literal.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_ddyo_rk_definition_extracted.cpython-311-pytest-9.0.2.pyc matches
+Binary file tests/__pycache__/test_drem_residual.cpython-311-pytest-9.0.2.pyc matches
+Binary file tests/__pycache__/test_ddyo_hybrid_rk_rescaling_lemma.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_ddyo_hybrid_rk_rescaling_lemma.cpython-311-pytest-9.0.2.pyc matches
+Binary file tests/__pycache__/test_ra1n_corrected_residual_and_closure.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_ra1n_terminal_region_factorization_route_literal.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_next_missing_object_terminal_high_high_curvature_gain.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_ddyo_residual.cpython-311-pytest-9.0.2.pyc matches
+Binary file tests/__pycache__/test_ra1n_projector_paired_symmetry_lock.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_terminal_high_high_resonance_gain_route.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_ddyo_residual.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_ddyo_residual.cpython-311.pyc matches
+Binary file tests/__pycache__/test_terminal_high_high_resonance_gain_route_status_doc.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_terminal_high_high_resonance_gain_route_doc.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_ra1n_projector_consistent_kernel_lock.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_ra1n_downstream_scale_compatibility.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_simslv_frontier_closure.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_readme_ra1n_frontier_surface.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_nak_regularized.cpython-311.pyc matches
+Binary file tests/__pycache__/test_nak_residual.cpython-311.pyc matches
+Binary file tests/__pycache__/test_ddyo_wall.cpython-311-pytest-9.0.2.pyc matches
+Binary file tests/__pycache__/test_ddyo_wall.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_ra1n_corrected_scale_normalized_coercivity.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_next_missing_object_terminal_symbol_lower_bound.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_nak_residual.cpython-311-pytest-9.0.2.pyc matches
+Binary file tests/__pycache__/test_j2b_residual.cpython-311-pytest-9.0.2.pyc matches
+Binary file tests/__pycache__/test_nak_regularized.cpython-311-pytest-9.0.2.pyc matches
+Binary file tests/__pycache__/test_nak_regularized.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_j2b_residual.cpython-311-pytest-9.0.3.pyc matches
+Binary file tests/__pycache__/test_nak_residual.cpython-311-pytest-9.0.3.pyc matches
+tests/test_ra1n_terminal_region_factorization_route_literal.py:9:    assert r"Z_k:=\{(\xi,\eta):r_k(\xi,\eta)=0\}\subseteq \{(\xi,\eta):g_k(\xi,\eta)=0\}" in text
+tests/test_ra1n_terminal_region_factorization_route_literal.py:10:    assert r"a_k(\xi,\eta):=\frac{r_k(\xi,\eta)}{g_k(\xi,\eta)}" in text
+tests/test_next_missing_object_terminal_high_high_curvature_gain.py:7:    assert "r_k(\\xi,\\eta)" in s
+tests/test_readme_ra1n_frontier_surface.py:7:    assert "r_k = \\widehat G_k - P_k\\widehat G_k" in s
+tests/test_terminal_high_high_resonance_curvature_gain_lemma_lock.py:8:    assert r"|\widetilde r_k(xi,eta)| >= c 2^{-alpha k} |xi \wedge eta|^2" in s
+tests/test_terminal_high_high_resonance_gain_route_status_doc.py:11:    assert "r_k(\\xi,\\eta)" in s
+tests/test_ra1n_projector_paired_symmetry_lock.py:6:    assert "r_k(\\eta,\\zeta)=r_k(\\zeta,\\eta)" in s
+tests/test_ra1n_corrected_scale_normalized_coercivity.py:6:    assert "r_k(ξ) = \\widehat G_k(ξ) − P_k \\widehat G_k(ξ)." in s
+tests/test_ra1n_corrected_scale_normalized_coercivity.py:9:    assert "∫_{A_k} |2^k ∇_ξ r_k(ξ)|² w_k(ξ) dξ ≥ c ∫_{A_k} |r_k(ξ)|² w_k(ξ) dξ" in s
+tests/test_nak_regularized.py:42:def drem_residual(w, h):
+tests/test_nak_regularized.py:73:def nak_regularized_residual(w, S, h, tau=4.0):
+tests/test_nak_regularized.py:89:def test_regularized_nak_residual_nonnegative():
+tests/test_nak_regularized.py:94:    r = nak_regularized_residual(w, S, h, tau=4.0)
+tests/test_nak_regularized.py:98:def test_regularized_nak_residual_bounded_by_drem():
+tests/test_nak_regularized.py:103:    r_reg = nak_regularized_residual(w, S, h, tau=4.0)
+tests/test_nak_regularized.py:104:    r_drem = drem_residual(w, h)
+tests/test_nak_regularized.py:113:    r1 = nak_regularized_residual(w, S, h, tau=4.0)
+tests/test_nak_regularized.py:120:    r2 = nak_regularized_residual(w2, S2, h2, tau=4.0)
+tests/test_drem_residual.py:52:def drem_residual(w, h):
+tests/test_drem_residual.py:73:    r1 = drem_residual(w, h)
+tests/test_drem_residual.py:79:    r2 = drem_residual(w2, h2)
+tests/test_drem_residual.py:97:def test_drem_residual_nonnegative():
+tests/test_drem_residual.py:101:    r = drem_residual(w, h)
+tests/test_ddyo_commutator_frontier.py:351:def test_ddyo_strain_commutator_kato_ponce_proxy_bound():
+tests/test_ddyo_wall.py:142:def shell_residual(wj, j, h):
+tests/test_ddyo_wall.py:232:    rhs = shell_residual(wj, j, h)
+tests/test_ddyo_wall.py:246:    rhs = shell_residual(wj, j, h)
+tests/test_ddyo_wall.py:260:    rhs = shell_residual(wj, j, h)
+tests/test_ddyo_wall.py:275:    rhs = (4.0 / 3.0) * lam * shell_residual(wj, j, h)
+tests/test_ddyo_wall.py:331:def shell_residual_on_mask(wj, j, h, mask):
+tests/test_ddyo_wall.py:365:    rhs_active = (4.0 / 3.0) * lam_active * shell_residual_on_mask(wj, j, h, active)
+tests/test_ddyo_wall.py:366:    rhs_tail = (4.0 / 3.0) * lam_tail * shell_residual_on_mask(wj, j, h, tail)
+tests/test_ddyo_wall.py:389:        rhs_active = (4.0 / 3.0) * lam_active * shell_residual_on_mask(wj, j, h, active)
+tests/test_ddyo_wall.py:390:        rhs_tail = (4.0 / 3.0) * lam_tail * shell_residual_on_mask(wj, j, h, tail)
+tests/test_ddyo_wall.py:401:    total = shell_residual(wj, j, h)
+tests/test_ddyo_wall.py:406:        tail_mass = shell_residual_on_mask(wj, j, h, tail)
+tests/test_ddyo_wall.py:424:        total = shell_residual(wj, j, h)
+tests/test_ddyo_wall.py:429:            tail_mass = shell_residual_on_mask(wj, j, h, tail)
+tests/test_ddyo_wall.py:445:    total = shell_residual(wj, j, h)
+tests/test_ddyo_wall.py:446:    tail_50 = shell_residual_on_mask(
+tests/test_ddyo_wall.py:449:    tail_90 = shell_residual_on_mask(
+tests/test_ddyo_wall.py:468:        total = shell_residual(wj, j, h)
+tests/test_ddyo_wall.py:469:        tail_50 = shell_residual_on_mask(
+tests/test_ddyo_wall.py:472:        tail_90 = shell_residual_on_mask(
+tests/test_terminal_high_high_resonance_curvature_open_problem_literal.py:9:    assert r"r_k=\widehat G_k-P_k\widehat G_k" in text
+tests/test_terminal_high_high_resonance_curvature_open_problem_literal.py:10:    assert r"|r_k(\xi,\eta)| \ge c\,2^{-\alpha k}|\xi\wedge\eta|^2" in text
+tests/test_ddyo_cancellation_surface_factorization_reduction.py:9:        "r_k(\\omega)=g_k(\\omega)\\,b_k(\\omega)",
+tests/test_ra1n_terminal_obstruction_lock.py:10:    assert "r_k(ξ) = \\widehat G_k(ξ) - P_k \\widehat G_k(ξ)" in DOC
+tests/test_ddyo_residual.py:51:def ddyo_residual_velocity(u):
+tests/test_ddyo_residual.py:61:def test_ddyo_residual_nonnegative():
+tests/test_ddyo_residual.py:64:    r = ddyo_residual_velocity(u)
+tests/test_ddyo_residual.py:83:    r1 = ddyo_residual_velocity(u)
+tests/test_ddyo_residual.py:88:    r2 = ddyo_residual_velocity(u2)
+tests/test_ra1n_downstream_scale_compatibility.py:7:    assert "sup_{|ξ| ~ 2^k} |(2^k∇_ξ)^α r_k(ξ)| ≤ C_α" in s
+tests/test_ra1n_downstream_scale_compatibility.py:8:    assert "2^{k|α|}(∂^α r_k)(2^kη)" in s
+tests/test_ra1n_downstream_scale_compatibility.py:11:    assert "r_k(ξ) = \\widehat G_k(ξ) − P_k \\widehat G_k(ξ)." in s
+tests/test_ra1n_downstream_scale_compatibility.py:15:    assert "r_k(2^k\\eta)" in s
+tests/test_ra1n_downstream_scale_compatibility.py:17:    assert "symbol-derivative hypothesis on \\(r_k\\)" in s
+tests/test_nak_residual.py:42:def drem_residual(w, h):
+tests/test_nak_residual.py:65:def nak_residual(w, S, h):
+tests/test_nak_residual.py:71:def test_nak_residual_nonnegative():
+tests/test_nak_residual.py:76:    r = nak_residual(w, S, h)
+tests/test_nak_residual.py:80:def test_nak_residual_bounded_by_drem():
+tests/test_nak_residual.py:85:    r_nak = nak_residual(w, S, h)
+tests/test_nak_residual.py:86:    r_drem = drem_residual(w, h)
+tests/test_nak_residual.py:105:    r1 = nak_residual(w, S, h)
+tests/test_nak_residual.py:112:    r2 = nak_residual(w2, S2, h2)

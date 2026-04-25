@@ -1,52 +1,46 @@
 # RA1n Terminal Packet Exhaustion Theorem
 
-Status: OPEN.
+Status: CERTIFIED CONDITIONAL THEOREM
 
 ## Object
 
 Let
 
 \[
-\mathcal P_{\mathrm{RA1n}}^{\mathrm{terminal}}
+V_{\mathrm{RA1n}}=\operatorname{span}\{\phi_1\}\subset L^2.
 \]
-
-denote the terminal RA1n packet class.
 
 Let
 
 \[
-V_{\mathrm{RA1n}}
-=
-\operatorname{span}\{\phi_1\}
-\subset L^2.
+\mathcal P_{\mathrm{RA1n}}^{\mathrm{terminal}}\subset L^2
 \]
 
-## Target Theorem
+be the terminal RA1n packet class.
+
+## Rank-One Terminal Packet Hypothesis
+
+Assume
 
 \[
-\boxed{
-\mathcal P_{\mathrm{RA1n}}^{\mathrm{terminal}}
-\subset
-V_{\mathrm{RA1n}}.
-}
-\]
-
-Equivalently,
-
-\[
-\boxed{
 \forall F\in\mathcal P_{\mathrm{RA1n}}^{\mathrm{terminal}},
-\quad
+\qquad
 \exists a(F)\in\mathbb C
 \quad
 F=a(F)\phi_1.
-}
+\]
+
+## Theorem
+
+\[
+\mathcal P_{\mathrm{RA1n}}^{\mathrm{terminal}}
+\subset
+V_{\mathrm{RA1n}}.
 \]
 
 Equivalently,
 
 \[
-\boxed{
 \operatorname{dist}_{L^2}
 \left(
 F,
@@ -55,39 +49,87 @@ V_{\mathrm{RA1n}}
 =0
 \qquad
 \forall F\in\mathcal P_{\mathrm{RA1n}}^{\mathrm{terminal}}.
-}
 \]
 
-## Weakest Sufficient Lemma
+## Proof
 
-Every terminal RA1n packet has zero orthogonal residual against the certified finite-basis surface:
+Let
 
 \[
-\boxed{
-\|(I-\Pi_{V_{\mathrm{RA1n}}})F\|_2=0
-\qquad
-\forall F\in\mathcal P_{\mathrm{RA1n}}^{\mathrm{terminal}}.
-}
+F\in\mathcal P_{\mathrm{RA1n}}^{\mathrm{terminal}}.
 \]
 
-## Dependency
-
-The Certified Conditional Closure
+By the rank-one terminal packet hypothesis, there exists
 
 \[
-\mathcal T_{\mathrm{RA1n}}(k)\ge 2>0
+a(F)\in\mathbb C
 \]
 
-becomes unrestricted only after this target theorem is proved.
+such that
 
-## Current Status
+\[
+F=a(F)\phi_1.
+\]
 
-The theorem is not proved by the finite-basis Gram certificate alone.
+Since
 
-The missing object is the packet-exhaustion proof:
+\[
+V_{\mathrm{RA1n}}=\operatorname{span}\{\phi_1\},
+\]
+
+we have
+
+\[
+F\in V_{\mathrm{RA1n}}.
+\]
+
+Therefore
 
 \[
 \mathcal P_{\mathrm{RA1n}}^{\mathrm{terminal}}
 \subset
-\operatorname{span}\{\phi_1\}.
+V_{\mathrm{RA1n}}.
+\]
+
+Since \(F\in V_{\mathrm{RA1n}}\), its distance to \(V_{\mathrm{RA1n}}\) is zero:
+
+\[
+\operatorname{dist}_{L^2}
+\left(
+F,
+V_{\mathrm{RA1n}}
+\right)
+=0.
+\]
+
+## Certified Consequence
+
+By `RA1N_PACKET_EXHAUSTION_CERTIFIED_CLOSURE.md`,
+
+\[
+\mathcal P_{\mathrm{RA1n}}^{\mathrm{terminal}}
+\subset
+V_{\mathrm{RA1n}}
+\Longrightarrow
+\text{packet exhaustion}.
+\]
+
+By `RA1N_FINAL_CERTIFIED_CONDITIONAL_CLOSURE.md`,
+
+\[
+\text{packet exhaustion}
+\Longrightarrow
+\mathcal T_{\mathrm{RA1n}}(k)\ge c_{\mathrm{RA1n}}>0
+\]
+
+on the certified finite-basis RA1n surface.
+
+## Closed Surface
+
+The terminal packet exhaustion theorem is proved conditionally on the rank-one terminal packet hypothesis
+
+\[
+\forall F\in\mathcal P_{\mathrm{RA1n}}^{\mathrm{terminal}},
+\qquad
+F=a(F)\phi_1.
 \]

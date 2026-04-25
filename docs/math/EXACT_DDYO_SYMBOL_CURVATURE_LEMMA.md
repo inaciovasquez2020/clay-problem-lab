@@ -1,5 +1,8 @@
 # Exact DDYO Symbol Curvature Lemma
 
+## Status
+OPEN
+
 **Status: OPEN**
 
 Exact Symbol Curvature Lemma for terminal_high_high_resonance_curvature_gain
